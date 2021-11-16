@@ -19,7 +19,7 @@ __Integrante 2:__
 
 __Integrante 3:__
     :raising_hand_man: Buenas, mi nombre es Nicolas Esteban, soy de Córdoba Argentina y tengo 25 años
-     Soy estudiante de ingenieria electrónica 
+    Soy estudiante de ingenieria electrónica   
 
 __Integrante 4:__ 
     Hola! Mi nombre es Leandro Toconás, tengo 29 años.
