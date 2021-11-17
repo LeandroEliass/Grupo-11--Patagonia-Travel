@@ -38,6 +38,18 @@ Tripavisur
 
 ![tripavisur](https://user-images.githubusercontent.com/93563000/142018749-29a9f800-85ac-4df7-9bd0-ae591dfe2fe7.png)
 
+Rumbosur
+
+![Rumbosur](https://user-images.githubusercontent.com/93354017/142296871-e08eaa90-f6b6-46d9-b9b6-c6d5510d71ae.PNG)
+
+Turismo Barbaglia
+
+![Turismo Barbaglia](https://user-images.githubusercontent.com/93354017/142297229-915b3bc0-182e-4f38-bf09-3ee273b02fb1.PNG)
+
+Almundo 
+
+![Almundo](https://user-images.githubusercontent.com/93354017/142297455-195b805d-43cd-411e-921d-17fdbad672cb.PNG)
+
 Listado de Alojamientos disponibles__
 
 
