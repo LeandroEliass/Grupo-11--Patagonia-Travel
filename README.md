@@ -14,6 +14,7 @@ Visitanos y podrás disfrutar cada minuto de tus vacaciones sin perderte nada, y
 __INTEGRANTES__
 
 __Integrante 1:__
+    Hola soy Santos Gatica Miles, tengo 18 años y soy de BsAs Argentina. Actualmente estoy trabajando en una empresa durante la semana y en un restaurant algunos fines de semana.  
 
 __Integrante 2:__
 
