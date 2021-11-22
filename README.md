@@ -72,10 +72,10 @@ ___
 + ## ___Wireframes___
      - 
         1. Home: [___Link___] 
-        2. Login: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=0%3A1
-        3. Registro: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=16%3A50
-        4. Carrito de Compras: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=10%3A3
-        5. Detalle del producto: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=9%3A6
+        2. Login: [___Link___](https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=0%3A1)
+        3. Registro: [___Link___](https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=16%3A50)
+        4. Carrito de Compras: [___Link___](https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=10%3A3)
+        5. Detalle del producto: [___Link___](https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=9%3A6)
 ___
 + ## ___Paleta de colores___
       -  __Basado en el siguiente:__ [___Link___](https://color.adobe.com/es/trends/Travel)
