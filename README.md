@@ -66,12 +66,12 @@ ___WIREFRAMES:__
 
 +##___Paleta de colores__
 
-        Basado en el siguiente link: [___link___] https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958
-        1- #C9E4CA__
-        2- #87bba2__
-        3- #55828B__
-        4- #3B6064__
-        5- #364958__
+        Basado en el siguiente link: https://color.adobe.com/es/trends/Travel
+        1. ![#5D7CA6](https://via.placeholder.com/15/5D7CA6/000000?text=+) `#e63946`
+        2. ![#023059](https://via.placeholder.com/15/023059/000000?text=+) `#f1faee`
+        3. ![#73A2BF](https://via.placeholder.com/15/73A2BF/000000?text=+) `#a8dadc`
+        4. ![#F2CAA7](https://via.placeholder.com/15/F2CAA7/000000?text=+) `#457b9d`
+        5. ![#59362E](https://via.placeholder.com/15/59362E/000000?text=+) `#1d3557`
 
 +##__Tipografía__
 
