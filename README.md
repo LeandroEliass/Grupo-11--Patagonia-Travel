@@ -17,6 +17,7 @@ __Integrante 1:__
     Hola soy Santos Gatica Miles, tengo 18 años y soy de BsAs Argentina. Actualmente estoy trabajando en una empresa durante la semana y en un restaurant algunos fines de semana.  
 
 __Integrante 2:__
+    Hola, soy Gonza San Miguel, tengo 25 años y actualmente estoy trabajando en el rubro de comercio. Mi sueño es conocer cada rincón de Argentina. 
 
 __Integrante 3:__
     :raising_hand_man: Buenas, mi nombre es Nicolas Esteban, soy de Córdoba Argentina y tengo 25 años.
