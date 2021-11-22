@@ -67,11 +67,11 @@ ___WIREFRAMES:__
 +##___Paleta de colores__
 
         Basado en el siguiente link: https://color.adobe.com/es/trends/Travel
-        1. ![#5D7CA6](https://via.placeholder.com/15/5D7CA6/000000?text=+) `#5D7CA6`
-        2. ![#023059](https://via.placeholder.com/15/023059/000000?text=+) `#023059`
-        3. ![#73A2BF](https://via.placeholder.com/15/73A2BF/000000?text=+) `#73A2BF`
-        4. ![#F2CAA7](https://via.placeholder.com/15/F2CAA7/000000?text=+) `#F2CAA7`
-        5. ![#59362E](https://via.placeholder.com/15/59362E/000000?text=+) `#59362E`
+        1. ![#5d7ca6](https://via.placeholder.com/15.png/5d7ca6/000000) `#5d7ca6`
+        2. ![#023059](https://via.placeholder.com/15.png/023059/000000) `#023059`
+        3. ![#73A2BF](https://via.placeholder.com/15.png/73A2BF/000000) `#73A2BF`
+        4. ![#F2CAA7](https://via.placeholder.com/15.png/F2CAA7/000000) `#F2CAA7`
+        5. ![#59362E](https://via.placeholder.com/15.png/59362E/000000) `#59362E`
 
 +##__Tipografía__
 
