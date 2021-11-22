@@ -32,8 +32,7 @@ __REFERENTES__
 Despegar
 
 ![Fechas viaje](https://user-images.githubusercontent.com/93563000/141685817-ccb169b1-1c69-4505-b1db-0ac450740cc5.png)
-
-        Menú de fechas___
+    Menú de fechas___
 
 
 Tripavisur
@@ -57,28 +56,21 @@ PatagoniaChic
     ___
 
 ___WIREFRAMES:__
-        1- Home: [___Link___]__
         
-        2- Login: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=0%3A1__
-        
-        3- Registro: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=16%3A50 __
-        
-        4- Carrito de Compras: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=10%3A3 __
-        
-        5- Detalle del producto: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=9%3A6 __
-        
+        1- Home: [___Link___] 
+        2- Login: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=0%3A1
+        3- Registro: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=16%3A50
+        4- Carrito de Compras: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=10%3A3
+        5- Detalle del producto: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=9%3A6
 
-___ PALETA DE COLORES___
-    -_ Basado en el siguiente link: [___link___] https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958 __
-        1- #C9E4CA __
-        
-        2- #87bba2 __
-        
-        3- #55828B __
-        
-        4- #3B6064 __
-        
-        5- #364958 __
++##___Paleta de colores__
+
+        Basado en el siguiente link: [___link___] https://coolors.co/c9e4ca-87bba2-55828b-3b6064-364958
+        1- #C9E4CA__
+        2- #87bba2__
+        3- #55828B__
+        4- #3B6064__
+        5- #364958__
 
 +##__Tipografía__
 
@@ -86,6 +78,6 @@ ___ PALETA DE COLORES___
 
 ___LOGO__
 
-IMAGOTIPO: Combinación de imagen y texto. ___
+IMAGOTIPO: Combinación de imagen y texto.
 
 ![logo](https://user-images.githubusercontent.com/93563000/142296769-8b770387-45b5-43be-9590-a90c81cf1874.jpg)
