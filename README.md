@@ -77,16 +77,16 @@ ___
         4. Carrito de Compras: [___Link___](https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=10%3A3)
         5. Detalle del producto: [___Link___](https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=9%3A6)
 ___
-+ ## ___Paleta de colores___
-      -  __Basado en el siguiente:__ [___Link___](https://color.adobe.com/es/trends/Travel)
-        1. [#69688C](https://via.placeholder.com/15/69688C/000000?text=+) `#69688C`
-        2. [#283959](https://via.placeholder.com/15/283959/000000?text=+) `#283959`
-        3. [#8EA3BF](https://via.placeholder.com/15/8EA3BF/000000?text=+) `#8EA3BF`
-        4. [#F2BC8D](https://via.placeholder.com/15/F2BC8D/000000?text=+) `#F2BC8D`
-        5. [#F29F8D](https://via.placeholder.com/15/F29F8D/000000?text=+) `#F29F8D`
+
++ ## ___Paleta de colores___}
+    - __Tomando como referencia:__ [___Link___](https://color.adobe.com/es/trends/Travel)
+        1. ![#69688C](https://via.placeholder.com/15/69688C/000000?text=+) `#69688C`
+        2. ![#283959](https://via.placeholder.com/15/283959/000000?text=+) `#283959`
+        3. ![#8EA3BF](https://via.placeholder.com/15/8EA3BF/000000?text=+) `#8EA3BF`
+        4. ![#F2BC8D](https://via.placeholder.com/15/F2BC8D/000000?text=+) `#F2BC8D`
+        5. ![#F29F8D](https://via.placeholder.com/15/F29F8D/000000?text=+) `#F29F8D`
         
 ___
-
 
 + ## ___Tipografía___
 
