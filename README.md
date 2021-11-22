@@ -70,21 +70,20 @@ ___
 ___
 
 + ## ___Wireframes___
-        
-        1- Home: [___Link___] 
-        2- Login: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=0%3A1
-        3- Registro: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=16%3A50
-        4- Carrito de Compras: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=10%3A3
-        5- Detalle del producto: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=9%3A6
+     - 
+        1. Home: [___Link___] 
+        2. Login: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=0%3A1
+        3. Registro: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=16%3A50
+        4. Carrito de Compras: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=10%3A3
+        5. Detalle del producto: [___Link___] https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=9%3A6
 ___
 + ## ___Paleta de colores___
-
       -  __Basado en el siguiente:__ [___Link___](https://color.adobe.com/es/trends/Travel)
-        1. ![#5d7ca6](https://via.placeholder.com/15.png/5d7ca6/000000?text=+) `#5d7ca6`
-        2. ![#023059](https://via.placeholder.com/15.png/023059/000000?text=+) `#023059`
-        3. ![#73A2BF](https://via.placeholder.com/15.png/73A2BF/000000?text=+) `#73A2BF`
-        4. ![#F2CAA7](https://via.placeholder.com/15.png/F2CAA7/000000?text=+) `#F2CAA7`
-        5. ![#59362E](https://via.placeholder.com/15.png/59362E/000000?text=+) `#59362E`
+        1. [#69688C](https://via.placeholder.com/15/69688C/000000?text=+) `#69688C`
+        2. [#283959](https://via.placeholder.com/15/283959/000000?text=+) `#283959`
+        3. [#8EA3BF](https://via.placeholder.com/15/8EA3BF/000000?text=+) `#8EA3BF`
+        4. [#F2BC8D](https://via.placeholder.com/15/F2BC8D/000000?text=+) `#F2BC8D`
+        5. [#F29F8D](https://via.placeholder.com/15/F29F8D/000000?text=+) `#F29F8D`
         
 ___
 
