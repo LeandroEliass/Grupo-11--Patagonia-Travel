@@ -10,7 +10,7 @@ En este Sitio podrás encontrar todo lo necesario para desidir cúal será tu pr
 
 ___
 
-+ ## ___ PUBLICO ___
++ ## ___Público___
 
 Apuntamos a un público general familias, parejas y amigos viajeros, que planean visitar nuevos lugares dentro del país, y les ofreceremos la información necesaria de lo que se van a encontrar en su viaje, pudiendo comprar en nuestra página alojamiento, excursiones, y reservas para eventos culturales de interés. 
 
@@ -18,7 +18,7 @@ Visitanos y podrás disfrutar cada minuto de tus vacaciones sin perderte nada, y
 
 ___
 
-+ ## ___ INTEGRANTES ___
++ ## ___Integrantes___
 
 __Integrante 1:__
     Hola soy Santos Gatica Miles, tengo 18 años y soy de BsAs Argentina. Actualmente estoy trabajando en una empresa durante la semana y en un restaurant algunos fines de semana.  
@@ -36,36 +36,40 @@ __Integrante 4:__
 
 ___
    
-+ ## ___REFERENTES___
++ ## ___Referentes___
 
 - Despegar
 
 ![Fechas viaje](https://user-images.githubusercontent.com/93563000/141685817-ccb169b1-1c69-4505-b1db-0ac450740cc5.png)
-    Menú de fechas___
+    Menú de fechas
     ___
 
 - Tripavisur
 
 ![tripavisur](https://user-images.githubusercontent.com/93563000/142018749-29a9f800-85ac-4df7-9bd0-ae591dfe2fe7.png)
-    Listado de Alojamientos disponibles__
+    Listado de Alojamientos disponibles
     ___
+
 - Rumbosur
 
 ![Rumbosur](https://user-images.githubusercontent.com/93354017/142296871-e08eaa90-f6b6-46d9-b9b6-c6d5510d71ae.PNG)
-    Vista del home__
+    Vista del home
     ___
+
 - Turismo Barbaglia
 
 ![Turismo Barbaglia](https://user-images.githubusercontent.com/93354017/142297229-915b3bc0-182e-4f38-bf09-3ee273b02fb1.PNG)
-    Filtro de busqúedas laterales__
+    Filtro de busqúedas laterales
     ___
+
 - PatagoniaChic
 ![patagoniachic](https://user-images.githubusercontent.com/93563000/142867282-93379a27-8ee0-49b9-8dd5-e55db77deb4a.png)
-    Recuadros de los lugares de interés__
+    Recuadros de los lugares de interés
     ___
+
 ___
 
-+ ## ___WIREFRAMES:___
++ ## ___Wireframes___
         
         1- Home: [___Link___] 
         2- Login: [___Link___] https://www.figma.com/file/roQTkWTjxDx678PrhrcG0p/login-y-registro-(1)-(1)?node-id=0%3A1
@@ -76,11 +80,11 @@ ___
 + ## ___Paleta de colores___
 
       -  __Basado en el siguiente:__ [___Link___](https://color.adobe.com/es/trends/Travel)
-        1. ![#5d7ca6](https://via.placeholder.com/15/5d7ca6/000000?text=+) `#5d7ca6`
-        2. ![#023059](https://via.placeholder.com/15/023059/000000?text=+) `#023059`
-        3. ![#73A2BF](https://via.placeholder.com/15/73A2BF/000000?text=+) `#73A2BF`
-        4. ![#F2CAA7](https://via.placeholder.com/15/F2CAA7/000000?text=+) `#F2CAA7`
-        5. ![#59362E](https://via.placeholder.com/15/59362E/000000?text=+) `#59362E`
+        1. ![#5d7ca6](https://via.placeholder.com/15.png/5d7ca6/000000?text=+) `#5d7ca6`
+        2. ![#023059](https://via.placeholder.com/15.png/023059/000000?text=+) `#023059`
+        3. ![#73A2BF](https://via.placeholder.com/15.png/73A2BF/000000?text=+) `#73A2BF`
+        4. ![#F2CAA7](https://via.placeholder.com/15.png/F2CAA7/000000?text=+) `#F2CAA7`
+        5. ![#59362E](https://via.placeholder.com/15.png/59362E/000000?text=+) `#59362E`
         
 ___
 
@@ -88,7 +92,7 @@ ___
 + ## ___Tipografía___
 
 ___
-+ ## ___LOGO___
++ ## ___Logo___
 
 IMAGOTIPO: Combinación de imagen y texto.
 
