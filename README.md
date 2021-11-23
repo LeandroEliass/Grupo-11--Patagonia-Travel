@@ -89,7 +89,11 @@ ___
 ___
 
 + ## ___Tipografía___
-
+  
+     1. Serif: https://fonts.google.com/specimen/Bellefair?query=bel
+     2. Sans serif: https://fonts.google.com/specimen/Poppins
+     3. Handwriting: https://fonts.google.com/specimen/Bad+Script?category=Handwriting#standard-styles
+    
 ___
 + ## ___Logo___
 
