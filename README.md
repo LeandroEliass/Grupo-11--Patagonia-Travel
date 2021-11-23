@@ -79,7 +79,8 @@ ___
 ___
 
 + ## ___Boceto___
-    - Realizado mediante Figma, usted puede visualizarlo mediante el siguiente [___Link___](https://www.figma.com/file/4fnf7XSxuPASN3At5NbewD/boceto?node-id=1%3A2)
+    - Realizado mediante Figma, usted puede visualizarlo mediante el siguiente [___Link___](https://www.figma.com/file/4fnf7XSxuPASN3At5NbewD/boceto?node-id=1%3A2) , 
+      Recuerde que debe dejar cargar la página, la misma contiene algunos gif, los cuales ocacionan un poco de demora.
 
 ___
 + ## ___Paleta de colores___}
