@@ -78,6 +78,10 @@ ___
         5. Detalle del producto: [___Link___](https://www.figma.com/file/0N6LGpDLhoDB0sMmZDIAoc/Untitled?node-id=9%3A6)
 ___
 
++ ## ___Boceto___
+    - Realizado mediante Figma, usted puede visualizarlo mediante el siguiente [___Link___](https://www.figma.com/file/4fnf7XSxuPASN3At5NbewD/boceto?node-id=1%3A2)
+
+___
 + ## ___Paleta de colores___}
     - __Tomando como referencia:__ [___Link___](https://color.adobe.com/es/trends/Travel)
         1. ![#69688C](https://via.placeholder.com/15/69688C/000000?text=+) `#69688C`
