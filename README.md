@@ -6,15 +6,20 @@ ___
 
 ___ Bienvenidos a "Patagonia Travel" ___
 Te acompañará en tu próximo viaje. Podrás planificar tus vacaciones o una escapada para relajar, y disfrutar al máximo de tu estadia.
-En este Sitio podrás encontrar todo lo necesario para desidir cúal será tu próximo destino dentro de Argentina, y te enterarás de los mejores eventos culturales, gastronómicos, sitios turísticos y recreativos que estarán disponibles en la fecha de tu viaje, y además, podrás acceder a reservas y descuentos en dichos eventos y alojamientos comprando en la página.
+En este Sitio podrás encontrar todo lo necesario para decidir cúal será tu próximo destino dentro de Argentina, y te enterarás de los mejores eventos culturales, gastronómicos, sitios turísticos y recreativos que estarán disponibles en la fecha de tu viaje, y además, podrás acceder a reservas y descuentos en dichos eventos y alojamientos comprando en la página.
 
 ___
 
 + ## ___Público___
 
-Apuntamos a un público general familias, parejas y amigos viajeros, que planean visitar nuevos lugares dentro del país, y les ofreceremos la información necesaria de lo que se van a encontrar en su viaje, pudiendo comprar en nuestra página alojamiento, excursiones, y reservas para eventos culturales de interés. 
 
-Visitanos y podrás disfrutar cada minuto de tus vacaciones sin perderte nada, y estar enterado de las distintas experiencias que puedes encontrar en tu próximo viaje!!
+Publico objetivo:
+18 a 50 años (solteros, casados y/o grupos familiares), residentes en cualquier parte del país y de clase socio-economica ABC1. 
+Habituados a vacacionar en Argentina y, especificamente, en la Patagonia. Clientes frecuentes de páginas como TurismoCity y/o Aereolineas Argentinas. 
+
+Publico potencial: 
+Personas que vacacionen mayoritariamente en otros países (Brasil, Uruguay, Europa, etc) y puedan ser seducidas por la idea de conocer lugares de Argentina. 
+
 
 ___
 
