@@ -15,7 +15,7 @@ ___
 
 Publico objetivo:
 18 a 50 años (solteros, casados y/o grupos familiares), residentes en cualquier parte del país y de clase socio-economica ABC1. 
-Habituados a vacacionar en Argentina y, especificamente, en la Patagonia. Clientes frecuentes de páginas como TurismoCity y/o Aereolineas Argentinas. 
+Habituados a vacacionar en Argentina y, especificamente, en la Patagonia. Clientes frecuentes de páginas como TurismoCity y/o Despegar. 
 
 Publico potencial: 
 Personas que vacacionen mayoritariamente en otros países (Brasil, Uruguay, Europa, etc) y puedan ser seducidas por la idea de conocer lugares de Argentina. 
@@ -49,9 +49,9 @@ ___
     Menú de fechas
     ___
 
-- Tripavisur
+- Tripadvisor
 
-![tripavisur](https://user-images.githubusercontent.com/93563000/142018749-29a9f800-85ac-4df7-9bd0-ae591dfe2fe7.png)
+![tripavisor](https://user-images.githubusercontent.com/93563000/142018749-29a9f800-85ac-4df7-9bd0-ae591dfe2fe7.png)
     Listado de Alojamientos disponibles
     ___
 
