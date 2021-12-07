@@ -93,9 +93,7 @@ ___
         1. ![#69688C](https://via.placeholder.com/15/69688C/000000?text=+) `#69688C`
         2. ![#283959](https://via.placeholder.com/15/283959/000000?text=+) `#283959`
         3. ![#8EA3BF](https://via.placeholder.com/15/8EA3BF/000000?text=+) `#8EA3BF`
-        4. ![#F2BC8D](https://via.placeholder.com/15/F2BC8D/000000?text=+) `#F2BC8D`
-        5. ![#F29F8D](https://via.placeholder.com/15/F29F8D/000000?text=+) `#F29F8D`
-        6. ![#D7DBDD](https://via.placeholder.com/15/D7DBDD/000000?text=+) `#D7DBDD`
+        4. ![#D7DBDD](https://via.placeholder.com/15/D7DBDD/000000?text=+) `#D7DBDD`
         
 ___
 
