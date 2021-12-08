@@ -110,3 +110,10 @@ IMAGOTIPO: Combinación de imagen y texto.
 
 ![logo](https://user-images.githubusercontent.com/93563000/142296769-8b770387-45b5-43be-9590-a90c81cf1874.jpg)
 ___
+
+
++ ## ___TABLERO___
+
+    - __TRELLO:__ [__Link__](https://trello.com/b/dnH7wgaD/sprint-2)
+
+    

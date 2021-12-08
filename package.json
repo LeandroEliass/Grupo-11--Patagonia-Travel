@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "name": "grupo-11-nombre-del-proyecto-",
+  "description": "Proyecto Integrador DH - Full Stack Web",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "nodemon src/app.js -e js,mjs,json,html,css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandroEliass/Grupo-11-Nombre-del-Proyecto-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeandroEliass/Grupo-11-Nombre-del-Proyecto-/issues"
+  },
+  "homepage": "https://github.com/LeandroEliass/Grupo-11-Nombre-del-Proyecto-#readme"
+}
