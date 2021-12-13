@@ -1,0 +1,4 @@
+ #69688C (violeta)
+ #283959 (azul)
+ #8EA3BF (gris)
+ #D7DBDD (blanco)
