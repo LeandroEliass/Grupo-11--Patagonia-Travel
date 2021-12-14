@@ -18,6 +18,9 @@ header{
     align-items: center;
 
 }
+.menuprincipal a{
+    color: white;
+}
 #menu1{
     display: inline-block;
     padding: 10px;
@@ -48,6 +51,10 @@ border: none;
      display: flex;
 
  }
+ .ciudades a{
+     text-decoration: none;
+     color: #283959;
+ }
  ul a{
      text-decoration: none;
      display: inline-block;
@@ -62,6 +69,7 @@ border: none;
  .listasecundaria{
      display: flex;
      flex-wrap: wrap;
+    overflow: scroll;
      
  }
  .listasecundaria a{
@@ -72,19 +80,18 @@ border: none;
  .imagenhome{
      width: 100%;
      height: 300px;
-     margin: 0px;
 
  }
  .busquedaviaje{
      font-family: 'Poppins', sans-serif ;
-     background-color: #D7DBDD;
      padding: 10px;
+     background-color: #D7DBDD
  }
- .busquedaviaje h3{
-     
- }
+
+
  .menufechas{
      display: block;
+     margin-left: 8%;
 
  }
  fieldset{
@@ -119,13 +126,45 @@ border: none;
 .irviaje{
     background-color: #283959;
     color:  #D7DBDD;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
 }
 .irviaje input{
     display: none;
 }
+.ciudades{
+    display: block;
+    
+}
+.tituloSeccion{
+    padding-left: 10px;
+    color: #283959;
+    margin-top: 10px;
+    display: inline;
+}
+section article{
+    border: 5px solid #8EA3BF ;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+section h4{
+    padding: 0 5px;
+    color: #69688C;
+}
+article img{
+    width: 100%;
+}
+
+.txt{
+    font-size: 12px;
+    text-align: justify;
+    padding: 0 5px;
+    padding-bottom: 10px;
+}
+
+
+
  @media (min-width: 768px){
     #menu1{
         display: none;
@@ -143,6 +182,7 @@ border: none;
     .navbar input{
         display: inline-block;
         border-radius: 5px;
+        width: 80%;
     }
     .listaprimaria{
         display: flex;
@@ -155,11 +195,48 @@ border: none;
         display: inline-block;
        
     }
+    .listasecundaria a{
+        padding: 0 8px;}
     .navbar i{
         margin: 0;
         padding: 5px;
     }
+    .menufechas{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+
+    }
+    fieldset{
+        padding-left: 0;
+    }
+    .menufechas label{
+        width: 20%;
+    }
+    .menufechas input{
+        width: 90%;
+    }
+    .button{
+        margin-right: 10px;
+    }
+   
+    .ciudades{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+   
+   section article{
+       width: 45%;
+   }
+   section img{
+       height: 300px;
+   }
+    
  }
+
+
  @media (min-width: 1200px){
 
     .menuprincipal{
@@ -184,4 +261,15 @@ border: none;
    .listasecundaria a{
        padding: 0 5px ;
    }
- }
+
+   section article{
+    width: 23%}
+
+    section img{
+        height: 250px;
+    }
+    .button{
+        margin-right: 25px;
+    }
+}
+ 

@@ -1,4 +1,4 @@
  #69688C (violeta)
- #283959 (azul)
- #8EA3BF (gris)
- #D7DBDD (blanco)
+ #283959 (azul oscuro)
+ #8EA3BF (azul claro)
+ #D7DBDD (gris)
