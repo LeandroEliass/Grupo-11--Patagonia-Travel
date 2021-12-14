@@ -51,10 +51,11 @@ border: none;
      display: flex;
 
  }
- .ciudades a{
-     text-decoration: none;
-     color: #283959;
+ section a{
+    text-decoration: none;
+    color: #283959;
  }
+
  ul a{
      text-decoration: none;
      display: inline-block;
@@ -123,6 +124,10 @@ border: none;
     margin: 10px 0;
     text-align: center;
 }
+.buttonvisitar{
+    margin: 5px 5px;
+    text-align: right;
+}
 .irviaje{
     background-color: #283959;
     color:  #D7DBDD;
@@ -133,10 +138,17 @@ border: none;
 .irviaje input{
     display: none;
 }
-.ciudades{
-    display: block;
-    
+.visitar{
+    background-color: #283959;
+    color:  #D7DBDD;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
 }
+.visitar input{
+    display: none;
+}
+
 .tituloSeccion{
     padding-left: 10px;
     color: #283959;
@@ -155,6 +167,7 @@ section h4{
 article img{
     width: 100%;
 }
+
 
 .txt{
     font-size: 12px;
@@ -193,8 +206,9 @@ article img{
     }
     .listaprimaria li{
         display: inline-block;
-       
     }
+    .listasecundaria{
+    overflow:-moz-hidden-unscrollable;}
     .listasecundaria a{
         padding: 0 8px;}
     .navbar i{
@@ -222,6 +236,16 @@ article img{
     }
    
     .ciudades{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .excursiones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .eventos{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -260,6 +284,9 @@ article img{
    }
    .listasecundaria a{
        padding: 0 5px ;
+   }
+   .menufechas{
+       margin-left: 25px;
    }
 
    section article{
