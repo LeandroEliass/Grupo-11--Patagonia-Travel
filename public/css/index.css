@@ -27,10 +27,14 @@ header{
     margin: 10px;
 }
 .logo{
-     width: 300px;
+     width: 60%;
      padding: 10px;
      display: inline-block;
      margin:10px
+ }
+ .logo img{
+     width: 100%;
+     border-radius: 23px;
  }
  .navbar{
 border: none;
@@ -112,10 +116,13 @@ border: none;
      border: 1px solid #69688C;
      border-radius: 8px;
      color: #69688C;
+     height: 35px;
+     padding: 10px;
  }
 .destino{
     margin-right: 20px;
 }
+
 .ida{
     margin-right: 53px;
 }
@@ -193,7 +200,6 @@ footer img{
 }
 footer section{
     padding: 10px;
-    margin: 10px 0;
     text-align: center;
     font-size: 20px;
     color: white;
@@ -203,11 +209,18 @@ footer section i{
     margin-right: 10px;
     height: 20px;
 }
+footer picture{
+    width: 80%;
+    margin-top: 20px;
+}
+.logofooter img{
+    margin-top: 30px;
+}
 footer article{
     font-size: 9px;
     color: #D7DBDD;
     text-align: justify;
-    margin: 20px 10px;
+    margin: 0px 10px;
 }
 
 
@@ -217,11 +230,19 @@ footer article{
         display: none;
     }
     .logo{
-        width:25%
+        width:30%
+    }
+    .logo img{
+        height: 10vh;
     }
     .menuprincipal{
         justify-items: center;
         align-items: center;
+        justify-content: space-between;
+    }
+    .menuprincipal form{
+        text-align: center;
+        width: 30%;
     }
     .navbar{
         padding-left: 5px;
@@ -234,10 +255,9 @@ footer article{
     .listaprimaria{
         display: flex;
         justify-content: right;
-        font-size: 12px;
-        padding: 5px;
-        width: 40%;
-    }
+        font-size: 14px;
+        width: 37%;
+    justify-content: space-between;}
     .listaprimaria li{
         display: inline-block;
     }
@@ -295,7 +315,33 @@ footer article{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-right: 40px;
    }
+   footer span h4{
+       font-size: 20px;
+       font-family: 'Bad Script', cursive;
+   }
+   footer span h5{
+       margin-right: 10px;
+       font-family: 'Bad Script', cursive;
+       font-size: 20px;
+   }
+   footer span i{
+       margin-right: 10px;
+   }
+   footer section{
+       display: flex;
+       justify-content: space-around;
+   }
+   .logofooter{
+    width: 40%;   
+    margin: 0
+   }
+   .logofooter img{
+       height: 100px;
+       margin: 0;
+   }
+
     
  }
 
@@ -312,7 +358,7 @@ footer article{
         width: 80%;
     }
     .listaprimaria{
-        width: 30%;
+        max-width: 28%;
     }
    .listasecundaria ul {
        width: 60%;
