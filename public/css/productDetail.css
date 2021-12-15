@@ -1,0 +1,349 @@
+*{font-family: 'Bad Script', cursive;
+    font-family: 'Bellefair', serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box ;
+    margin: 0px;
+    padding: 0px;}
+    
+    
+    header{
+        list-style: none;
+        background-color: #283959;
+    }
+    
+    .menuprincipal{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+    
+    }
+    .menuprincipal a{
+        color: white;
+    }
+    #menu1{
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+    }
+    .logo{
+         width: 300px;
+         padding: 10px;
+         display: inline-block;
+         margin:10px
+     }
+     .navbar{
+    border: none;
+     }
+     .navbar input{
+         display: none;
+     }
+     .navbar i{
+         width: 40px;
+         height: 30px;
+         display: inline-block;
+         padding: 10px;
+         color: white;
+         margin: 10px;
+     }
+     ul{
+         list-style: none;
+         display: flex;
+    
+     }
+     section a{
+        text-decoration: none;
+        color: #283959;
+     }
+    
+     ul a{
+         text-decoration: none;
+         display: inline-block;
+         padding: 2px;
+         margin: 10px 5px;
+         color: white
+     }
+     .listaprimaria{
+        
+         display: none;
+     }
+     .listasecundaria{
+         display: flex;
+         flex-wrap: wrap;
+        overflow: scroll;
+         
+     }
+     .listasecundaria a{
+         display: inline-block;
+         border-radius: 10px;
+         border: solid 1px #8EA3BF ;
+     }
+     .imagenhome{
+         width: 100%;
+         height: 300px;
+    
+     }
+     .busquedaviaje{
+         font-family: 'Poppins', sans-serif ;
+         padding: 10px;
+         background-color: #D7DBDD
+     }
+    
+    .busquedaviaje h3{
+        padding-top: 0;
+    }
+     .menufechas{
+         display: block;
+         margin-left: 8%;
+    
+     }
+     fieldset{
+         border: none;
+         margin: 20px 0;
+         padding-left: 15px;
+     }
+     fieldset label{
+         padding: 5px;
+         margin-right: 25px;
+    
+     }
+     fieldset input{
+         width: 60%;
+         border: 1px solid #69688C;
+         border-radius: 8px;
+         color: #69688C;
+     }
+    .destino{
+        margin-right: 20px;
+    }
+    .ida{
+        margin-right: 53px;
+    }
+    .vuelta{
+        margin-right: 27px;
+    }
+    .button{
+        margin: 10px 0;
+        text-align: center;
+    }
+    .buttonvisitar{
+        margin: 5px 5px;
+        text-align: right;
+    }
+    .irviaje{
+        background-color: #283959;
+        color:  #D7DBDD;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .irviaje input{
+        display: none;
+    }
+    .visitar{
+        background-color: #283959;
+        color:  #D7DBDD;
+        padding: 5px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .visitar input{
+        display: none;
+    }
+    
+    .tituloSeccion{
+        padding-left: 10px;
+        color: #283959;
+        padding-top: 30px;
+    
+    }
+    section article{
+        border: 5px solid #8EA3BF ;
+        margin: 10px 20px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+    section h4{
+        padding: 0 5px;
+        color: #69688C;
+    }
+    article img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    
+    .txt{
+        font-size: 12px;
+        text-align: justify;
+        padding: 0 5px;
+        padding-bottom: 10px;
+    }
+    footer{
+        background-color: #69688C;
+        padding: 10px;
+    }
+    footer h4{
+        text-align: center;
+        color: white;
+    }
+    footer img{
+        width: 100%;
+        padding: 8px;
+    }
+    footer section{
+        padding: 10px;
+        margin: 10px 0;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+    footer section i{
+        padding: 8px;
+        margin-right: 10px;
+        height: 20px;
+    }
+    footer article{
+        font-size: 9px;
+        color: #D7DBDD;
+        text-align: justify;
+        margin: 20px 10px;
+    }
+    
+    
+    
+     @media (min-width: 768px){
+        #menu1{
+            display: none;
+        }
+        .logo{
+            width:25%
+        }
+        .menuprincipal{
+            justify-items: center;
+            align-items: center;
+        }
+        .navbar{
+            padding-left: 5px;
+        }
+        .navbar input{
+            display: inline-block;
+            border-radius: 5px;
+            width: 80%;
+        }
+        .listaprimaria{
+            display: flex;
+            justify-content: right;
+            font-size: 12px;
+            padding: 5px;
+            width: 40%;
+        }
+        .listaprimaria li{
+            display: inline-block;
+        }
+        .listasecundaria{
+        overflow:-moz-hidden-unscrollable;}
+        .listasecundaria a{
+            padding: 0 8px;}
+        .navbar i{
+            margin: 0;
+            padding: 5px;
+        }
+        .menufechas{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+    
+        }
+        fieldset{
+            padding-left: 0;
+        }
+        .menufechas label{
+            width: 20%;
+        }
+        .menufechas input{
+            width: 90%;
+        }
+        .button{
+            margin-right: 10px;
+        }
+       
+        .ciudades{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .excursiones{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .eventos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+       
+       section article{
+           width: 45%;
+       }
+       section img{
+           height: 200px;
+       }
+       footer span{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+       }
+        
+     }
+    
+    
+     @media (min-width: 1200px){
+    
+        .menuprincipal{
+            justify-content: space-between;
+        }
+        .navbar{
+            width: 400px;
+        }
+        .navbar input{
+            width: 80%;
+        }
+        .listaprimaria{
+            width: 30%;
+        }
+       .listasecundaria ul {
+           width: 60%;
+       }
+       .listasecundaria ul li{
+           margin-right: 10px;
+           padding: 5px;
+       }
+       .listasecundaria a{
+           padding: 0 5px ;
+       }
+       .menufechas{
+           margin-left: 25px;
+       }
+    
+       section article{
+        width: 23%;
+        margin: 15px 10px;}
+        
+    
+        section img{
+            height: 250px;
+        }
+        .button{
+            margin-right: 25px;
+        }
+        footer picture{
+            width: 70%;
+        }
+        footer img{
+            height: 20vh;
+        }
+    }
+     
