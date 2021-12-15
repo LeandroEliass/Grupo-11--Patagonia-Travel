@@ -89,7 +89,9 @@ border: none;
      background-color: #D7DBDD
  }
 
-
+.busquedaviaje h3{
+    padding-top: 0;
+}
  .menufechas{
      display: block;
      margin-left: 8%;
@@ -152,13 +154,14 @@ border: none;
 .tituloSeccion{
     padding-left: 10px;
     color: #283959;
-    margin-top: 10px;
-    display: inline;
+    padding-top: 30px;
+
 }
 section article{
     border: 5px solid #8EA3BF ;
-    margin: 10px;
+    margin: 10px 20px;
     margin-bottom: 30px;
+    border-radius: 20px;
 }
 section h4{
     padding: 0 5px;
@@ -166,6 +169,7 @@ section h4{
 }
 article img{
     width: 100%;
+    border-radius: 10px;
 }
 
 
@@ -174,6 +178,36 @@ article img{
     text-align: justify;
     padding: 0 5px;
     padding-bottom: 10px;
+}
+footer{
+    background-color: #69688C;
+    padding: 10px;
+}
+footer h4{
+    text-align: center;
+    color: white;
+}
+footer img{
+    width: 100%;
+    padding: 8px;
+}
+footer section{
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+footer section i{
+    padding: 8px;
+    margin-right: 10px;
+    height: 20px;
+}
+footer article{
+    font-size: 9px;
+    color: #D7DBDD;
+    text-align: justify;
+    margin: 20px 10px;
 }
 
 
@@ -255,7 +289,12 @@ article img{
        width: 45%;
    }
    section img{
-       height: 300px;
+       height: 200px;
+   }
+   footer span{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
    }
     
  }
@@ -290,13 +329,21 @@ article img{
    }
 
    section article{
-    width: 23%}
+    width: 23%;
+    margin: 15px 10px;}
+    
 
     section img{
         height: 250px;
     }
     .button{
         margin-right: 25px;
+    }
+    footer picture{
+        width: 70%;
+    }
+    footer img{
+        height: 20vh;
     }
 }
  
