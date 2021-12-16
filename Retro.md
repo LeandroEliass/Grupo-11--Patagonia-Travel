@@ -28,8 +28,11 @@ Basandonos en el modelo de Starfish propuesto por la catedra, podemos disociar l
     -- Además, debemos de continuar con el compañerismo del equipo, la colaboración mutua y las buenas relaciones personales.
 
  + Less of (Hacer menos) 
+
    Cuando hablamos de hacer menos, podemos referirnos a aquellas practicas que no nos beneficiaron tanto, como el dejar algunas actividades a último momento. Si bien, se pueden dejar algunos pendientes, estos tienen que mínimos y solo detalles.
+   Mencionamos a trello como plataforma. Si bien es una herramienta muy útil, no fue de muy utilizada y de mucha importancia, tapoco genera mcho interes para aprender su uso.
 
  + Stop Doing (Dejar de hacer)  
   Para esta etapa, debido a que el sprint 1 no fue demasiado laborioso ni extenso en las actividades necesarias, consideramos que no podemos encontrar practicas que puedan encasillarse en esta categoría.
 
+   Para finalizar seguimos con los mismos problemas de less of, trello es una plataformo poco intuitiva, la cual, fue reemplazada por otros medios como whatsapp, git, etc. Solo fue implementada ya que se pedia en el sprint. Seguimos in saber su verdadera utilidad.
