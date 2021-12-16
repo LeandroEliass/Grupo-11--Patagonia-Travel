@@ -106,9 +106,8 @@ ___
 ___
 + ## ___Logo___
 
-IMAGOTIPO: Combinación de imagen y texto.
-
-![logo](https://user-images.githubusercontent.com/93563000/142296769-8b770387-45b5-43be-9590-a90c81cf1874.jpg)
+LOGOTIPO: Combinación de imagen y texto.
+![logo](https://user-images.githubusercontent.com/93563000/146455907-5630c873-de6c-4395-8606-b90493c81a31.png)
 ___
 
 
