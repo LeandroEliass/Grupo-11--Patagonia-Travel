@@ -47,8 +47,37 @@ display: flex;
     margin-bottom: 2%;
 }
 
+.seccionTurismo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.flexTurismo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0%;
+    width: 70%;
+border: 5px solid #8EA3BF ;
+border-radius: 10px;
+margin-bottom: 2%;
+justify-content: center;
+}
 
+.imagenTurismo{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+h2{
+    font-size: 25px;
+    padding-left: 10px;
+    color: #283959;
+    padding-top: 30px;
+    margin-bottom: 2%;
+    text-align: center;
+}
     
  /* ESTILOS HEADER */
     header{
@@ -182,6 +211,8 @@ display: flex;
     }
 
 
+
+
     @media (min-width: 768px){
 
         .bariloche{
@@ -191,6 +222,17 @@ display: flex;
         .pBariloche{
             font-size: 17px;
         }
+        
+        .flexTurismo{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        border: none;
+        }
+    
+         .imagenTurismo{
+            width: 300px;
+            } 
 
 
         #menu1{
@@ -327,7 +369,10 @@ display: flex;
             margin: 0px;
         }
     
-        
+        .imagenTurismo{
+            width: 400px;
+            }
+
         .menuprincipal{
             justify-content: space-between;
         }
