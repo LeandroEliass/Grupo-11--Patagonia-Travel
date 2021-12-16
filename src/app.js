@@ -7,6 +7,6 @@ app.listen(app.get('port'), () => {console.log("SERVIDOR CORRIENDO http://localh
 app.use(express.static(path.resolve(__dirname, "../public")))
 
 app.get("/",(req,res)=>res.sendFile(path.resolve(__dirname,"../views/index.html")))
-app.get("/",(req,res)=>res.sendFile(path.resolve(__dirname,"../views/login.html")))
+app.get("/login.html",(req,res)=>res.sendFile(path.resolve(__dirname,"../views/login.html")))
 app.get("/register.html",(req,res)=>res.sendFile(path.resolve(__dirname,"../views/register.html")))
 app.get("/productDetail",(req,res)=>res.sendFile(path.resolve(__dirname,"../views/productDetail.html")))

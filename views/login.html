@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patagonia Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bellefair&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" > 
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body> 
+    <header>
+        <section class="menuprincipal">
+            <nav><a  href=""><i id="menu1" class="fas fa-ellipsis-v"></i></a></nav>
+            <picture class="logo"><img src="image/logo.png" alt=""></picture> 
+        <form action=""><fieldset class="navbar"><input type="search" placeholder="Buscar" name="Barra"><i class="fas fa-search"></i></fieldset></form>
+        <nav class="listaprimaria">
+            <ul >
+            <li><a href="register.html">Crear cuenta</a></li>
+            <li><a href="login.html">Iniciar Sesión</a></li>
+            <li><a href="productCar.html">Mis compras</a></li>
+        </ul></nav></section>
+    <section ><nav class="listasecundaria">
+        <ul >
+            <li><a href="">Lugares</a></li>
+            <li><a href="">Hospedajes</a></li>
+            <li><a href="">Excursiones</a></li>
+            <li><a href="">Gastronomía</a></li>
+            <li><a href="">Eventos</a></li>
+        </ul></nav></section>
+    </header>
+
+    <main>
+        <section class="principal">
+            <section class="flex-container">
+                <form class="form-login" action="/" method="post"> 
+
+                    <fieldset class="form-fieldset">
+                        <legend class="dn">Nombre de usuario</legend>
+                        <label class="form-fieldset-input" for="usuario">Nombre de usuario</label>            
+                        <input class="form-fieldset-input" type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" required="">
+                    </fieldset>
+
+                    <fieldset class="form-fieldset">
+                        <legend class="dn">Contraseña</legend>
+                        <label class="form-fieldset-input" for="contrasena">Contraseña</label>
+                        <input class="form-fieldset-input" type="password" name="contrasena" id="contrasena"  placeholder="**********" required>
+                        <a class="rcontraseña" href="rccontrasena.html">Recuperar tu contraseña</a>
+                    </fieldset>
+
+
+                    <div>
+                        <label for="recordarUsuario">Recordar Usuario
+                            <input class="" type="Checkbox" name="recordarUsuario" id="recordarUsuario" required>
+                            </label>                 
+                    </div>
+                    
+                    <div>
+                        <label for="recordarContraseña">Recordar Contraseña
+                            <input class="" type="Checkbox" name="recordarContraseña" id="recordarContraseña" required>
+                            </label>                 
+                    </div>   
+
+                    <fieldset class="form-fieldset-buttons">
+                        <legend class="dn">Botones de enviar</legend>
+                        <button class="buttons" type="submit">Ingresar</button>
+                    </fieldset> 
+
+                    <fieldset class="form-fieldset-buttons">
+                        <legend class="dn">Registrarse</legend>
+                        <button class="buttons" type="submit">Registrarse</button>
+                    </fieldset> 
+
+                    <fieldset class="form-fieldset-buttons">
+                        <legend class="dn">Iniciar con google</legend>
+                        <button class="buttons" type="submit"><i style="margin-right: 5px;" class="fa-brands fa-google"></i>Iniciar con google</button>
+                    </fieldset> 
+
+                    <fieldset class="form-fieldset-buttons">
+                        <legend class="dn">Iniciar con facebook</legend>
+                        <button class="buttons" type="submit"><i style="margin-right: 5px;" class="fab fa-facebook"></i>Iniciar con facebook</button>
+                    </fieldset> 
+                     
+                </form>
+            </section>      
+        </section>
+
+    <footer>
+        <span><h4>PAGÁ COMO QUIERAS</h4> <picture><img src="image/bannertarjetas.png" alt=""></picture></span>
+        <section>
+            <span><h5>Seguinos en </h5><i class="fab fa-facebook"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></span>
+            <picture class="logofooter"><img src="image/logo.png" alt=""></picture> </section>
+        <article>
+            <p>2020-2021. PatagoniaTravels S.R.L. Todos los derechos reservados. - Evt: PatagoniaTravels.com - Legajo: 8362 - Disp: 1350/93 - Cuit Nº 30-65951462-8. 4 lugares disponibles por producto. Vigencia desde el 14/12/2021 al 16/12/2021 LA AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales</p></article>
+
+    </footer>
+</body>
