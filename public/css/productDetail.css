@@ -5,7 +5,18 @@
     margin: 0px;
     padding: 0px;}
     
+
+
+
+
+
+
+
+
+
+
     
+ /* ESTILOS HEADER */
     header{
         list-style: none;
         background-color: #283959;
@@ -27,11 +38,15 @@
         margin: 10px;
     }
     .logo{
-         width: 300px;
-         padding: 10px;
-         display: inline-block;
-         margin:10px
-     }
+        width: 60%;
+        padding: 10px;
+        display: inline-block;
+        margin:10px
+    }
+    .logo img{
+        width: 100%;
+        border-radius: 23px;
+    }
      .navbar{
     border: none;
      }
@@ -55,7 +70,7 @@
         text-decoration: none;
         color: #283959;
      }
-    
+
      ul a{
          text-decoration: none;
          display: inline-block;
@@ -78,107 +93,11 @@
          border-radius: 10px;
          border: solid 1px #8EA3BF ;
      }
-     .imagenhome{
-         width: 100%;
-         height: 300px;
-    
-     }
-     .busquedaviaje{
-         font-family: 'Poppins', sans-serif ;
-         padding: 10px;
-         background-color: #D7DBDD
-     }
-    
-    .busquedaviaje h3{
-        padding-top: 0;
-    }
-     .menufechas{
-         display: block;
-         margin-left: 8%;
-    
-     }
-     fieldset{
-         border: none;
-         margin: 20px 0;
-         padding-left: 15px;
-     }
-     fieldset label{
-         padding: 5px;
-         margin-right: 25px;
-    
-     }
-     fieldset input{
-         width: 60%;
-         border: 1px solid #69688C;
-         border-radius: 8px;
-         color: #69688C;
-     }
-    .destino{
-        margin-right: 20px;
-    }
-    .ida{
-        margin-right: 53px;
-    }
-    .vuelta{
-        margin-right: 27px;
-    }
-    .button{
-        margin: 10px 0;
-        text-align: center;
-    }
-    .buttonvisitar{
-        margin: 5px 5px;
-        text-align: right;
-    }
-    .irviaje{
-        background-color: #283959;
-        color:  #D7DBDD;
-        padding: 10px;
-        border-radius: 10px;
-        text-align: center;
-    }
-    .irviaje input{
-        display: none;
-    }
-    .visitar{
-        background-color: #283959;
-        color:  #D7DBDD;
-        padding: 5px;
-        border-radius: 15px;
-        text-align: center;
-    }
-    .visitar input{
-        display: none;
-    }
-    
-    .tituloSeccion{
-        padding-left: 10px;
-        color: #283959;
-        padding-top: 30px;
-    
-    }
-    section article{
-        border: 5px solid #8EA3BF ;
-        margin: 10px 20px;
-        margin-bottom: 30px;
-        border-radius: 20px;
-    }
-    section h4{
-        padding: 0 5px;
-        color: #69688C;
-    }
-    article img{
-        width: 100%;
-        border-radius: 10px;
-    }
-    
-    
-    .txt{
-        font-size: 12px;
-        text-align: justify;
-        padding: 0 5px;
-        padding-bottom: 10px;
-    }
+
+ /* ESTILOS HEADER */
+
+/* ESTILOS FOOTER */
+     
     footer{
         background-color: #69688C;
         padding: 10px;
@@ -209,19 +128,27 @@
         text-align: justify;
         margin: 20px 10px;
     }
+
+    /* ESTILOS FOOTER */
     
-    
-    
-     @media (min-width: 768px){
+    @media (min-width: 768px){
         #menu1{
             display: none;
         }
         .logo{
-            width:25%
+            width:30%
+        }
+        .logo img{
+            height: 10vh;
         }
         .menuprincipal{
             justify-items: center;
             align-items: center;
+            justify-content: space-between;
+        }
+        .menuprincipal form{
+            text-align: center;
+            width: 30%;
         }
         .navbar{
             padding-left: 5px;
@@ -234,10 +161,9 @@
         .listaprimaria{
             display: flex;
             justify-content: right;
-            font-size: 12px;
-            padding: 5px;
-            width: 40%;
-        }
+            font-size: 14px;
+            width: 37%;
+        justify-content: space-between;}
         .listaprimaria li{
             display: inline-block;
         }
@@ -295,7 +221,33 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-right: 40px;
        }
+       footer span h4{
+           font-size: 20px;
+           font-family: 'Bad Script', cursive;
+       }
+       footer span h5{
+           margin-right: 10px;
+           font-family: 'Bad Script', cursive;
+           font-size: 20px;
+       }
+       footer span i{
+           margin-right: 10px;
+       }
+       footer section{
+           display: flex;
+           justify-content: space-around;
+       }
+       .logofooter{
+        width: 40%;   
+        margin: 0
+       }
+       .logofooter img{
+           height: 100px;
+           margin: 0;
+       }
+    
         
      }
     
@@ -312,7 +264,7 @@
             width: 80%;
         }
         .listaprimaria{
-            width: 30%;
+            max-width: 28%;
         }
        .listasecundaria ul {
            width: 60%;
