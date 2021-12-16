@@ -6,12 +6,46 @@
     padding: 0px;}
     
 
+.bariloche{
+ width: 200px;
+ max-height: 250px;
+ border-radius: 10px;
+}
 
+.flexAB{
+display: flex;
+flex-wrap: nowrap;
+margin: 0%;
+border: 5px solid #8EA3BF ;
+border-radius: 20px;
+margin-bottom: 2%;
+}
 
+.flexA{
+display: flex;
+flex-wrap: nowrap;
+display: flex;
+}
 
+.flexB{
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
 
+.pBariloche{
+    font-size: 11px;
+}
 
-
+.tituloSeccion{
+    font-size: 30px;
+    padding-left: 10px;
+    color: #283959;
+    padding-top: 30px;
+    margin-bottom: 2%;
+}
 
 
 
@@ -122,6 +156,13 @@
         margin-right: 10px;
         height: 20px;
     }
+    footer picture{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .logofooter img{
+        margin-top: 30px;
+    }
     footer article{
         font-size: 9px;
         color: #D7DBDD;
@@ -131,7 +172,27 @@
 
     /* ESTILOS FOOTER */
     
+    @media (min-width: 550px){
+        .bariloche{
+            width: 300px;
+        }
+        .pBariloche{
+            font-size: 15px;
+        }
+    }
+
+
     @media (min-width: 768px){
+
+        .bariloche{
+            width: 350px;
+        }
+
+        .pBariloche{
+            font-size: 17px;
+        }
+
+
         #menu1{
             display: none;
         }
@@ -253,7 +314,20 @@
     
     
      @media (min-width: 1200px){
+
+        .bariloche{
+            width: 600px;
+        }
+
+        .pBariloche{
+            font-size: 18px;
+        }
+
+        .flexAB{
+            margin: 0px;
+        }
     
+        
         .menuprincipal{
             justify-content: space-between;
         }
