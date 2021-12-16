@@ -16,7 +16,7 @@ Basandonos en el modelo de Starfish propuesto por la catedra, podemos disociar l
 
  + More of (Hacer más) 
 
-    En este aspecto destacamos el uso de github como plataforma de almacenamiento. Cabe recalcar que más alla de alguna que otra discrepancia a la hora de implementar el codigo, o de su corrección; encontramos que git nos ofrece amplias oportunidades para el trabajo en equipo. En conclusión, es una excelente herramienta, pero existe una falta de habilidades para su óptimo uso, como por ejemplo el uso de ramas.
+    En este aspecto destacamos el uso de git como software y github como plataforma de almacenamiento. Cabe recalcar que más alla de alguna que otra discrepancia a la hora de implementar el codigo, o de su corrección; encontramos que git nos ofrece amplias oportunidades para el trabajo en equipo. En conclusión, es una excelente herramienta, pero existe una falta de habilidades para su óptimo uso, como por ejemplo el uso de ramas.
     -- Debemos de lograr una comunicación mas fluida en el equipo, sobre todo a la hora de designar actividades y decidir aspectos importantes del proyecto, donde cada integrante pueda manifestar su punto de vista al inicio del sprint.
     -- Empezar con las actividades necesarias lo antes posible para no sobrecargarnos de trabajo a última hora.
 
