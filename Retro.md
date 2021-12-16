@@ -24,6 +24,8 @@ Basandonos en el modelo de Starfish propuesto por la catedra, podemos disociar l
 
  + Less of (Hacer menos) 
 
+   Mencionamos a trello como plataforma. Si bien es una herramienta muy útil, no fue de muy utilizada y de mucha importancia, tapoco genera mcho interes para aprender su uso.
 
  + Stop Doing (Dejar de hacer)  
 
+   Para finalizar seguimos con los mismos problemas de less of, trello es una plataformo poco intuitiva, la cual, fue reemplazada por otros medios como whatsapp, git, etc. Solo fue implementada ya que se pedia en el sprint. Seguimos in saber su verdadera utilidad.
