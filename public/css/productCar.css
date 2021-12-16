@@ -1,0 +1,337 @@
+*{font-family: 'Bad Script', cursive;
+    font-family: 'Bellefair', serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box ;
+    margin: 0px;
+    padding: 0px;}
+    
+    
+    header{
+        list-style: none;
+        background-color: #283959;
+    }
+    
+    .menuprincipal{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+    
+    }
+    .menuprincipal a{
+        color: white;
+    }
+    #menu1{
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+    }
+    .logo{
+         width: 60%;
+         padding: 10px;
+         display: inline-block;
+         margin:10px
+     }
+     .logo img{
+         width: 100%;
+         border-radius: 23px;
+     }
+     .navbar{
+    border: none;
+     }
+     .navbar input{
+         display: none;
+     }
+     .navbar i{
+         width: 40px;
+         height: 30px;
+         display: inline-block;
+         padding: 10px;
+         color: white;
+         margin: 10px;
+     }
+     ul{
+         list-style: none;
+         display: flex;
+    
+     }
+     section a{
+        text-decoration: none;
+        color: #283959;
+     }
+    
+     ul a{
+         text-decoration: none;
+         display: inline-block;
+         padding: 2px;
+         margin: 10px 5px;
+         color: white
+     }
+     .listaprimaria{
+        
+         display: none;
+     }
+     .listasecundaria{
+         display: flex;
+         flex-wrap: wrap;
+        overflow: scroll;
+         
+     }
+     .listasecundaria a{
+         display: inline-block;
+         border-radius: 10px;
+         border: solid 1px #8EA3BF ;
+     }
+     /*Footer*/
+     footer{
+        background-color: #69688C;
+        padding: 10px;
+    }
+    footer h4{
+        text-align: center;
+        color: white;
+    }
+    footer img{
+        width: 100%;
+        padding: 8px;
+    }
+    footer section{
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+    footer section i{
+        padding: 8px;
+        margin-right: 10px;
+        height: 20px;
+    }
+    footer picture{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .logofooter img{
+        margin-top: 30px;
+    }
+    footer article{
+        font-size: 9px;
+        color: #D7DBDD;
+        text-align: justify;
+        margin: 0px 10px;
+    }
+
+     /*Main*/
+
+    .formaDePago{
+        background-color: #D7DBDD;
+        
+
+        box-sizing: content-box;
+        width: 70%;
+        height: 180px;
+        border: solid #8EA3BF 10px;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px 10px 10px 5px;
+    }
+    .formaDePago input  {
+        display:inline-block
+    }
+    .formaDePago p {
+        padding: 10px;
+    }
+    .datosDeTarjeta{
+        background-color: #D7DBDD;
+        
+
+        box-sizing: content-box;
+        width: 70%;
+        height: 250px;
+        border: solid #8EA3BF 10px;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px 10px 10px 5px;
+        display: flex;
+        flex-direction: column;
+    }    
+    .Titular, .CVVa, .nroDeTarjeta, .fechaDeVencimiento, .dni{
+        margin:7px;
+        display: inline-block ;
+    }
+
+    h3{
+        padding-left: 10px;
+        color: #283959;
+        margin-top: 10px;
+        display: inline;
+    }
+
+    hr {
+        height: 3px;
+        width: 990px;
+        background-color: #8EA3BF;
+        margin-top: 6px;
+        margin-bottom: 5px;
+      }
+      .quienesViajan{
+          background-color: #D7DBDD;
+        
+
+          box-sizing: content-box;
+          width: 70%;
+          height: 770px;
+          border: solid #8EA3BF 10px;
+          border-radius: 10px;
+          padding: 5px;
+          margin: 10px 10px 10px 5px;
+          display: flex;
+          flex-direction: column;
+
+      }
+      .quienesViajan1{
+      display: flex;
+      flex-direction: column;
+
+    }
+    .telefono{
+        width: 200px;
+        flex: 1 0.6 auto;
+        border: none;
+        outline: none;
+        padding: .25rem;
+        margin: .25rem 0;
+    }
+    .botonDeCompra{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius:28px;
+	border:1px solid #747474;
+    background-color: #283959;
+    color: #D7DBDD;
+    margin-top: 50px;}
+    
+    .formDatosTarj{
+        flex: 1 0.6 auto;
+        border: none;
+        outline: none;
+        padding: .25rem;
+        margin: .25rem 0;}
+    
+    .detallesDeCompra{
+        float: right;}
+      
+    /*Media quires*/
+    @media (min-width: 768px){
+        #menu1{
+            display: none;
+        }
+        .logo{
+            width:25%
+        }
+        .menuprincipal{
+            justify-items: center;
+            align-items: center;
+        }
+        .navbar{
+            padding-left: 5px;
+        }
+        .navbar input{
+            display: inline-block;
+            border-radius: 5px;
+            width: 80%;
+        }
+        .listaprimaria{
+            display: flex;
+            justify-content: right;
+            font-size: 12px;
+            padding: 5px;
+            width: 40%;
+        }
+        .listaprimaria li{
+            display: inline-block;
+        }
+        .listasecundaria{
+        overflow:-moz-hidden-unscrollable;}
+        .listasecundaria a{
+            padding: 0 8px;}
+        .navbar i{
+            margin: 0;
+            padding: 5px;
+        }
+         /*hasta aca es el MQ del header*/
+         /*aca arranca el MQ del footer*/
+         footer span{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 40px;
+           }
+           footer span h4{
+               font-size: 20px;
+               font-family: 'Bad Script', cursive;
+           }
+           footer span h5{
+               margin-right: 10px;
+               font-family: 'Bad Script', cursive;
+               font-size: 20px;
+           }
+           footer span i{
+               margin-right: 10px;
+           }
+           footer section{
+               display: flex;
+               justify-content: space-around;
+           }
+           .logofooter{
+            width: 40%;   
+            margin: 0
+           }
+           .logofooter img{
+               height: 100px;
+               margin: 0;
+           }
+        /*hasta aca es el MQ del footer*/
+         /*aca arranca el MQ del Main*/
+         
+         }
+    
+        @media (min-width: 1200px){
+
+            .menuprincipal{
+                justify-content: space-between;
+            }
+            .navbar{
+                width: 400px;
+            }
+            .navbar input{
+                width: 80%;
+            }
+            .listaprimaria{
+                width: 30%;
+            }
+           .listasecundaria ul {
+               width: 60%;
+           }
+           .listasecundaria ul li{
+               margin-right: 10px;
+               padding: 5px;
+           }
+           .listasecundaria a{
+               padding: 0 5px ;
+           }
+           /*hasta aca es el MQ del header*/
+           /*aca arranca el MQ del footer*/
+           footer picture{
+            width: 70%;
+        }
+        footer img{
+            height: 20vh;
+        }
+        /*hasta aca es el MQ del footer*/
+         /*aca arranca el MQ del Main*/
+        }
+
+        
