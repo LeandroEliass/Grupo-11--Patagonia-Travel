@@ -27,7 +27,7 @@ header{
     padding: 10px;
     margin: 10px;
 }
-.logo{
+ .logo{
      width: 60%;
      padding: 10px;
      display: inline-block;
@@ -36,7 +36,9 @@ header{
  .logo img{
      width: 100%;
      border-radius: 23px;
- }
+ } 
+
+
  .navbar{
 border: none;
  }
@@ -231,10 +233,10 @@ footer article{
         display: none;
     }
     .logo{
-        width:30%
+        width:17%
     }
     .logo img{
-        height: 10vh;
+        height: 12vh;
     }
     .menuprincipal{
         justify-items: center;
@@ -349,6 +351,7 @@ footer article{
 
  @media (min-width: 1200px){
 
+  
     .menuprincipal{
         justify-content: space-between;
     }
@@ -392,5 +395,10 @@ footer article{
     footer img{
         height: 20vh;
     }
+
+    .logofooter{
+        width: 25%;
+    }
 }
+
  

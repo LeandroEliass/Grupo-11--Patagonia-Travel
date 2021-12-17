@@ -18,7 +18,7 @@ flex-wrap: nowrap;
 margin: 0%;
 border: 5px solid #8EA3BF ;
 border-radius: 20px;
-margin-bottom: 2%;
+margin-bottom: 5%;
 }
 
 .flexA{
@@ -57,7 +57,7 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     margin: 0%;
-    width: 70%;
+    width: 50%;
 border: 5px solid #8EA3BF ;
 border-radius: 10px;
 margin-bottom: 2%;
@@ -70,6 +70,45 @@ justify-content: center;
     width: 100%;
 }
 
+main section ul {
+    font-size: 12px;
+}
+
+.flexHospedajeA{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    background-image: url("../image/hospedaje/nieveB.jpg");
+}
+
+.flexListaContenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.flexLista{
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+    justify-content: center;
+}
+
+.flexCabanaContenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.flexCabana{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 300px;
+}
+
+
 h2{
     font-size: 25px;
     padding-left: 10px;
@@ -77,6 +116,24 @@ h2{
     padding-top: 30px;
     margin-bottom: 2%;
     text-align: center;
+}
+
+h3{
+    margin: 4%;
+    margin-bottom: 8%;
+    font-size: 20px;
+    text-align: center;
+    color: #283959;
+    background-color: rgb(221, 221, 221);
+    border: 2px solid #283959;
+    border-radius: 15px;
+}
+
+h4{
+    margin: 2%;
+    margin-bottom: 6%;
+    font-size: 16px;
+    color: #283959;
 }
     
  /* ESTILOS HEADER */
@@ -110,20 +167,20 @@ h2{
         width: 100%;
         border-radius: 23px;
     }
-     .navbar{
-    border: none;
-     }
-     .navbar input{
-         display: none;
-     }
-     .navbar i{
-         width: 40px;
-         height: 30px;
-         display: inline-block;
-         padding: 10px;
-         color: white;
-         margin: 10px;
-     }
+    .navbar{
+        border: none;
+         }
+    .navbar input{
+             display: none;
+         }
+    .navbar i{
+             width: 40px;
+             height: 30px;
+             display: inline-block;
+             padding: 10px;
+             color: white;
+             margin: 10px;
+         }
      ul{
          list-style: none;
          display: flex;
@@ -158,6 +215,23 @@ h2{
      }
 
  /* ESTILOS HEADER */
+
+ .button{
+    text-align: center;
+}
+
+   
+.visitar{
+        background-color: #283959;
+        color:  #D7DBDD;
+        padding: 3px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+   .visitar input{
+        display: none;
+    }
 
 /* ESTILOS FOOTER */
      
@@ -201,12 +275,21 @@ h2{
 
     /* ESTILOS FOOTER */
     
-    @media (min-width: 550px){
+    @media (min-width: 560px){
         .bariloche{
             width: 300px;
         }
         .pBariloche{
             font-size: 15px;
+        }
+
+        main section ul {
+            font-size: 14px;
+        }
+
+        .flexCabana{
+            width: 400px;
+            height: 280px;
         }
     }
 
@@ -234,15 +317,68 @@ h2{
             width: 300px;
             } 
 
+            .flexHospedajeA{
+                display: flex;
+                flex-wrap: nowrap;
+                margin-bottom: 5%;
+            }
+
+            .flexCabana{
+                width: 400px;
+                height: 290px;
+            }
+
+            main section ul {
+                font-size: 14px;
+            }
+
+            h3{
+                margin: 4%;
+                margin-bottom: 8%;
+                font-size: 19px;
+                text-align: center;
+                color: #283959;
+                background-color: rgb(221, 221, 221);
+                border: 2px solid #283959;
+                border-radius: 15px;
+            }
+            
+            h4{
+                margin: 2%;
+                margin-bottom: 6%;
+                font-size: 16px;
+                color: #283959;
+            }
+
+            .button{
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+               
+            .visitar{
+                    background-color: #283959;
+                    color:  #D7DBDD;
+                    padding: 7px;
+                    font-size: 15px;
+                    border-radius: 15px;
+                    text-align: center;
+                    margin-top: 5%;
+                }
+            
+               .visitar input{
+                    display: none;
+                }
+            
 
         #menu1{
             display: none;
         }
         .logo{
-            width:30%
+            width:17%
         }
         .logo img{
-            height: 10vh;
+            height: 12vh;
         }
         .menuprincipal{
             justify-items: center;
@@ -365,14 +501,23 @@ h2{
             font-size: 18px;
         }
 
-        .flexAB{
-            margin: 0px;
-        }
+    
     
         .imagenTurismo{
             width: 400px;
             }
 
+            .flexCabana{
+                width: 600px;
+                height: 400px;
+            }
+
+            main section ul {
+                font-size: 18px;
+            }
+
+
+            
         .menuprincipal{
             justify-content: space-between;
         }
@@ -415,6 +560,9 @@ h2{
         }
         footer img{
             height: 20vh;
+        }
+        .logofooter{
+            width: 25%;
         }
     }
      
