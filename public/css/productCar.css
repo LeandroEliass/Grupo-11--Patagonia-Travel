@@ -229,7 +229,10 @@
             display: none;
         }
         .logo{
-            width:25%
+            width:17%
+        }
+        .logo img{
+            height: 12vh;
         }
         .menuprincipal{
             justify-items: center;
@@ -329,6 +332,10 @@
         }
         footer img{
             height: 20vh;
+        }
+
+        .logofooter{
+            width: 25%;
         }
         /*hasta aca es el MQ del footer*/
          /*aca arranca el MQ del Main*/

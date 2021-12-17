@@ -70,7 +70,6 @@ justify-content: center;
     width: 100%;
 }
 
-
 main section ul {
     font-size: 12px;
 }
@@ -168,20 +167,20 @@ h4{
         width: 100%;
         border-radius: 23px;
     }
-     .navbar{
-    border: none;
-     }
-     .navbar input{
-         display: none;
-     }
-     .navbar i{
-         width: 40px;
-         height: 30px;
-         display: inline-block;
-         padding: 10px;
-         color: white;
-         margin: 10px;
-     }
+    .navbar{
+        border: none;
+         }
+    .navbar input{
+             display: none;
+         }
+    .navbar i{
+             width: 40px;
+             height: 30px;
+             display: inline-block;
+             padding: 10px;
+             color: white;
+             margin: 10px;
+         }
      ul{
          list-style: none;
          display: flex;
@@ -376,10 +375,10 @@ h4{
             display: none;
         }
         .logo{
-            width:30%
+            width:17%
         }
         .logo img{
-            height: 10vh;
+            height: 12vh;
         }
         .menuprincipal{
             justify-items: center;
@@ -517,6 +516,8 @@ h4{
                 font-size: 18px;
             }
 
+
+            
         .menuprincipal{
             justify-content: space-between;
         }
@@ -559,6 +560,9 @@ h4{
         }
         footer img{
             height: 20vh;
+        }
+        .logofooter{
+            width: 25%;
         }
     }
      
