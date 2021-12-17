@@ -93,6 +93,7 @@ main section ul {
     display: flex;
     flex-direction: column;
     list-style: circle;
+    justify-content: center;
 }
 
 .flexCabanaContenedor{
