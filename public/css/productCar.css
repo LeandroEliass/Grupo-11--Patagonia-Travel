@@ -27,15 +27,15 @@
         margin: 10px;
     }
     .logo{
-         width: 60%;
-         padding: 10px;
-         display: inline-block;
-         margin:10px
-     }
-     .logo img{
-         width: 100%;
-         border-radius: 23px;
-     }
+        width: 60%;
+        padding: 10px;
+        display: inline-block;
+        margin:10px
+    }
+    .logo img{
+        width: 100%;
+        border-radius: 23px;
+    }
      .navbar{
     border: none;
      }
@@ -59,7 +59,7 @@
         text-decoration: none;
         color: #283959;
      }
-    
+
      ul a{
          text-decoration: none;
          display: inline-block;
@@ -129,10 +129,10 @@
         box-sizing: content-box;
         width: 70%;
         height: 180px;
-        border: solid #8EA3BF 10px;
+        border: solid #8EA3BF 5px;
         border-radius: 10px;
         padding: 5px;
-        margin: 10px 10px 10px 5px;
+        margin: 10px 10px 10px 20px;
     }
     .formaDePago input  {
         display:inline-block
@@ -143,32 +143,40 @@
     .datosDeTarjeta{
         background-color: #D7DBDD;
         
-
         box-sizing: content-box;
         width: 70%;
-        height: 250px;
-        border: solid #8EA3BF 10px;
+        height: 360px;
+        border: solid #8EA3BF 5px;
         border-radius: 10px;
         padding: 5px;
-        margin: 10px 10px 10px 5px;
-        display: flex;
+        margin: 10px 10px 10px 20px;
+        display:flex;
         flex-direction: column;
-    }    
+    }   
+
     .Titular, .CVVa, .nroDeTarjeta, .fechaDeVencimiento, .dni{
         margin:7px;
         display: inline-block ;
     }
-
+    .datosDeTarjeta input{
+        display: block;
+        width: 50%;
+        height: 30px;
+    }
     h3{
         padding-left: 10px;
         color: #283959;
         margin-top: 10px;
         display: inline;
     }
+    h2{padding-left: 10px;
+        color: #283959;
+        margin-top: 10px;
+        display: inline;}
 
     hr {
         height: 3px;
-        width: 990px;
+        width:300px;
         background-color: #8EA3BF;
         margin-top: 6px;
         margin-bottom: 5px;
@@ -180,10 +188,10 @@
           box-sizing: content-box;
           width: 70%;
           height: 770px;
-          border: solid #8EA3BF 10px;
+          border: solid #8EA3BF 5px;
           border-radius: 10px;
           padding: 5px;
-          margin: 10px 10px 10px 5px;
+          margin: 10px 10px 300px 20px;
           display: flex;
           flex-direction: column;
 
@@ -202,16 +210,21 @@
         margin: .25rem 0;
     }
     .botonDeCompra{
-    display: flex;
-    width: 100px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    border-radius:28px;
-	border:1px solid #747474;
-    background-color: #283959;
-    color: #D7DBDD;
-    margin-top: 50px;}
+        display: flex;
+        width: 100px;
+        height: 40px;
+        border:1px solid #747474;
+        background-color: #283959;
+        color: #D7DBDD;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        border-radius:28px;
+	}
+
+    .botonDeCompra:hover{
+        background-color: #8EA3BF;
+    }
     
     .formDatosTarj{
         flex: 1 0.6 auto;
@@ -220,10 +233,93 @@
         padding: .25rem;
         margin: .25rem 0;}
     
-    .detallesDeCompra{
-        float: right;}
-      
+    .detalleDeCompra{
+        box-sizing: content-box;
+          width: 22%;
+          height: 300px;
+          border: solid #8EA3BF 5px;
+          border-radius: 5px;
+          padding: 5px;
+          margin: 76px 5px 0px 0px;
+        float: right;
+        }
+    /* Arriba | Derecha | Abajo | Izquierda */
+    .detalleDeCompra p{
+        margin: 15px 40px 0px 10px;
+        font-size: small;
+    }
+    .detalleDeCompra .total{
+        margin-top: 70px;
+    }
+    .lineaTtal{
+        height: 3px;
+        width: 200px;
+        background-color: #8EA3BF;
+        margin-top: 6px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+    .detalleDeCompra .cantDinero{
+        margin-left: 1px;
+    }
+    
     /*Media quires*/
+    /*Mobile (corregir)*/
+    @media(min-device-width : 368px) and (max-device-width : 709px){
+    .detalleDeCompra1{
+        box-sizing: content-box;
+        width: 80%;
+        height: 240px;
+          border: solid #8EA3BF 5px;
+          border-radius: 10px;
+          padding: 5px;
+          margin: 38px 0px 0px 0px;
+          
+        }
+        .detalleDeCompra1 p{
+            margin: 15px 40px 10px 10px;
+            font-size: small;
+        }
+        .detalleDeCompra1 .total{
+            margin-top: 30px;
+        }
+        .detalleDeCompra{ display: none;}
+        .datosDeTarjeta input{
+            width:50%;
+            height: 30px;
+        }
+    }
+    @media(min-device-width : 709px) and (max-device-width : 981px)
+    {
+        .detalleDeCompra{ display: none;}
+        
+        .detalleDeCompra1{
+            box-sizing: content-box;
+            width: 50%;
+            height: 250px;
+              border: solid #8EA3BF 5px;
+              border-radius: 10px;
+              padding: 5px;
+              margin: 38px 0px 0px 0px;
+              
+            }
+            .detalleDeCompra1 p{
+                margin: 15px 40px 10px 10px;
+                font-size: small;
+            }
+            .detalleDeCompra1 .total{
+                margin-top: 30px;
+            }
+            
+        
+    }
+    @media(min-device-width : 962px) and (max-device-width : 1124px){
+    .detalleDeCompra{
+          height: 400px;
+    }
+    .detalleDeCompra1{ display: none;}}
+
+
     @media (min-width: 768px){
         #menu1{
             display: none;
@@ -295,33 +391,37 @@
            }
         /*hasta aca es el MQ del footer*/
          /*aca arranca el MQ del Main*/
-         
+         hr{
+            width: 500px; 
+        }
+
          }
-    
+         @media (min-width: 1100px){.detalleDeCompra1{ display: none;}}
+
         @media (min-width: 1200px){
 
             .menuprincipal{
-                justify-content: space-between;
-            }
-            .navbar{
-                width: 400px;
-            }
-            .navbar input{
-                width: 80%;
-            }
-            .listaprimaria{
-                width: 30%;
-            }
-           .listasecundaria ul {
-               width: 60%;
+        justify-content: space-between;
            }
-           .listasecundaria ul li{
-               margin-right: 10px;
-               padding: 5px;
-           }
-           .listasecundaria a{
-               padding: 0 5px ;
-           }
+        .navbar{
+        width: 400px;
+        }
+        .navbar input{
+        width: 80%;
+        }
+         .listaprimaria{
+        max-width: 28%;
+        }
+        .listasecundaria ul {
+       width: 60%;
+        }
+       .listasecundaria ul li{
+       margin-right: 10px;
+       padding: 5px;
+        }
+        .listasecundaria a{
+       padding: 0 5px ;
+        }
            /*hasta aca es el MQ del header*/
            /*aca arranca el MQ del footer*/
            footer picture{
@@ -332,6 +432,8 @@
         }
         /*hasta aca es el MQ del footer*/
          /*aca arranca el MQ del Main*/
+         .detalleDeCompra1{ display: none;}
         }
+        
 
         

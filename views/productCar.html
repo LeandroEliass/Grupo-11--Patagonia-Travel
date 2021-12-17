@@ -15,7 +15,7 @@
     <header>
         <section class="menuprincipal">
             <nav><a  href=""><i id="menu1" class="fas fa-ellipsis-v"></i></a></nav>
-            <picture class="logo"><img src="image/logo.png" alt=""></picture> 
+            <picture class="logo"><a href="/"><img src="image/logo.png" alt=""></a></picture>
         <form action=""><fieldset class="navbar"><input type="search" placeholder="Buscar" name="Barra"><i class="fas fa-search"></i></fieldset></form>
         <nav class="listaprimaria">
             <ul >
@@ -33,10 +33,22 @@
         </ul></nav></section>
     </header>
     <main>
-        <h3>Completá tus datos y finalizá tu compra</h3>
-        <form class="formaDePago" action="" method="post">
+        <div class= "detalleDeCompra">
+            <h3>Detalles de compra</h3>
+            <p>Paquete para X personas $$$</p>
+            <p>Impuestos, tasas y cargos $$$</p>
+            <p>Percepción RG4815 $$$</p>
+            <p>Percepción impuesto PAIS $$$</p>
+            <hr class="lineaTtal">
+            <p class="total">TOTAL:$$$</p>
+            </div>
+        <h2>Completá tus datos y finalizá tu compra</h2>
+        <p></p>
 
-          <label for="selMetodoDePago">Seleccione un método de pago:</label>
+        <h3>Seleccione un método de pago:</h3>
+        
+        
+        <form class="formaDePago" action="" method="post">
           <p><input type="radio" name="medioDePago" value="Efectivo">  Efectivo</p>
           <p><input type="radio" name="medioDePago" value="Crédito">  Crédito</p>
           <p><input type="radio" name="medioDePago" value="Débito">  Débito</p>
@@ -45,23 +57,23 @@
         <form class="datosDeTarjeta">
             <div class="Titular">
                 <label for="Titular">Titular:</label>
-                <input type="text" class="formDatosTarj" id="Titular">
+                <input type="text" class="formDatosTarj" id="Titular" placeholder="Como figura en la tarjeta">
             </div>
             <div class="dni" id="card-number-field">
                 <label for="DNI">DNI:</label>
-                <input type="" class="formDatosTarj" id="dni">
+                <input type="" class="formDatosTarj" id="dni" placeholder="Ej: 17308278">
             </div>
             <div class="nroDeTarjeta" id="">
                 <label for="cardNumber">Nro. de tu Tarjeta:</label>
-                <input type="" class="formDatosTarj" id="nroDeTarjeta">
+                <input type="" class="formDatosTarj" id="nroDeTarjeta" placeholder="Ingresa el número de tu tarjeta">
             </div>
             <div class="CVVa">
                 <label for="cvv">CVV:</label>
-                <input type="" class="formDatosTarj" id="cvv">
+                <input placeholder="MM/AA"type="" class="formDatosTarj" id="cvv">
             </div>
             <div class="fechaDeVencimiento" id="fechaDeVencimiento">
                 <label>Fecha De Vencimiento:</label>
-                <select class="formDatosTarj">
+                <select class="formDatosTarj1">
                     <option value="01">Enero</option>
                     <option value="02">Febrero </option>
                     <option value="03">Marzo</option>
@@ -75,7 +87,7 @@
                     <option value="11">Noviembre</option>
                     <option value="12">Diciembre</option>
                 </select>
-                <select class="formDatosTarj">
+                <select class="formDatosTarj1">
                     <option value="16"> 2021</option>
                     <option value="17"> 2022</option>
                     <option value="18"> 2023</option>
@@ -90,15 +102,72 @@
             <h4>Adulto 1</h4>
             <label for="nombres">
                 <span>Nombres</span>
-                <input class="formDatosTarj" type="text" name="nombres" id="nombres" autocomplete="nombres" required>
+                <input placeholder="Como figura en tu documento"class="formDatosTarj" type="text" name="nombres" id="nombres" autocomplete="nombres" required>
             </label>
             <label for="apellidos">
                 <span>Apellidos</span>
-                <input class="formDatosTarj" type="text" name="apellidos" id="apellidos" autocomplete="apellidos" required>
+                <input placeholder="Como figura en tu documento"class="formDatosTarj" type="text" name="apellidos" id="apellidos" autocomplete="apellidos" required>
             </label>
             <label class="documento" id="document-field">
                 <span>Documento</span>
-                <input class="formDatosTarj"type="" class="form-control" id="documento">
+                <input placeholder="Ej: 17308278" class="formDatosTarj"type="" class="form-control" id="documento">
+            </label>
+            <label for="correo">
+                <span>¿Cuál es tu correo?</span>
+                <input class="formDatosTarj" type="email" name="correo" id="correo" autocomplete="email" placeholder="fulanito@email.com" required>
+            </label>
+            <label action="" method="post" target="_blank">
+                <p>
+                  Teléfono: <input class="formDatosTarj" class= "telefono" type="tel" name="telefono" placeholder="(Código de área) Número">
+                </p>
+              </label>
+            <label for="pais">
+            <br>
+                Seleccione su pais: <select class="formDatosTarj" name="pais">
+                <option value="1">Argentina</option>
+                <option value="2">España</option>
+                <option value="3">México</option>
+                <option value="4">Guatemala</option>
+                <option value="5">Honduras</option>
+                <option value="6">El Salvador</option>
+                <option value="7">Venezuela</option>
+                <option value="8">Colombia</option>
+                <option value="9">Cuba</option>
+                <option value="10">Bolivia</option>
+                <option value="11">Ecuador</option>
+                <option value="12">Uruguay</option>
+                <option value="13">Chile</option>
+                </select>
+            </br>
+            </label>
+            <label  for="sexo">
+                <span>Sexo:</span>
+                <input type="radio" name="hm" value="h"> Hombre
+                <input type="radio" name="hm" value="m"> Mujer
+              </p>
+            
+            <label for="fechaDeNacimiento">Fecha de nacimiento</label>
+
+            <input class="formDatosTarj" type="date" id="start" name="trip-start"
+                   value="2021-12-16"
+                   min="1940-01-01" max="2021-12-16">
+            
+           <hr>
+            
+        </form>
+        <h4>Adulto 2 o Menor 1</h4>
+        <form class="quienesViajan1" action="">
+            <label for="nombres">
+                <span>Nombres</span>
+                <input placeholder="Como figura en tu documento"class="formDatosTarj" type="text" name="nombres" id="nombres" autocomplete="nombres" required>
+            </label>
+            <label for="apellidos">
+                <span>Apellidos</span>
+                <input placeholder="Como figura en tu documento"class="formDatosTarj" type="text" name="apellidos" id="apellidos" autocomplete="apellidos" required>
+            </label>
+            <label class="documento" id="document-field">
+                <span>Documento</span>
+                <input placeholder="Ej: 17308278" class="formDatosTarj"type="" class="form-control" id="documento">
             </label>
             <label for="correo">
                 <span>¿Cuál es tu correo?</span>
@@ -139,69 +208,23 @@
             <input class="formDatosTarj" type="date" id="start" name="trip-start"
                    value="2021-12-16"
                    min="1940-01-01" max="2021-12-16">
-            
-           <hr>
-            
-        </form>
-        <h4>Adulto 2 o Menor 1</h4>
-        <form class="quienesViajan1" action="">
-            <label for="nombres">
-                <span>Nombres</span>
-                <input class="formDatosTarj" type="text" name="nombres" id="nombres" autocomplete="nombres" required>
-            </label>
-            <label for="apellidos">
-                <span>Apellidos</span>
-                <input class="formDatosTarj" type="text" name="apellidos" id="apellidos" autocomplete="apellidos" required>
-            </label>
-            <label class="documento" id="document-field">
-                <span>Documento</span>
-                <input class="formDatosTarj" type="" class="form-control" id="documento">
-            </label>
-            <label for="correo">
-                <span>¿Cuál es tu correo?</span>
-                <input class="formDatosTarj" type="email" name="correo" id="correo" autocomplete="email" placeholder="fulanito@email.com" required>
-            </label>
-            <label action="" method="post" target="_blank">
-                <p>
-                  Teléfono: <input class= "telefono" type="tel" name="telefono" placeholder="(Código de área) Número">
-                </p>
-              </label>
-            <label for="pais">
-            <br>
-                Seleccione su pais: <select class="formDatosTarj" name="pais">
-                <option value="1">Argentina</option>
-                <option value="2">España</option>
-                <option value="3">México</option>
-                <option value="4">Guatemala</option>
-                <option value="5">Honduras</option>
-                <option value="6">El Salvador</option>
-                <option value="7">Venezuela</option>
-                <option value="8">Colombia</option>
-                <option value="9">Cuba</option>
-                <option value="10">Bolivia</option>
-                <option value="11">Ecuador</option>
-                <option value="12">Uruguay</option>
-                <option value="13">Chile</option>
-                </select>
-            </br>
-            </label>
-            <label for="sexo">
-                <span>Sexo:</span>
-                <input class="formDatosTarj" type="radio" name="hm" value="h"> Hombre
-                <input class="formDatosTarj" type="radio" name="hm" value="m"> Mujer
-              </p>
-              <label for="fechaDeNacimiento">Fecha de nacimiento</label>
-
-            <input class="formDatosTarj" type="date" id="start" name="trip-start"
-                   value="2021-12-16"
-                   min="1940-01-01" max="2021-12-16">
-
+                   
                    <div class="Boton">
                     <button class="botonDeCompra" type="submit">Comprar</button>
                 </div>
                 
         </form>
-        
+        <form>
+        <div class= "detalleDeCompra1">
+            <h3>Detalles de compra</h3>
+            <p>Paquete para X personas $$$</p>
+            <p>Impuestos, tasas y cargos $$$</p>
+            <p>Percepción RG4815 $$$</p>
+            <p>Percepción impuesto PAIS $$$</p>
+            <hr class="lineaTtal">
+            <p class="total">TOTAL:$$$</p>
+        </div>
+    </form>
     </main>
 
     
