@@ -1,87 +1,90 @@
 *{font-family: 'Bad Script', cursive;
-    font-family: 'Bellefair', serif;
-    font-family: 'Poppins', sans-serif;
-    box-sizing:border-box ;
-    margin: 0px;
-    padding: 0px;}
-    
-    
-    header{
-        list-style: none;
-        background-color: #283959;
-    }
-    
-    .menuprincipal{
-        display: flex;
-        justify-content: space-between;
-        color: white;
-        align-items: center;
-    
-    }
-    .menuprincipal a{
-        color: white;
-    }
-    #menu1{
-        display: inline-block;
-        padding: 10px;
-        margin: 10px;
-    }
-    .logo{
-        width: 60%;
-        padding: 10px;
-        display: inline-block;
-        margin:10px
-    }
-    .logo img{
-        width: 100%;
-        border-radius: 23px;
-    }
-     .navbar{
-    border: none;
-     }
-     .navbar input{
-         display: none;
-     }
-     .navbar i{
-         width: 40px;
-         height: 30px;
-         display: inline-block;
-         padding: 10px;
-         color: white;
-         margin: 10px;
-     }
-     ul{
-         list-style: none;
-         display: flex;
-    
-     }
-     section a{
-        text-decoration: none;
-        color: #283959;
-     }
+font-family: 'Bellefair', serif;
+font-family: 'Poppins', sans-serif;
+box-sizing:border-box ;
+margin: 0px;
+padding: 0px;}
 
-     ul a{
-         text-decoration: none;
-         display: inline-block;
-         padding: 2px;
-         margin: 10px 5px;
-         color: white
-     }
-     .listaprimaria{
-        
-         display: none;
-     }
-     .listasecundaria{
-         display: flex;
-         flex-wrap: wrap;
-        overflow: scroll;
-         
-     }
-     .listasecundaria a{
-         display: inline-block;
-         border-radius: 10px;
-         border: solid 1px #8EA3BF ;
-     }
+
+header{
+    list-style: none;
+    background-color: #283959;
+}
+
+
+.menuprincipal{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+
+}
+.menuprincipal a{
+    color: white;
+}
+#menu1{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+ .logo{
+     width: 60%;
+     padding: 10px;
+     display: inline-block;
+     margin:10px
+ }
+ .logo img{
+     width: 100%;
+     border-radius: 23px;
+ } 
+
+
+ .navbar{
+border: none;
+ }
+ .navbar input{
+     display: none;
+ }
+ .navbar i{
+     width: 40px;
+     height: 30px;
+     display: inline-block;
+     padding: 10px;
+     color: white;
+     margin: 10px;
+ }
+ ul{
+     list-style: none;
+     display: flex;
+
+ }
+ section a{
+    text-decoration: none;
+    color: #283959;
+ }
+
+ ul a{
+     text-decoration: none;
+     display: inline-block;
+     padding: 2px;
+     margin: 10px 5px;
+     color: white
+ }
+ .listaprimaria{
+    
+     display: none;
+ }
+ .listasecundaria{
+     display: flex;
+     flex-wrap: wrap;
+    overflow: scroll;
+     
+ }
+ .listasecundaria a{
+     display: inline-block;
+     border-radius: 10px;
+     border: solid 1px #8EA3BF ;
+ }
      /*Footer*/
      footer{
         background-color: #69688C;
