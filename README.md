@@ -107,7 +107,7 @@ ___
 + ## ___Logo___
 
 LOGOTIPO: Combinación de imagen y texto.
-![logo](https://user-images.githubusercontent.com/93563000/146455907-5630c873-de6c-4395-8606-b90493c81a31.png)
+![logo1](https://user-images.githubusercontent.com/93563000/146534241-1fe02aaf-12e9-49fa-bac0-697a35de9c75.jpg)
 ___
 
 
