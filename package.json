@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "nodemon src/app.js -e js,mjs,json,html,css",
-    "star": "node ./src/app.js"
+    "star": "node src/app.js"
   },
   "repository": {
     "type": "git",
