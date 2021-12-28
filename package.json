@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   },
   "name": "grupo-11-nombre-del-proyecto-",

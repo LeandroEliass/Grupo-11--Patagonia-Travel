@@ -12,26 +12,7 @@
         <link rel="stylesheet" href="/css/productCar.css">
     </head>
 <body>
-    <header>
-        <section class="menuprincipal">
-            <nav><a  href=""><i id="menu1" class="fas fa-ellipsis-v"></i></a></nav>
-            <picture class="logo"><a href="/"><img src="image/logo1.jpg" alt=""></a></picture>
-        <form action=""><fieldset class="navbar"><input type="search" placeholder="Buscar" name="Barra"><i class="fas fa-search"></i></fieldset></form>
-        <nav class="listaprimaria">
-            <ul >
-            <li><a href="register.html">Crear cuenta</a></li>
-            <li><a href="login.html">Iniciar Sesión</a></li>
-            <li><a href="productCar.html">Mis compras</a></li>
-        </ul></nav></section>
-    <section ><nav class="listasecundaria">
-        <ul >
-            <li><a href="">Lugares</a></li>
-            <li><a href="">Hospedajes</a></li>
-            <li><a href="">Excursiones</a></li>
-            <li><a href="">Gastronomía</a></li>
-            <li><a href="">Eventos</a></li>
-        </ul></nav></section>
-    </header>
+    <%- include ("./partials/header.ejs") %> 
     <main>
         <div class= "detalleDeCompra">
             <h3>Detalles de compra</h3>

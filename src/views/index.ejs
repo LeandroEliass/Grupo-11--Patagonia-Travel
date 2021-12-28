@@ -12,26 +12,7 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <header>
-        <section class="menuprincipal">
-            <nav><a  href=""><i id="menu1" class="fas fa-ellipsis-v"></i></a></nav>
-            <picture class="logo"><a href="/"><img src="image/logo1.jpg" alt=""></a></picture>
-        <form action=""><fieldset class="navbar"><input type="search" placeholder="Buscar" name="Barra"><i class="fas fa-search"></i></fieldset></form>
-        <nav class="listaprimaria">
-            <ul >
-            <li><a href="register.html">Crear cuenta</a></li>
-            <li><a href="login.html">Iniciar Sesión</a></li>
-            <li><a href="productCar.html">Mis compras</a></li>
-        </ul></nav></section>
-    <section ><nav class="listasecundaria">
-        <ul >
-            <li><a href="">Lugares</a></li>
-            <li><a href="">Hospedajes</a></li>
-            <li><a href="">Excursiones</a></li>
-            <li><a href="">Gastronomía</a></li>
-            <li><a href="">Eventos</a></li>
-        </ul></nav></section>
-    </header>
+   <%- include ("./partials/header.ejs") %> 
     <main>
         <picture><img class="imagenhome" src="image/patagonia.jpg" alt=""></picture>
        <section class="busquedaviaje"><h3 class="tituloSeccion">Disfrutá tu viaje</h3>
@@ -57,7 +38,7 @@
        </form>
        <h3 class="tituloSeccion">Ciudades Imperdibles</h3>
        <section class="ciudades">
-    <article class="bariloche"><nav> <a href="productDetail.html">
+    <article class="bariloche"><nav> <a href="http://localhost:3000/products/productDetail">
     <picture><img src="image/bariloche.jpg" alt=""></picture><h4>San Carlos de Bariloche</h4>
 <p class="txt">Conocida por su estilo alpino de Suiza y su chocolate. Disfrutá del excursionismo y el esquí en las montañas cercanas. Explorá los alrededores del Distrito de los Lagos</p>
 <fieldset class="buttonvisitar"><button class="visitar"><input type="text" name="visitar">Visitar</button></fieldset>
