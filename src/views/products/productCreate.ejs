@@ -3,9 +3,89 @@
     <%- include ("../partials/head.ejs")%> 
 <body>
     <%- include ("../partials/header.ejs") %> 
-    <h1>Estoy aqui, crear y editar productos</h1>
+    <h3>Agregar Alojamiento</h3>
+    <main>
+        <section class="principal">
+            <section class="flex-container">
+                <form class="form-register" action="" method="post"> 
+        <fieldset class="form-fieldset">
+            <label name="NewProduct">Nombre</label>
+            <input type="text" name="newProduct" id="newProduct">
+    </fieldset>
+    <fieldset class="form-fieldset">
+        <label name="ciudad">Ciudad</label>
+        <input type="text" name="ciudad" id="ciudad">
+    </fieldset>
+    <fieldset class="form-fieldset">
+        <label name="direccion">Dirección</label>
+        <input type="text" name="direccion" id="direccion">
+    </fieldset>
+    <fieldset class="form-fieldset">
+        <label name="cp">Código Postal</label>
+        <input type="text" name="cp" id="cp">
+    </fieldset>
+    <fieldset class="form-fieldset">
+        <label name="categoria">Categoría</label>
+        <input list="categoria" name="categoria" required>
+        <datalist id="categoria" name="categoria">
+            <option value="Hotel">Hotel</option>
+            <option value="Hostal">Hostal</option>
+            <option value="Cabañas">Cabañas</option>
+        </datalist>
+</fieldset>
+<fieldset class="form-fieldset">
+    <label name="cantHab">N° Habitaciones</label>
+    <input type="number" id="cantHab">
+</fieldset>
+<fieldset class="form-fieldset">
+    <label name="tipoHabitacion">Tipo de Habitación</label>
+    <input list="habitacion" name="habitaciones" id="habitaciones">
+    <datalist id="habitacion">
+        <option value="Single"></option>
+        <option value="Doble/ Matrimonial"></option>
+        <option value="Triple"></option>
+        <option value="Cuadruple"></option>
+        <option value="Suite"></option>
+        <option value="Otra"></option>
+    </datalist>
+</fieldset>
+<fieldset class="form-fieldset">
+    <label name="Baños">Baños</label><br>
+    <input type="radio" name="bañoPrivado" id="bañoPrivado" value="Privado"> Privado <br>
+    <input type="radio" name="bañoCompartido" id="bañoCompartido" value="Compartido"> Compartido
+</fieldset>
+<fieldset class="form-fieldset">
+    <label name="servicios">Servicios</label> <br>
+    <input type="radio" name="internet" id="internet" value="Wifi"> Wifi<br>
+    <input type="radio" name="tv" id="tv" value="TV"> TV<br>
+    <input type="radio" name="servicio" id="servHabi" value="">Servicio a la Habitación<br>
+    <input type="radio" name="electro" id="electro" value="TV"> Electrodomésticos<br>
+    <input type="radio" name="garage" id="garage" value="garage"> Estacionamiento<br>
+    </fieldset>
+    <fieldset class="form-fieldset">
+        <label name="description">Descripción</label>
+        <input type="" name="description" id="description" placeholder="Descripción del alojamiento"> 
+    </fieldset>
+    <fieldset class="form-fieldset">
+        <label name="superficie">Medidas</label>
+        <input type="text" name="superficie" id="superficie"> m2
+    </fieldset>
+    <fieldset class="form-fieldset"> 
+        <label name="image">Fotos</label>
+        <input type="file" name="fotos" required>
+    </fieldset>
+    <fieldset class="form-fieldset-buttons">
+        <legend class="dn">Botones de enviar</legend>
+        <button class="buttons" type="submit">Enviar</button>
+    </fieldset> 
+    
+
+    </form>
+</section>
+</section>
+</main>
+
 </body>
 <%- include ("../partials/footer.ejs") %> 
-
 
 </html>

@@ -1,0 +1,90 @@
+*{font-family: 'Bad Script', cursive;
+    font-family: 'Bellefair', serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box ;
+    margin: 0px;
+    padding: 0px;}
+
+    footer{
+        background-color: #69688C;
+        padding: 10px;
+    }
+    footer h4{
+        text-align: center;
+        color: white;
+    }
+    footer img{
+        width: 100%;
+        padding: 8px;
+    }
+    footer section{
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+    footer section i{
+        padding: 8px;
+        margin-right: 10px;
+        height: 20px;
+    }
+    footer picture{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .logofooter img{
+        margin-top: 30px;
+    }
+    footer article{
+        font-size: 9px;
+        color: #D7DBDD;
+        text-align: justify;
+        margin: 0px 10px;
+    }
+    
+@media (min-width: 768px){
+    footer span{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 40px;
+       }
+       footer span h4{
+           font-size: 20px;
+           font-family: 'Bad Script', cursive;
+       }
+       footer span h5{
+           margin-right: 10px;
+           font-family: 'Bad Script', cursive;
+           font-size: 20px;
+       }
+       footer span i{
+           margin-right: 10px;
+       }
+       footer section{
+           display: flex;
+           justify-content: space-around;
+       }
+       .logofooter{
+        width: 40%;   
+        margin: 0
+       }
+       .logofooter img{
+           height: 100px;
+           margin: 0;
+       }
+    
+}
+
+@media (min-width: 1200px){
+    footer picture{
+        width: 70%;
+    }
+    footer img{
+        height: 20vh;
+    }
+
+    .logofooter{
+        width: 25%;
+    }
+}

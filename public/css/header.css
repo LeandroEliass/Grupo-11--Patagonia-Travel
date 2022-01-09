@@ -1,0 +1,158 @@
+*{font-family: 'Bad Script', cursive;
+    font-family: 'Bellefair', serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box ;
+    margin: 0px;
+    padding: 0px;}
+    
+    
+    header{
+        list-style: none;
+        background-color: #283959;
+    }
+    .menuprincipal{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+    
+    }
+    .menuprincipal a{
+        color: white;
+    }
+    #menu1{
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+    }
+     .logo{
+         width: 60%;
+         padding: 10px;
+         display: inline-block;
+         margin:10px
+     }
+     .logo img{
+         width: 100%;
+         border-radius: 23px;
+     } 
+    
+    
+     .navbar{
+    border: none;
+     }
+     .navbar input{
+         display: none;
+     }
+     .navbar i{
+         width: 40px;
+         height: 30px;
+         display: inline-block;
+         padding: 10px;
+         color: white;
+         margin: 10px;
+     }
+     ul{
+         list-style: none;
+         display: flex;
+    
+     }
+     section a{
+        text-decoration: none;
+        color: #283959;
+     }
+    
+     ul a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 2px;
+        margin: 10px 5px;
+        color: white
+    }
+    .listaprimaria{
+       
+        display: none;
+    }
+    .listasecundaria{
+        display: flex;
+        flex-wrap: wrap;
+       overflow: scroll;
+        
+    }
+    .listasecundaria a{
+        display: inline-block;
+        border-radius: 10px;
+        border: solid 1px #8EA3BF ;
+    }
+    @media (min-width: 768px){
+    #menu1{
+        display: none;
+    }
+    .logo{
+        width:17%
+    }
+    .logo img{
+        height: 12vh;
+    }
+    .menuprincipal{
+        justify-items: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menuprincipal form{
+        text-align: center;
+        width: 30%;
+    }
+    .navbar{
+        padding-left: 5px;
+    }
+    .navbar input{
+        display: inline-block;
+        border-radius: 5px;
+        width: 80%;
+    }
+    .listaprimaria{
+        display: flex;
+        justify-content: right;
+        font-size: 14px;
+        width: 37%;
+    justify-content: space-between;}
+    .listaprimaria li{
+        display: inline-block;
+    }
+    .listasecundaria{
+    overflow:-moz-hidden-unscrollable;}
+    .listasecundaria a{
+        padding: 0 8px;}
+    .navbar i{
+        margin: 0;
+        padding: 5px;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+  
+    .menuprincipal{
+        justify-content: space-between;
+    }
+    .navbar{
+        width: 400px;
+    }
+    .navbar input{
+        width: 80%;
+    }
+    .listaprimaria{
+        max-width: 28%;
+    }
+   .listasecundaria ul {
+       width: 60%;
+   }
+   .listasecundaria ul li{
+       margin-right: 10px;
+       padding: 5px;
+   }
+   .listasecundaria a{
+       padding: 0 5px ;
+   }
+}
