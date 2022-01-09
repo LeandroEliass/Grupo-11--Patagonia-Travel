@@ -1,5 +1,7 @@
 let controller ={
-    index: (req,res)=> {res.render("index")},
+    index: (req,res)=> {res.render("index",
+    {styles: ["index"]})
+},
     
 }
 
