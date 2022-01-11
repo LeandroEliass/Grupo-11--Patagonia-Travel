@@ -8,7 +8,7 @@ const rutasUsers = require("./routes/users")
 
 
 app.listen(process.env.PORT || 3000, function () {
-    console.log("Servidor corriendo")})
+    console.log("Servidor corriendo http://localhost:3000")})
 app.set("view engine", "ejs" )
 app.set("views", path.resolve(__dirname, "views"))
 app.use(express.static(path.join(__dirname, "../public")))
