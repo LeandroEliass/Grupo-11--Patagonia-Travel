@@ -113,6 +113,7 @@ ___
 
 + ## ___TABLERO___
 
-    - __TRELLO:__ [__Link__](https://trello.com/b/dnH7wgaD/sprint-2)
+    - [__Sprint 2__](https://trello.com/b/dnH7wgaD/sprint-2)
+    - [__Sprint 3__](https://trello.com/b/tZBI5swt/sprint-3)
 
     
