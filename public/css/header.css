@@ -26,10 +26,9 @@
         margin: 10px;
     }
      .logo{
-         width: 60%;
-         padding: 10px;
+         width: 40%;
+         padding: 5px;
          display: inline-block;
-         margin:10px
      }
      .logo img{
          width: 100%;
@@ -65,7 +64,7 @@
         text-decoration: none;
         display: inline-block;
         padding: 2px;
-        margin: 10px 5px;
+        margin: 0 5px 5px;
         color: white
     }
     .listaprimaria{

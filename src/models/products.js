@@ -32,5 +32,7 @@ create:data => {
         all.push(newProduct);
         model.write(all)
         return newProduct
-}}
+},
+search: (field,value)=> model.all().find(e=>e[field]==value),
+}
 module.exports=model

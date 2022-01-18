@@ -6,7 +6,6 @@ const rutasProducts = require("./routes/product")
 const rutasUsers = require("./routes/users")
 const method = require("method-override")
 
-
 app.listen(process.env.PORT || 3000, function () {
     console.log("Servidor corriendo http://localhost:3000")})
 app.set("view engine", "ejs" )

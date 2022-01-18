@@ -7,7 +7,7 @@ router.get("/", controller.products)
 router.get("/productCar", controller.productCar)
 router.get("/productDetail", controller.productDetail)
 router.get("/productCreate", controller.productCreate)
-/* router.get("/:id",controller.show) */
+router.get("/:id",controller.show)
 router.post("/productCreate",controller.save)
 
 

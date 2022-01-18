@@ -1,4 +1,4 @@
-const { all } = require("express/lib/application")
+
 const product = require("../models/products")
 
 let controller ={
@@ -12,15 +12,13 @@ let controller ={
      let created= product.create(req.body);
         return res.redirect("/products")
     },
-    /* show: (req,res) => {
+    show: (req,res) => {
         let result = product.search("id", req.params.id)
         return  result ? res.render("products/productDetail",{
-            style: ["productDetail"],
-            title:"Producto | " + result.name,
+            styles: ["productDetail"],
             product: result 
-        }) : res.render("error", {
-            msg: "producto no encontrado"
-        }) }, */
+        }) : res.send("error, producto no encontrado"
+        ) }, 
 
     
 }

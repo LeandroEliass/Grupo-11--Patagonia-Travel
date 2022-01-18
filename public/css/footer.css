@@ -15,10 +15,9 @@
     }
     footer img{
         width: 100%;
-        padding: 8px;
+        padding: 2px;
     }
     footer section{
-        padding: 10px;
         text-align: center;
         font-size: 20px;
         color: white;
@@ -28,12 +27,9 @@
         margin-right: 10px;
         height: 20px;
     }
-    footer picture{
-        width: 80%;
-        margin-top: 20px;
-    }
+  
     .logofooter img{
-        margin-top: 30px;
+        width: 40%;
     }
     footer article{
         font-size: 9px;
@@ -57,6 +53,12 @@
            margin-right: 10px;
            font-family: 'Bad Script', cursive;
            font-size: 20px;
+       }
+       picture{
+           text-align: center;
+       }
+       footer img{
+           width:50%;
        }
        footer span i{
            margin-right: 10px;
@@ -85,6 +87,6 @@
     }
 
     .logofooter{
-        width: 25%;
+        width: 50%;
     }
 }
