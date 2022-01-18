@@ -1,0 +1,30 @@
+<%- include ("../partials/head.ejs") %> 
+<body> 
+    <%- include ("../partials/header.ejs") %> 
+    <h2 class="tituloSeccion"> Hospedajes Disponibles</h1>
+    <% if (locals.products) { %>
+    <% if (products.length > 0) { %> 
+        
+            <% products.forEach(product => { %>
+                <a class="listHospedajes" href="/products/<%= product.id %> ">
+                     <span>
+                        <li><%= product.categoria %>  <%= product.name %></li> 
+                        
+                     </span></a>
+                    
+               
+            
+            <% }) %>
+        
+        <% } else { %>
+            <h2>No hay productos</h2>
+            <% } %>
+            <% } else { %>  
+                <h2>No hay productos</h2>
+<% } %> 
+    <span class="agregar"> <a class="create" href="/products/productCreate">Agregar Alojamiento </a></span>
+           
+            
+    
+    <%- include ("../partials/footer.ejs") %> 
+</body>

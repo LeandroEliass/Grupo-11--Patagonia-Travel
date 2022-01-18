@@ -1,0 +1,36 @@
+*{font-family: 'Bad Script', cursive;
+    font-family: 'Bellefair', serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box ;
+    margin: 0px;
+    padding: 0px;}
+
+.tituloSeccion{
+    padding-left: 10px;
+    color: #283959;
+    padding-top: 30px;
+
+}
+.listHospedajes{
+    text-decoration: none;
+    list-style: none;
+    padding: 3rem;
+    color: #283959;
+    text-align: center;
+    font-weight: bold;
+}
+.agregar{
+    margin: 10px;
+    display: flex;
+    justify-content: right;
+}
+.create{
+    text-decoration: none;
+    color: #283959;
+    border: 1px solid #283959 ;
+    padding: 5px;
+    border-radius:5px;
+   
+    
+}
+

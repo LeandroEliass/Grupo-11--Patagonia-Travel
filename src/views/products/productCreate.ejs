@@ -6,11 +6,11 @@
     <h3>Agregar Alojamiento</h3>
     <main>
         <section class="principal">
-            <section class="flex-container">
-                <form class="form-register" action="" method="post"> 
+            <section class="flex-container" >
+                <form action="/products/productCreate" method="post" class="form-register">
         <fieldset class="form-fieldset">
-            <label name="NewProduct">Nombre</label>
-            <input type="text" name="newProduct" id="newProduct">
+            <label name="name">Nombre</label>
+            <input type="text" name="name" id="name">
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="ciudad">Ciudad</label>
@@ -26,7 +26,7 @@
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="categoria">Categoría</label>
-        <input list="categoria" name="categoria" required>
+        <input list="categoria" name="categoria" >
         <datalist id="categoria" name="categoria">
             <option value="Hotel">Hotel</option>
             <option value="Hostal">Hostal</option>
@@ -37,7 +37,7 @@
 </fieldset>
 <fieldset class="form-fieldset">
     <label name="cantHab">N° Habitaciones</label>
-    <input type="number" id="cantHab">
+    <input type="number" name= "cantHab" id="cantHab" min="1">
 </fieldset>
 <fieldset class="form-fieldset">
     <label name="tipoHabitacion">Tipo de Habitación</label>
@@ -53,16 +53,16 @@
 </fieldset>
 <fieldset class="form-fieldset">
     <label name="Baños">Baños</label><br>
-    <input type="radio" name="bañoPrivado" id="bañoPrivado" value="Privado"> Privado <br>
-    <input type="radio" name="bañoCompartido" id="bañoCompartido" value="Compartido"> Compartido
+    <input type="checkbox" name="bañoPrivado" id="bañoPrivado" > Privado <br>
+    <input type="checkbox" name="bañoCompartido" id="bañoCompartido"> Compartido
 </fieldset>
 <fieldset class="form-fieldset">
     <label name="servicios">Servicios</label> <br>
-    <input type="radio" name="internet" id="internet" value="Wifi"> <h4>Wifi</h4><br>
-    <input type="radio" name="tv" id="tv" value="TV"> <h4>TV</h4><br>
-    <input type="radio" name="servicio" id="servHabi" value=""><h4>Servicio a la Habitación</h4><br>
-    <input type="radio" name="electro" id="electro" value="TV"> <h4>Electrodomésticos</h4><br>
-    <input type="radio" name="garage" id="garage" value="garage"> <h4>Estacionamiento</h4><br>
+    <input type="radio" name="internet" id="internet"> <h4>Wifi</h4><br>
+    <input type="radio" name="television" id="television" v> <h4>TV</h4><br>
+    <input type="radio" name="servicioHab" id="servicioHab" ><h4>Servicio a la Habitación</h4><br>
+    <input type="radio" name="electro" id="electro" > <h4>Electrodomésticos</h4><br>
+    <input type="radio" name="garage" id="garage" > <h4>Estacionamiento</h4><br>
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="description">Descripción</label>
@@ -72,10 +72,14 @@
         <label name="superficie">Medidas</label>
         <input type="text" name="superficie" id="superficie"> m2
     </fieldset>
+    <fieldset class="form-fieldset">
+        <label name="price">Precio</label>
+        <input type="number" name="price" id="price"> $ (Pesos Argentinos)
+    </fieldset>
     <fieldset class="form-fieldset"> 
         <label name="image">Fotos</label>
-        <input type="file" name="fotos" required>
-    </fieldset>
+        <input type="file" name="fotos" >
+    </fieldset> 
     <fieldset class="form-fieldset-buttons">
         <legend class="dn">Botones de enviar</legend>
         <button class="buttons" type="submit">Enviar</button>
@@ -83,6 +87,7 @@
     
 
     </form>
+    
 </section>
 </section>
 </main>
