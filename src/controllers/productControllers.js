@@ -19,6 +19,8 @@ let controller ={
             product: result 
         }) : res.send("error, producto no encontrado"
         ) }, 
+    update: (req,res)=>{res.render("./products/productUpdate",{styles: ["productCreate","footer","header"],
+            product: product.search("id", req.params.id)})}
 
     
 }

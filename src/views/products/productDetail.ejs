@@ -37,12 +37,39 @@ Es el destino más visitado de la Patagonia y uno de los destinos más visitados
         <ul class="flexLista">
             <h3><%= product.categoria  %>  <%= product.name %></h3>
             <h4>Servicios del hospedaje</h4>
-            <li>Cabañas para 2 y 4 personas<i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i></li>
-            <li>Estacionamiento privado<i class="fas fa-bus"></i></li>
-            <li>Aire condicionado y calefacción<i class="fas fa-thermometer-empty"></i></li>
-            <li>Wifi y Tv Smart<i class="fas fa-wifi"></i><i class="fas fa-tv"></i></li>
+            <li> Habitación <%= product.habitaciones %>  para <%= product.capacidad %>  personas  <i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i></li>
+            <% if (product.bañoPrivado) { %>
+                <li> Baño Privado </li>
+               <% } %>
+               <% if (product.bañoCompartido) { %>
+                <li> Baño Compartido </li>
+               <% } %>
+            <% if (product.garage) { %>
+            <li> Estacionamiento privado <i class="fas fa-bus"></i> </li>
+           <% } %>
+           <% if (product.television) { %>
+            <li> Tv en Habitación  <i class="fas fa-tv"></i></li>
+           <% } %>
+           <% if (product.internet) { %>
+            <li> Wifi   <i class="fas fa-wifi"></i> </li>
+           <% } %>
+           <% if (product.servicioHab) { %> 
+            <li> Servicio a la Habitación y Restaurante <i class="fas fa-utensils"></i> </li>
+           <% } %>
+           <% if (product.mascotas) { %> 
             <li>Pet Friendly <i class="fas fa-dog"></i></li>
-            <a href="/products/productCar"><button class="visitar"><input type="text" name="visitar">Reservar</button></a>
+           <% } %>
+           <% if (product.climatizacion) { %> 
+            <li>Aire condicionado y calefacción<i class="fas fa-thermometer-empty"></i></li>
+           <% } %>
+           <li><%= product.description %>  </li>
+           <br>
+           <h4> Reservá por tan solo $<%= product.price %> por noche </h4>
+            
+           
+            
+           <a href="/products/productCar"><button class="visitar"><input type="text" name="visitar">Reservar</button></a>
+           <a href="/products/<%= product.id%>/edit"><button class="visitar"><input type="text" name="editar">Editar</button></a>
         </ul>
     </div>
 
@@ -51,7 +78,7 @@ Es el destino más visitado de la Patagonia y uno de los destinos más visitados
     </div>
 </section>
 
-<section class= "flexHospedajeA">
+<!-- <section class= "flexHospedajeA">
     <div class= "flexListaContenedor">
       
         <ul class="flexLista">
@@ -60,7 +87,7 @@ Es el destino más visitado de la Patagonia y uno de los destinos más visitados
             <li>Habitaciones para 2-3 personas<i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i></li>
             <li>Climatización central<i class="fas fa-thermometer-empty"></i></li>
             <li>Wifi y Cable<i class="fas fa-wifi"></i><i class="fas fa-tv"></i></li>
-            <li>Restaurante<i class="fas fa-utensils"></i></li>
+            <li>Restaurante</li>
             <li>Alquiler de equipos de Ski<i class="fas fa-skiing-nordic"></i></li>
             <li>Traslados al aeropuerto y terminal<i class="fas fa-bus"></i></li>
             <a href="/products/productCar"><button class="visitar"><input type="text" name="visitar">Reservar</button></a>
@@ -71,7 +98,7 @@ Es el destino más visitado de la Patagonia y uno de los destinos más visitados
     <div class= flexCabanaContenedor>
         <picture><img src="../image/hospedaje/hotel.jpg" class= "flexCabana"></picture>
     </div>
-</section>
+</section> -->
 
 <h2>Un lugar mágico</h2>
 <section class="seccionTurismo">
