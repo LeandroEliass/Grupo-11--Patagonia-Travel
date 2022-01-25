@@ -62,19 +62,26 @@ Es el destino más visitado de la Patagonia y uno de los destinos más visitados
            <% if (product.climatizacion) { %> 
             <li>Aire condicionado y calefacción<i class="fas fa-thermometer-empty"></i></li>
            <% } %>
-           <li><%= product.description %>  </li>
+           <li><%= product.description %> <i class="fas fa-comment-dots"></i> </li>
            <br>
-           <h4> Reservá por tan solo $<%= product.price %> por noche </h4>
+
+           <h4 class="reservaTitle"> RESERVA por tan solo $<%= product.price %> por noche</h4>
             
            
-            
+            <span class="boxButons">
            <a href="/products/productCar"><button class="visitar"><input type="text" name="visitar">Reservar</button></a>
            <a href="/products/<%= product.id%>/edit"><button class="visitar"><input type="text" name="editar">Editar</button></a>
-        </ul>
+        </span>
+    </ul>
     </div>
 
     <div class= flexCabanaContenedor>
-        <picture><img src="../image/hospedaje/cabanas.jpg" class= "flexCabana"></picture>
+        
+           
+        <% if (product.image) { %>
+            <picture> <img src="/uploads/<%= product.image.url %>" class= "flexCabana"></picture>
+        <% } %>
+      
     </div>
 </section>
 
