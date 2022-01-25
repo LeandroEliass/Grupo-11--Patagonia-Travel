@@ -55,7 +55,7 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     margin: 0%;
-    width: 50%;
+    width: 75%;
 border: 5px solid #8EA3BF ;
 border-radius: 10px;
 margin-bottom: 2%;
@@ -132,6 +132,28 @@ h4{
     font-size: 20px;
     color: #283959;
 }
+.button{
+    margin: 10px 0;
+    text-align: center;
+}
+.boxButons{
+    text-align: center;
+}
+   
+.visitar{
+        background-color: #283959;
+        color:  #D7DBDD;
+        padding: 7px;
+        font-size: 15px;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 5%;
+        margin-right: 2rem;
+    }
+
+   .visitar input{
+        display: none;
+    }
     
 
 
@@ -152,6 +174,28 @@ h4{
             width: 400px;
             height: 280px;
         }
+        .button{
+            margin: 10px 0;
+            text-align: center;
+        }
+        .boxButons{
+            text-align: center;
+        }
+           
+        .visitar{
+                background-color: #283959;
+                color:  #D7DBDD;
+                padding: 7px;
+                font-size: 15px;
+                border-radius: 15px;
+                text-align: center;
+                margin-top: 5%;
+                margin-right: 2rem;
+            }
+        
+           .visitar input{
+                display: none;
+            }
     }
 
 

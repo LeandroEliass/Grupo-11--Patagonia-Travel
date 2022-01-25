@@ -4,19 +4,21 @@
     <h2 class="tituloSeccion"> Hospedajes Disponibles</h1>
     <% if (locals.products) { %>
     <% if (products.length > 0) { %> 
-        
+        <section class="BoxProduct">
             <% products.forEach(product => { %>
                 <a class="listHospedajes" href="/products/<%= product.id %> ">
-                  
+                    <% if (product.image) { %>
+                        <picture> <img src="../upload/<%= product.image.url %>" class= "flexCabana"></picture>
+                    <% } %> 
                      <span>
                         <li><%= product.categoria %>  <%= product.name %></li> 
                         
                      </span></a>
                     
-               
+                    
             
             <% }) %>
-        
+        </section>
         <% } else { %>
             <h2>No hay productos</h2>
             <% } %>

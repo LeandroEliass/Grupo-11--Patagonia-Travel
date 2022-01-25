@@ -17,9 +17,12 @@ const controller ={
     },
     show: (req,res) => {
         let result = product.search("id", req.params.id)
+        let productShow= Object({...result, image: result.image.map(image => 
+            file.search("id", image))})
+            
         return  result ? res.render("products/productDetail",{
             styles: ["productDetail"],
-            product: result ,
+            product: productShow ,
         }) : res.send("error, producto no encontrado"
         ) }, 
     update: (req,res)=>{res.render("./products/productUpdate",{styles: ["productCreate","footer","header"],

@@ -6,19 +6,34 @@
     padding: 0px;}
 
 .tituloSeccion{
-    padding-left: 10px;
+    padding-left: 15px;
     color: #283959;
-    padding-top: 30px;
+    padding-top: 20px;
 
+}
+.BoxProduct li{
+    margin: -25px;
 }
 .listHospedajes{
     text-decoration: none;
     list-style: none;
-    padding: 3rem;
     color: #283959;
     text-align: center;
     font-weight: bold;
 }
+.BoxProduct{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+.BoxProduct img{
+    width: 90%;
+    margin-right: 1rem;
+    padding: 2rem;
+}
+
 .agregar{
     margin: 10px;
     display: flex;
@@ -30,7 +45,9 @@
     border: 1px solid #283959 ;
     padding: 5px;
     border-radius:5px;
+    margin-top: 3rem;
    
-    
 }
+
+
 
