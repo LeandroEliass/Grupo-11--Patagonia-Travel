@@ -7,7 +7,7 @@
     <main>
         <section class="principal">
             <section class="flex-container" >
-                <form action="/products/productCreate" method="post" class="form-register">
+                <form action="/products/productCreate" enctype="multipart/form-data" method="post" class="form-register">
         <fieldset class="form-fieldset">
             <label name="name">Nombre</label>
             <input type="text" name="name" id="name">
@@ -78,8 +78,8 @@
         <input type="number" name="price" id="price"> $ (Pesos Argentinos)
     </fieldset>
     <fieldset class="form-fieldset"> 
-        <label name="image">Fotos</label>
-        <input type="file" name="fotos" >
+        <label name="file">Fotos</label>
+        <input type="file" name="file" id="file" multiple>
     </fieldset> 
     <fieldset class="form-fieldset-buttons">
         <legend class="dn">Botones de enviar</legend>

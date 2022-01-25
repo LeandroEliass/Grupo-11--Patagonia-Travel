@@ -7,7 +7,7 @@
     <main>
         <section class="principal">
             <section class="flex-container" >
-                <form action="/products/?m=PUT" method="post" class="form-register">
+                <form action="/products/<%= product.id %>?m=PUT" method="post" class="form-register">
         <fieldset class="form-fieldset">
             <label name="name">Nombre</label>
             <input type="text" name="name" id="name" value="<%= product.name %>">
@@ -77,16 +77,22 @@
         <input type="number" name="price" id="price" value="<%= product.price %>"> $ (Pesos Argentinos)
     </fieldset>
     <fieldset class="form-fieldset"> 
-        <label name="image">Fotos</label>
-        <input type="file" name="fotos" >
+        <label name="file">Fotos</label>
+        <input type="file" name="file" multiple >
     </fieldset> 
     <fieldset class="form-fieldset-buttons">
         <legend class="dn">Botones de enviar</legend>
         <button class="buttons" type="submit">Editar</button>
-    </fieldset> 
+     
+   
+</form>
+<form action="/products/?m=DELETE" method="post">
+    <input type="hidden" > 
     
+<button id="deleteButon" class="buttons" type="submit" name="id" value="<%= product.id  %> ">Eliminar </button></fieldset>
+</form> 
 
-    </form>
+    
     
 </section>
 </section>

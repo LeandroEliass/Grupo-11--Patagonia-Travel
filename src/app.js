@@ -5,12 +5,14 @@ const rutasMain = require("./routes/main")
 const rutasProducts = require("./routes/product")
 const rutasUsers = require("./routes/users")
 const method = require("method-override")
+const rutasFiles = require("./routes/files")
 
 app.listen(process.env.PORT || 3000, function () {
     console.log("Servidor corriendo http://localhost:3000")})
 app.set("view engine", "ejs" )
 app.set("views", path.resolve(__dirname, "views"))
-app.use(express.static(path.join(__dirname, "../public")))
+app.use(express.static(path.resolve(__dirname, "../public")));
+app.use("/uploads",express.static(path.resolve(__dirname, "../upload")))
 app.use(method("m"))
 app.use(express.urlencoded({extended:true}))
 
@@ -18,6 +20,7 @@ app.use(express.urlencoded({extended:true}))
 app.use("/",rutasMain);
 app.use("/products",rutasProducts);
 app.use("/users",rutasUsers);
+app.use("/files", rutasFiles)
 
 
 

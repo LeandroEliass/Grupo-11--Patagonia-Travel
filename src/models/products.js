@@ -1,5 +1,6 @@
 const path = require("path");
 const fs  = require("fs");
+const file=require("./files")
 
 const model={
 file: path.resolve(__dirname,"../database","products.json"),
@@ -26,6 +27,7 @@ generate: data => Object({
         description: data.description,
         superficie: parseInt(data.superficie),
         price: parseInt(data.price),
+        image: data.files.map(f=>file.create(f).id)
       }),                                                                            
 create:data => {
         let newProduct = model.generate(data);
@@ -58,6 +60,7 @@ update: (id,data) => {
         e.description= data.description,
         e.superficie= data.superficie,
                 e.price = data.price;
+                e.image = data.image;
                 
                 return e
             } return e
@@ -65,6 +68,11 @@ update: (id,data) => {
         model.write(update)
         let product = model.search("id", id);
         return product
+    },
+    delete: id=>{
+        let deleted = model.all().filter(e=>e.id != id)
+        model.write(deleted)
+        return true
     }
 }
 module.exports=model

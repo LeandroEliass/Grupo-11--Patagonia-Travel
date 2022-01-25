@@ -1,35 +1,13 @@
 [
   {
-    "id": 1,
-    "name": "EL NAHUELITO",
+    "id": 3,
+    "name": "ELA KUPAL",
     "ciudad": "Bariloche",
-    "direccion": "LAGOS 1313",
+    "direccion": "pasaje 323",
     "categoria": "Cabañas",
     "cantHab": 2,
     "habitaciones": "Doble/ Matrimonial",
-    "capacidad": 2,
-    "bañoPrivado": true,
-    "bañoCompartido": false,
-    "internet": true,
-    "television": true,
-    "servicioHab": false,
-    "electro": false,
-    "garage": true,
-    "climatizacion": true,
-    "mascotas": true,
-    "description": "Hermosa cabaña, te sentirás como en casa",
-    "superficie": 38,
-    "price": 5000
-  },
-  {
-    "id": 2,
-    "name": "Bariloche SKI ",
-    "ciudad": "Bariloche",
-    "direccion": "calle laguna 333",
-    "categoria": "Hotel",
-    "cantHab": 1,
-    "habitaciones": "Suite",
-    "capacidad": 3,
+    "capacidad": 4,
     "bañoPrivado": true,
     "bañoCompartido": false,
     "internet": true,
@@ -38,8 +16,59 @@
     "garage": true,
     "climatizacion": true,
     "mascotas": true,
-    "description": "Está ubicado en un entorno tranquilo frente al Lago Nahuel Huapi, a pocos minutos del Centro de Bariloche.",
-    "superficie": 20,
-    "price": 9500
+    "description": "Hermosas cabañas cerca del lago",
+    "superficie": 38,
+    "price": 7500,
+    "image": [
+      2
+    ]
+  },
+  {
+    "id": 4,
+    "name": "El Nahuelito",
+    "ciudad": "Bariloche",
+    "direccion": "AVENIDA 2322",
+    "categoria": "Cabañas",
+    "cantHab": 3,
+    "habitaciones": "Cuadruple",
+    "capacidad": 6,
+    "bañoPrivado": true,
+    "bañoCompartido": false,
+    "internet": true,
+    "television": true,
+    "servicioHab": true,
+    "garage": false,
+    "climatizacion": true,
+    "mascotas": true,
+    "description": "Mejor que en tu casa.",
+    "superficie": 48,
+    "price": 9000,
+    "image": [
+      3
+    ]
+  },
+  {
+    "id": 5,
+    "name": "SKY BARILOCHE",
+    "ciudad": "Bariloche",
+    "direccion": "LAGUNAS 3421",
+    "categoria": "Hotel",
+    "cantHab": 1,
+    "habitaciones": "Suite",
+    "capacidad": 2,
+    "bañoPrivado": true,
+    "bañoCompartido": false,
+    "internet": true,
+    "television": true,
+    "servicioHab": true,
+    "garage": true,
+    "climatizacion": true,
+    "mascotas": true,
+    "description": "Hotel 4 estrellas FULL.",
+    "superficie": 18,
+    "price": 9000,
+    "image": [
+      4
+    ]
   }
 ]
