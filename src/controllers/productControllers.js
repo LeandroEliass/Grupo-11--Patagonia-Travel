@@ -6,7 +6,7 @@ const controller ={
     products: (req,res)=>res.render("./products/list",{styles:["list"],
             products:product.all().map(p=> Object({...p, image: file.search("id", p.image)}))}),
     productDetail: (req,res)=> {res.render("./products/productDetail",{styles: ["productDetail"],
-     products:product.all().map(p=> Object({...p, image: file.search("id", p.image)}))})},
+     /* products:product.all().map(p=> Object({...p, image: file.search("id", p.image)})) */})},
     productCar: (req,res)=> {res.render("./products/productCar",{styles: ["productCar"]})},
     productCreate: (req,res)=> {res.render("./products/productCreate",{styles: ["productCreate"],
     product:product.all()})},
@@ -17,12 +17,13 @@ const controller ={
     },
     show: (req,res) => {
         let result = product.search("id", req.params.id)
-        let productShow= Object({...result, image: result.image.map(image => 
-            file.search("id", image))})
-            
+        let productShow=  Object({...result, image: file.search("id", result.image)})
+        let image = productShow.image.url
+       
         return  result ? res.render("products/productDetail",{
             styles: ["productDetail"],
             product: productShow ,
+            imagen: image
         }) : res.send("error, producto no encontrado"
         ) }, 
     update: (req,res)=>{res.render("./products/productUpdate",{styles: ["productCreate","footer","header"],

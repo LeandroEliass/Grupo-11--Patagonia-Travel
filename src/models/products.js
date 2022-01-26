@@ -60,7 +60,7 @@ update: (id,data) => {
         e.description= data.description,
         e.superficie= data.superficie,
                 e.price = data.price;
-                e.image = data.image;
+                e.image = data.image.url;
                 
                 return e
             } return e
