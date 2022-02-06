@@ -6,30 +6,30 @@
     <main>
         <section class="principal">
             <section class="flex-container">
-                <form class="form-register" action="/" method="post"> 
+                <form class="form-register" action="/users/" method="post" enctype="multipart/form-data"> 
 
                     <fieldset class="form-fieldset">
                         <legend class="dn">Nombre</legend>
                         <label class="" for="nombreCompleto">Nombre</label>
-                        <input class="form-fieldset-input" type="text" id="name" name="user_name" placeholder="Nombres" required>
+                        <input class="form-fieldset-input" type="text" id="name" name="name" placeholder="Nombres" required>
                     </fieldset>
 
                     <fieldset class="form-fieldset">
                         <legend class="dn">Apellido</legend>
                         <label class="" for="apellido">Apellido</label>
-                        <input class="form-fieldset-input" type="text" id="apellido" name="user_name" placeholder="Apellido" required>
+                        <input class="form-fieldset-input" type="text" id="lastName" name="lastName" placeholder="Apellido" required>
                     </fieldset>
 
                     <fieldset class="form-fieldset">
                         <legend class="dn">Fecha de Nacimiento</legend>
                         <label for="fecha">Fecha de Nacimiento</label>
-                        <input class="form-fieldset-input" type="date" id="fecha" name="fecha">
+                        <input class="form-fieldset-input" type="date" id="fechaNac" name="fechaNac">
                     </fieldset>
 
                     <fieldset class="form-fieldset">
                         <legend class="dn">Nacionalidad</legend>
                         <label class="" for="pais">Nacionalidad</label>
-                        <input list="pais" name="spais" class="form-fieldset-input" required/></label>
+                        <input list="pais" name="nacionalidad" class="form-fieldset-input" required/></label>
                         <datalist id="pais"> 
                                 <option value="AF">Afganistán</option>
                                 <option value="AL">Albania</option>
@@ -95,7 +95,7 @@
                                 <option value="AE">Emiratos Árabes Unidos</option>
                                 <option value="ER">Eritrea</option>
                                 <option value="SI">Eslovenia</option>
-                                <option value="ES" selected>España</option>
+                                <option value="ES">España</option>
                                 <option value="US">Estados Unidos</option>
                                 <option value="EE">Estonia</option>
                                 <option value="ET">Etiopía</option>
@@ -270,26 +270,14 @@
 
                     <fieldset class="form-fieldset">
                         <legend class="dn">Ciudad</legend>
-                        <label for="provincia">Ciudad</label>
+                        <label for="ciudad">Ciudad</label>
                         <input class="form-fieldset-input" type="text" id="Ciudad" name="ciudad" required>
                     </fieldset>
 
                     <fieldset class="form-fieldset">
                         <legend class="dn">Domicilio</legend>
-                        <label for="provincia">Domicilio</label>
+                        <label for="domicilio">Domicilio</label>
                         <input class="form-fieldset-input" type="text" id="domicilio" name="domicilio" required>
-                    </fieldset>
-
-                    <fieldset class="form-fieldset">
-                        <legend class="dn">Email</legend>
-                        <label class="" for="email">Email</label>
-                        <input class="form-fieldset-input" type="text" id="email" name="user_name" placeholder="Email" required="">
-                    </fieldset>
-
-                    <fieldset class="form-fieldset">
-                        <legend class="dn">Repetir Email</legend>
-                        <label class="" for="email">Repetir Email</label>
-                        <input class="form-fieldset-input" type="text" id="remail" name="user_name" placeholder="Email" required="">
                     </fieldset>
 
                     <fieldset class="form-fieldset">
@@ -299,15 +287,27 @@
                     </fieldset>
 
                     <fieldset class="form-fieldset">
+                        <legend class="dn">Email</legend>
+                        <label class="" for="email">Email</label>
+                        <input class="form-fieldset-input" type="email" id="email" name="email" placeholder="Email" required="">
+                    </fieldset>
+
+                    <fieldset class="form-fieldset">
+                        <legend class="dn">Repetir Email</legend>
+                        <label class="" for="rEmail">Repetir Email</label>
+                        <input class="form-fieldset-input" type="email" id="rEmail" name="rEmail" placeholder="Email" required="">
+                    </fieldset>
+
+                    <fieldset class="form-fieldset">
                         <legend class="dn">Contraseña</legend>
                         <label for="clave">Contraseña</label>
-                        <input class="form-fieldset-input" type="password" name="clave" id="clave"  placeholder="**********" required>
+                        <input class="form-fieldset-input" type="password" name="password" id="password"  placeholder="**********" required>
                     </fieldset>
 
                     <fieldset class="form-fieldset">
                         <legend class="dn">Confirmar Contraseña</legend>
                         <label for="clave">Confirmar Contraseña</label>
-                        <input class="form-fieldset-input" type="password" name="confirm" id="rclave" placeholder="**********" required>
+                        <input class="form-fieldset-input" type="password" name="rPassword" id="rPassword" placeholder="**********" required>
                     </fieldset>
 
                     <div>
@@ -324,13 +324,13 @@
 
                     <fieldset class="form-fieldset">
                         <legend class="dn">Foto del Usuario</legend>
-                        <label for="foto">Foto del Usuario</label>
-                        <input class="form-fieldset-input" type="file" accept=".jpg,.png.bpm,.sgv,.icon" name="foto" id="foto" >
+                        <label for="foto" name="file">Foto del Usuario</label>
+                        <input class="form-fieldset-input" type="file" name="file" id="file" >
                     </fieldset>
 
                     <fieldset class="form-fieldset-buttons">
                         <legend class="dn">Botones del Formulario</legend>
-                        <button class="buttons" type="submit">Siguiente</button>
+                        <button class="buttons" type="submit">Registrarse</button>
                         <button class="buttons" type="reset">Limpiar</button>
                     </fieldset> 
                      
