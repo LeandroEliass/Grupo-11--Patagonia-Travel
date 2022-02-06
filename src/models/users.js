@@ -20,7 +20,7 @@ const model={
         rEmail: data.rEmail,
         usuario: data.usuario,
         password: bcrypt.hashSync(data.password,10),
-        isAdmin: data.email.includes("@patagoniatravels.com"),
+        isAdmin: data.email.includes("@patagoniatravel.com"),
         image: data.files.map(f=>file.create(f).id)
     }),
     create: data => {

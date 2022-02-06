@@ -13,5 +13,56 @@
     "password": "12345",
     "rPassword": "12345",
     "isAdmin": true
+  },
+  {
+    "id": 2,
+    "name": "Jorge",
+    "lastName": "Perez",
+    "fechaNac": "1998-12-14",
+    "nacionalidad": "Argentina",
+    "ciudad": "salta",
+    "domicilio": "Calle 25",
+    "email": "jorge@jorge.com",
+    "rEmail": "jorge@jorge.com",
+    "usuario": "Jorgito",
+    "password": "$2b$10$ng14FzkhIjlorZFONebslu6NifbVuVpqF/CxbtRO1KHaz6WDVBT86",
+    "isAdmin": false,
+    "image": [
+      1
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Elias",
+    "lastName": "Elias",
+    "fechaNac": "1998-12-15",
+    "nacionalidad": "Venezuela",
+    "ciudad": "Salto",
+    "domicilio": "avenida",
+    "email": "elias@patagoniatravel.com",
+    "rEmail": "elias@patagoniatravel.com",
+    "usuario": "Elias",
+    "password": "$2b$10$6oBH2VpFL9Eyejy52U6f9.0SN5mkOu8MKoz.wKXwcY0aduLUz05Xi",
+    "isAdmin": false,
+    "image": [
+      2
+    ]
+  },
+  {
+    "id": 4,
+    "name": "asss",
+    "lastName": "sass",
+    "fechaNac": "2022-01-30",
+    "nacionalidad": "Islas Salomón",
+    "ciudad": "asa",
+    "domicilio": "assa",
+    "email": "toconasleandro@gmail.com",
+    "rEmail": "leandro@patagoniatravels.com",
+    "usuario": "ssa",
+    "password": "$2b$10$j9LetN7vWyOIiQid7L3y3Op7lXpFsoOTSaemM/OR2D2xuUnOIDCG.",
+    "isAdmin": false,
+    "image": [
+      3
+    ]
   }
 ]

@@ -1,4 +1,4 @@
-const {Router} = require("express");
+/* const {Router} = require("express");
 const router = Router();
 const file = require("../controllers/fileUserControllers")
 const path = require("path")
@@ -12,4 +12,4 @@ filename:(req,file,cb) => cb(null, file.fieldname + "-" + Date.now() + path.extn
 router.get("/", file.upload)
 router.post("/", [upload.any("file")],file.store)
 
-module.exports = router
+module.exports = router */

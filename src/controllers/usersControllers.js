@@ -1,6 +1,6 @@
 let fs = require("fs")
-const user= require("../models/users")
-const file= require("../models/filesUser")
+const user= require("../models/users")/* 
+const file= require("../models/filesUser") */
 
 const controller ={
     index: (req,res)=> {res.send("Funciona")},

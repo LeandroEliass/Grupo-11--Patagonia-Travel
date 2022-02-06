@@ -14,21 +14,21 @@ app.use("/upload",express.static(path.resolve(__dirname, "../upload")))
 app.use(method("m"))
 app.use(express.urlencoded({extended:true}))
 app.use(cookie())
-app.use(session({secret:"patagonia"}))
+app.use(session({secret:"patagonia", resave: true, saveUninitialized: false}))
 
 const rutasMain = require("./routes/main")
 const rutasProducts = require("./routes/product")
 const rutasUsers = require("./routes/users")
 
-const rutasFiles = require("./routes/files")
-const rutasFilesUser = require("./routes/filesUser")
+const rutasFiles = require("./routes/files")/* 
+const rutasFilesUser = require("./routes/filesUser") */
 
 
 app.use("/",rutasMain);
 app.use("/products",rutasProducts);
 app.use("/users",rutasUsers);
-app.use("/files", rutasFiles)
-app.use("/filesUser", rutasFilesUser)
+app.use("/files", rutasFiles)/* 
+app.use("/filesUser", rutasFilesUser) */
 
 
 

@@ -20,7 +20,7 @@
     "nodemon": "^2.0.15"
   },
   "scripts": {
-    "test": "nodemon src/app.js -e js,mjs,json,html,css",
+    "test": "nodemon src/app.js -e js,mjs,ejs,html,css",
     "start": "node src/app.js"
   },
   "repository": {
