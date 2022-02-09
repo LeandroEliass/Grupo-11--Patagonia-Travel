@@ -27,7 +27,8 @@ const rutasFilesUser = require("./routes/filesUser") */
 app.use("/",rutasMain);
 app.use("/products",rutasProducts);
 app.use("/users",rutasUsers);
-app.use("/files", rutasFiles)/* 
+app.use("/files", rutasFiles)
+app.use(require("./middlewares/users"))/* 
 app.use("/filesUser", rutasFilesUser) */
 
 

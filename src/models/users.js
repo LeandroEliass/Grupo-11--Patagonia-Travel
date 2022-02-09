@@ -2,12 +2,14 @@ const path = require("path");
 const fs = require("fs");
 const file  = require("./filesUser")
 const bcrypt  = require("bcrypt")
+const {body}= require("express-validator")
 
 const model={
     file:path.resolve(__dirname,"../database","user.json"),
     read:()=> fs.readFileSync(model.file, "utf-8"),
     write: data=> fs.writeFileSync(model.file, JSON.stringify(data,null,2)),
     all: ()=> JSON.parse(model.read()),
+    search: (prop, value)=> model.all().find(e=> e[prop] == value),
     generate: data => Object({
         id: model.all().length == 0 ? 1 : model.all().pop().id + 1,
         name: data.name,
@@ -29,7 +31,10 @@ const model={
         all.push(user);
         model.write(all)
         return user
-    }
+    },
+    validate:[
+        body("email").isEmail().withMessage("email incorrecto"),
+        body("password").isLength({ min: 5}).withMessage("Constraseña corta")]
 }
 
 

@@ -3,6 +3,9 @@ const router = express.Router()
 let controller = require("../controllers/usersControllers")
 const multer = require("multer")
 const path = require("path")
+const {validate} = require("../models/users")
+const access = require("../middlewares/access")
+
 
 const upload= multer({storage: multer.diskStorage({
     destination: (req,file,cb)=> cb(null, path.resolve(__dirname, "../../public/image/users")),
@@ -13,6 +16,8 @@ const upload= multer({storage: multer.diskStorage({
 router.get("/login", controller.login)
 router.get("/register", controller.register)
 router.post("/",[upload.any()],controller.save)
+
+router.post("/access",[validate] ,controller.access) 
 
 
 module.exports = router

@@ -7,31 +7,33 @@
     <main>
         <section class="principal">
             <section class="flex-container">
-                <form class="form-login" action="/" method="post"> 
+                <form class="form-login" action="/users/access" method="post"> 
 
-                    <fieldset class="form-fieldset">
+                    <!-- <fieldset class="form-fieldset">
                         <legend class="dn">Nombre de usuario</legend>
                         <label class="form-fieldset-input" for="usuario">Nombre de usuario</label>            
                         <input class="form-fieldset-input" type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" required="">
-                    </fieldset>
+                    </fieldset> -->
+                    <label class="" for="email">Email</label>
+                        <input class="form-fieldset-input" type="email" id="email" name="email" placeholder="Email" required="">
 
                     <fieldset class="form-fieldset">
                         <legend class="dn">Contraseña</legend>
                         <label class="form-fieldset-input" for="contrasena">Contraseña</label>
-                        <input class="form-fieldset-input" type="password" name="contrasena" id="contrasena"  placeholder="**********" required>
+                        <input class="form-fieldset-input" type="password" name="password" id="password"  placeholder="**********" required>
                         <a class="rcontraseña" href="rccontrasena.html">Recuperar tu contraseña</a>
                     </fieldset>
 
 
                     <div>
                         <label for="recordarUsuario">Recordar Usuario
-                            <input class="" type="Checkbox" name="recordarUsuario" id="recordarUsuario" required>
+                            <input class="" type="Checkbox" name="remember" id="remember" >
                             </label>                 
                     </div>
                     
                     <div>
                         <label for="recordarContraseña">Recordar Contraseña
-                            <input class="" type="Checkbox" name="recordarContraseña" id="recordarContraseña" required>
+                            <input class="" type="Checkbox" name="recordarContraseña" id="recordarContraseña" >
                             </label>                 
                     </div>   
 
@@ -54,7 +56,12 @@
                         <legend class="dn">Iniciar con facebook</legend>
                         <button class="buttons" type="submit"><i style="margin-right: 5px;" class="fab fa-facebook"></i>Iniciar con facebook</button>
                     </fieldset> 
-                     
+                    <% if (locals.errors && errors.email) { %>
+                        <p> <%= errors.email.msg  %> </p>
+                        <% } %>
+                        <% if (locals.errors && errors.password) { %>
+                        <p> <%= errors.password.msg  %> </p>
+                        <% } %>
                 </form>
             </section>      
         </section>

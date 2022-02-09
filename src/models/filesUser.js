@@ -6,6 +6,7 @@ const model={
     read: ()=> fs.readFileSync(model.file),
     write: data=> fs.writeFileSync(model.file, JSON.stringify(data,null,2)),
     all: ()=> JSON.parse(model.read()),
+    save: data => model.write(JSON.stringify(data, null,2)),
     search: (field, value) => model.all().find(element => element[field] == value),
     generate: data => Object({
         id: model.all().length == 0 ? 1 : model.all().pop().id + 1,

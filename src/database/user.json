@@ -64,5 +64,22 @@
     "image": [
       3
     ]
+  },
+  {
+    "id": 5,
+    "name": "Pedro Pablo",
+    "lastName": "Perez",
+    "fechaNac": "2009-02-24",
+    "nacionalidad": "Argentina",
+    "ciudad": "Cordoba",
+    "domicilio": "Calle Olivos 321",
+    "email": "pedro@gmail.com",
+    "rEmail": "pedro@gmail.com",
+    "usuario": "Pablito",
+    "password": "$2b$10$V1JIFY1vhDq4m2l2IYon4u9x79upNrjt1J3qhE31p4nxu/3wXdj0m",
+    "isAdmin": false,
+    "image": [
+      4
+    ]
   }
 ]
