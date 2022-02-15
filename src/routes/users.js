@@ -15,7 +15,7 @@ const upload= multer({storage: multer.diskStorage({
 //router.get("/", controller.index)
 router.get("/login", controller.login)
 router.get("/register", controller.register)
-router.post("/",[upload.any()],controller.save)
+router.post("/",[upload.any()],[validate] ,controller.save)
 
 router.post("/access",[validate] ,controller.access) 
 

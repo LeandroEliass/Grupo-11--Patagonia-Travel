@@ -10,6 +10,11 @@ main{
     animation-name: slidein ;  
 }
 
+.warningtxt{
+    text-align: left;
+    color: red;
+}
+
 @keyframes slidein {
     from {
       margin-left: 100%;
