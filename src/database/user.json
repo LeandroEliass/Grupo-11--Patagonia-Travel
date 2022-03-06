@@ -81,5 +81,22 @@
     "image": [
       4
     ]
+  },
+  {
+    "id": 6,
+    "name": "Javier",
+    "lastName": "Alonso",
+    "fechaNac": "2019-02-08",
+    "nacionalidad": "Argentina",
+    "ciudad": "CABA",
+    "domicilio": "AV. BOEDO 1212",
+    "email": "javier@patagoniatravel.com",
+    "rEmail": "javier@patagoniatravel.com",
+    "usuario": "Javier",
+    "password": "$2b$10$J7KpTb/0YJLtgvB7LlXBm./z8nLxISHiONzqDXYZ/SS2z57JT6a9K",
+    "isAdmin": true,
+    "image": [
+      5
+    ]
   }
 ]

@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const file  = require("./filesUser")
 const bcrypt  = require("bcrypt")
-const {body}= require("express-validator")
+const validations= require("express-validator")
 
 const model={
     file:path.resolve(__dirname,"../database","user.json"),
@@ -33,8 +33,11 @@ const model={
         return user
     },
     validate:[
-        body("email").isEmail().withMessage("email incorrecto"),
-        body("password").isLength({ min: 5}).withMessage("Constraseña corta")]
+        validations.body("email").isEmail().withMessage("email incorrecto").custom(value => {
+            let search = model.search("email", value);
+            return search ? Promise.reject("Email used") : Promise.resolve()
+        }),
+        validations.body("password").isLength({ min: 5}).withMessage("Contraseña corta")]
 }
 
 
