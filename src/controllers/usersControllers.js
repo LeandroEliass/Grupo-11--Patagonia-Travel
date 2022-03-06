@@ -49,20 +49,26 @@ const controller ={
 
     },
     save: (req,res)=> {
-        let errors = validator.validationResult(req)
-        if (errors.isEmpty()) {
-            req.body.files = req.files
-            let userRegistred = user.create(req.body)
-            console.log("todo");
-            return res.redirect("/users/login",{styles: ["login"]})
-        } else{
-            res.render("./users/register",{styles: ["register"]},{
-                errors: errors.array(),
-                old: req.body
-            })
-            console.log("se detecto error");
-            console.log(errors);
-        }
+        
+    let errors = validator.validationResult(req)
+    let exist =user.search("email", req.body)
+    if (!errors.isEmpty()) {
+           return res.render("./users/register",{
+                errors: errors.mapped(),
+                old: req.body 
+            })}
+    if(exist){
+        return res.render("user/register ",{
+            errors:{
+                email:{
+                    msg: "email is registerd"
+                        }
+                    }
+                })
+            }
+        let userRegistred = user.create(req.body)
+    
+            return res.redirect("/users/login")
     }
 }
 

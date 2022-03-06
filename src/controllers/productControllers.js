@@ -1,10 +1,18 @@
 let fs = require("fs")
 const product = require("../models/products")
 const file= require("../models/files")
+let db = require("../database/models")
+const sequelize = db.sequelize
 
 const controller ={
-    products: (req,res)=>res.render("./products/list",{styles:["list"],
-            products:product.all().map(p=> Object({...p, image: file.search("id", p.image)}))}),
+    products: (req,res)=>
+    db.Product.findAll()
+    .then(function(product){
+        return res.send(product)
+       /*  return res.render("./products/lista",{productos:productos}) */
+    })
+    .catch(error=>res.send(error)), /* res.render("./products/list",{styles:["list"],
+            products:product.all().map(p=> Object({...p, image: file.search("id", p.image)}))}), */
     productDetail: (req,res)=> {res.render("./products/productDetail",{styles: ["productDetail"],
      /* products:product.all().map(p=> Object({...p, image: file.search("id", p.image)})) */})},
     productCar: (req,res)=> {res.render("./products/productCar",{styles: ["productCar"]})},

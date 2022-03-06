@@ -16,17 +16,9 @@
                     <fieldset class="form-fieldset">
                         <legend class="dn">Contraseña</legend>
                         <label class="form-fieldset-input" for="contrasena">Contraseña</label>
-                        <input class="form-fieldset-input" type="password" name="password" id="password"  placeholder="**********" 
+                        <input class="form-fieldset-input" type="password" name="password" id="password"  placeholder="**********" >
                         <a class="rcontraseña" href="rccontrasena.html">Recuperar tu contraseña</a>
                     </fieldset>
-
-                <% if (locals.errors && errors.email) { %>
-                    <p class = "warningtxt">! <%= errors.email.msg  %> </p>
-                    <% } %>
-                    <% if (locals.errors && errors.password) { %>
-                    <p class = "warningtxt">! <%= errors.password.msg  %> </p>
-                    <% } %>
-
                     <div>
                         <label for="recordarUsuario">Recordar Usuario
                             <input class="" type="Checkbox" name="remember" id="remember" >
@@ -35,7 +27,7 @@
                     
                     <div>
                         <label for="recordarContraseña">Recordar Contraseña
-                            <input class="" type="Checkbox" name="recordarContraseña" id="recordarContraseña" >
+                            <input class="" type="checkbox" name="recordarContraseña" id="recordarContraseña" >
                             </label>                 
                     </div>   
 
@@ -48,7 +40,7 @@
                         <legend class="dn">Registrarse</legend>
                         <a class="buttons" href="/users/register">Registrarse</a>
                     </fieldset> 
-
+<!-- 
                     <fieldset class="form-fieldset-buttons">
                         <legend class="dn">Iniciar con google</legend>
                         <button class="buttons" type="submit"><i style="margin-right: 5px;" class="fa-brands fa-google"></i>Iniciar con google</button>
@@ -57,7 +49,14 @@
                     <fieldset class="form-fieldset-buttons">
                         <legend class="dn">Iniciar con facebook</legend>
                         <button class="buttons" type="submit"><i style="margin-right: 5px;" class="fab fa-facebook"></i>Iniciar con facebook</button>
-                    </fieldset> 
+                    </fieldset>  -->
+                    <% if (locals.errors && errors.email) { %>
+                        <p class = "warningtxt">! <%= errors.email.msg  %> </p>
+                        <% } %>
+                        <% if (locals.errors && errors.password) { %>
+                        <p class = "warningtxt">! <%= errors.password.msg  %> </p>
+                        <% } %>
+    
                 </form>
             </section>      
         </section>

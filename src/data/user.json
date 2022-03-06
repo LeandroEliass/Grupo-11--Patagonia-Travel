@@ -98,5 +98,20 @@
     "image": [
       5
     ]
+  },
+  {
+    "id": 7,
+    "name": "Elias",
+    "lastName": "Brian",
+    "fechaNac": "2018-02-06",
+    "nacionalidad": "Argentina",
+    "ciudad": " Salta",
+    "domicilio": " Calle 2",
+    "email": "elias@patagoniatravel.com",
+    "rEmail": "elias@patagoniatravel.com",
+    "usuario": "Elias",
+    "password": "$2b$10$TLIyo5zewWWqSrxjKDJLE.eIPzCR59rUL2JAKd0ga9UzcS.oVW3IC",
+    "isAdmin": true,
+    "image": []
   }
 ]

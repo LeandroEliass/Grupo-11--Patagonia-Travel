@@ -3,6 +3,7 @@ const fs = require("fs");
 const file  = require("./filesUser")
 const bcrypt  = require("bcrypt")
 const validations= require("express-validator")
+const {body} = require("express-validator")
 
 const model={
     file:path.resolve(__dirname,"../database","user.json"),

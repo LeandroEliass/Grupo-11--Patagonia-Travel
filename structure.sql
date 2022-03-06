@@ -3,68 +3,78 @@ USE patagoniaTravel_db;
 
 
 
-CREATE TABLE nacionalidad(
+CREATE TABLE nacionalities(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   pais VARCHAR(100) NOT NULL
+   country VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE ciudad(
+CREATE TABLE cities(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   nombre VARCHAR(100) NOT NULL
+   city VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE categorias(
+CREATE TABLE categories(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   nombre VARCHAR(100) NOT NULL
+   category VARCHAR(100) NOT NULL
 );
-CREATE TABLE baños(
+CREATE TABLE baths(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   tipos VARCHAR(100) NOT NULL
+   bath VARCHAR(100) NOT NULL
 );
-CREATE TABLE servicios(
+CREATE TABLE services(
    id INT PRIMARY KEY AUTO_INCREMENT,
-   tipos VARCHAR(100) NOT NULL
+   service VARCHAR(100) NOT NULL
+);
+CREATE TABLE rooms(
+   id INT PRIMARY KEY AUTO_INCREMENT,
+   room VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE imagen(
+
+CREATE TABLE images(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(250)
+    url VARCHAR(250)
 );
-CREATE TABLE usuarios (
+CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
-    fecha_nacimiento DATE,
-    id_nacionalidad SMALLINT,
-    id_ciudad SMALLINT,
+    date_birth DATE,
+    id_nacionality INT,
+    id_city INT,
     admin BOOLEAN,
     email VARCHAR(200) NOT NULL,
     password VARCHAR(255) NOT NULL,
-    id_imagen INT,
-    FOREIGN KEY (id_nacionalidad) REFERENCES nacionalidad(id),
-    FOREIGN KEY (id_ciudad) REFERENCES ciudad(id),
-    FOREIGN KEY (id_imagen) REFERENCES imagen(id)
+    id_image INT,
+    FOREIGN KEY (id_nacionality) REFERENCES nacionalities(id),
+    FOREIGN KEY (id_city) REFERENCES cities(id),
+    FOREIGN KEY (id_image) REFERENCES images(id)
 );
-CREATE TABLE productos (
+CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(200) NOT NULL,
-    id_ciudad SMALLINT,
-    dirección TEXT NOT NULL,
-    id_categoria SMALLINT,
-    capacidad_personas SMALLINT NOT NULL,
-    id_baños INT NOT NULL,
-    descripcion TEXT NOT NULL,
+    name VARCHAR(200) NOT NULL,
+    id_city INT,
+    address TEXT NOT NULL,
+    id_category INT,
+    capacity INT NOT NULL,
+    id_bath INT NOT NULL,
+    id_room INT NOT NULL,
+    surface INT,
+    description TEXT NOT NULL,
     price INT NOT NULL,
-    id_imagen INT,
-    FOREIGN KEY (id_ciudad) REFERENCES ciudad(id),
-    FOREIGN KEY (id_imagen) REFERENCES imagen(id)
+    id_image INT,
+    FOREIGN KEY (id_city) REFERENCES cities(id),
+    FOREIGN KEY (id_image) REFERENCES images(id),
+    FOREIGN KEY (id_category) REFERENCES categories(id),
+    FOREIGN KEY (id_room) REFERENCES rooms(id),
+    FOREIGN KEY (id_bath) REFERENCES baths(id)
 );
-CREATE TABLE servicios_productos(
+CREATE TABLE services_products(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    producto_id INT,
-    servicio_id INT,
-    FOREIGN KEY (producto_id) REFERENCES productos(id),
-    FOREIGN KEY (servicio_id) REFERENCES servicios(id)
+    product_id INT,
+    service_id INT,
+    FOREIGN KEY (product_id) REFERENCES products(id),
+    FOREIGN KEY (service_id) REFERENCES services(id)
 );
 
 
