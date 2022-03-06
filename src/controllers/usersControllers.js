@@ -49,10 +49,20 @@ const controller ={
 
     },
     save: (req,res)=> {
-        req.body.files = req.files
-        let userRegistred = user.create(req.body)
-
-        return res.redirect("/users/login")
+        let errors = validator.validationResult(req)
+        if (errors.isEmpty()) {
+            req.body.files = req.files
+            let userRegistred = user.create(req.body)
+            console.log("todo");
+            return res.redirect("/users/login",{styles: ["login"]})
+        } else{
+            res.render("./users/register",{styles: ["register"]},{
+                errors: errors.array(),
+                old: req.body
+            })
+            console.log("se detecto error");
+            console.log(errors);
+        }
     }
 }
 

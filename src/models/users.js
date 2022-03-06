@@ -33,11 +33,15 @@ const model={
         return user
     },
     validate:[
-        validations.body("email").isEmail().withMessage("email incorrecto").custom(value => {
-            let search = model.search("email", value);
-            return search ? Promise.reject("Email used") : Promise.resolve()
-        }),
-        validations.body("password").isLength({ min: 5}).withMessage("Contraseña corta")]
+        body("name").notEmpty().isLength({ min: 3, max:16}).withMessage("Debe ingresar un nombre (entre 3 y 16 caracteres)"),
+        body("lastName").notEmpty().isLength({ min: 3, max:16}).withMessage("Debe ingresar un apellido (entre 3 y 16 caracteres)"),
+        body("fechaNac").isDate().withMessage("Ingrese su fecha de nacimiento"),
+        body("ciudad").notEmpty().isLength({ min: 3, max:16}).withMessage("Debe ingresar una ciudad (entre 3 y 16 caracteres)"),
+        body("domicilio").notEmpty().isLength({ min: 3, max:16}).withMessage("Debe ingresar un domicilio (entre 3 y 16 caracteres)"),
+        body("name").notEmpty().isLength({ min: 3, max:16}).withMessage("Debe ingresar un usuario (entre 3 y 16 caracteres)"),
+        body("email").isEmail().withMessage("email incorrecto"),
+        body("rEmail").isEmail().withMessage("email incorrecto"),
+        body("password").isLength({ min: 5,max:16}).withMessage("La contraseña debe comprender entre 5 y 16 caracteres")],
 }
 
 

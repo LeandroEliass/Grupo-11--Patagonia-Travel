@@ -59,6 +59,11 @@ body{
     justify-content: space-between;
 }
 
+.warningtxt{
+    text-align: center;
+    color: red;
+}
+
 .form-fieldset-input{
     display: flex;
     flex: 1 0.6 auto;
