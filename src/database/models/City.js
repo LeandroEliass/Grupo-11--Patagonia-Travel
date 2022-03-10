@@ -13,19 +13,20 @@ module.exports= function(sequelize, dataTypes){
     };
     let config={
         timestamps:false,
-        tableName: "cities"
+        tableName: "cities",
+        underscored:true
     }
 const City = sequelize.define(alias,cols,config);
 
 City.associate=function(models){
-City.hasMany(models.user,{
+City.hasMany(models.User,{
     as: "users",
-    foreingKey: "id_city"
+    foreingKey: "city_id"
 })
-/* City.hasMany(models.Product,{
+ City.hasMany(models.Product,{
     as: "products",
     foreingKey: "city_id"
-}) */
+}) 
 }
 
 return City

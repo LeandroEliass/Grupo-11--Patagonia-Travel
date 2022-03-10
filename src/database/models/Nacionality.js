@@ -1,5 +1,5 @@
 module.exports= function(sequelize, dataTypes){
-    let alias = "nacionality";
+    let alias = "Nacionality";
     let cols ={
         id:{
             type: dataTypes.INTEGER, 
@@ -13,13 +13,14 @@ module.exports= function(sequelize, dataTypes){
     };
     let config={
         timestamps:false,
-        tableName: "nacionalities"
+        tableName: "nacionalities",
+        underscored:true
     }
 const nacionality = sequelize.define(alias,cols,config);
 nacionality.associate=function(models){
-    nacionality.hasMany(models.user,{
+    nacionality.hasMany(models.User,{
         as: "users",
-        foreingKey: "id_nacionality"
+        foreingKey: "nacionality_id"
     })}
 return nacionality
 }

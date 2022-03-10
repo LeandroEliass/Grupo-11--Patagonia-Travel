@@ -2,7 +2,7 @@ module.exports= function(sequelize, dataTypes){
     let alias = "Product";
     let cols ={
         id:{
-            type: dataTypes.INTEGER, 
+            type: dataTypes.INTEGER.UNSIGNED, 
             autoIncrement:true, 
             primaryKey:true
         },
@@ -10,15 +10,15 @@ module.exports= function(sequelize, dataTypes){
             type: dataTypes.STRING,
             allowNull: false
         },
-        /* id_city:{
+       city_id:{
             type: dataTypes.INTEGER,
             allowNull: false
-        }, */
+        }, 
         address:{
             type: dataTypes.STRING,
             allowNull: false
-        },
-        id_category:{
+        }, 
+        category_id:{
             type: dataTypes.INTEGER,
             allowNull: false
         },
@@ -26,11 +26,11 @@ module.exports= function(sequelize, dataTypes){
             type: dataTypes.INTEGER,
             allowNull: false
         },
-        id_bath:{
+        bath_id:{
             type: dataTypes.INTEGER,
             allowNull: false
         },
-        id_room:{
+        room_id:{
             type: dataTypes.INTEGER,
             allowNull: false
         },
@@ -46,46 +46,49 @@ module.exports= function(sequelize, dataTypes){
             type: dataTypes.INTEGER,
             allowNull: false
         },
-        id_image:{
+        image_id:{
             type: dataTypes.INTEGER,
-            allowNull: false
-        },
-        city_id: dataTypes.BIGINT(10)
+            
+        } 
+        
     };
     let config={
         timestamps:false,
-        tableName: "products"
+        tableName: "products",
+        underscored:true
     }
 const Product = sequelize.define(alias,cols,config);
 
 Product.associate=models=>{
-    /*Product.belongsTo(models.City,{
+    Product.belongsTo(models.City,{
         as: "city",
         foreingKey: "city_id"
-    })*/
+    })
     Product.belongsTo(models.Category,{
         as: "category",
-        foreingKey: "id_category"
-    })/*
-    product.belongsTo(models.bath,{
+        foreingKey: "category_id"
+    })
+    
+    Product.belongsTo(models.Bath,{
         as: "bath",
-        foreingKey: "id_bath"
+        foreingKey: "bathId"
     })
-    product.belongsTo(models.room,{
+    Product.belongsTo(models.Room,{
         as: "room",
-        foreingKey: "id_room"
+        foreingKey: "room_id"
     })
-    product.belongsTo(models.image,{
+    Product.belongsTo(models.Image,{
         as: "image",
-        foreingKey: "id_image"
+        foreingKey: "image_id"
     })
-    product.belongsToMany(models.service,{
+    Product.belongsToMany(models.Service,{
         as:"services",
         through: "services_products",
         foreingKey: "product_id",
-        otherKey:"service_id"
-    }) */
+        otherKey:"service_id",
+        timestamps:false
+    }) }
 
- } 
+ 
 return Product
 }

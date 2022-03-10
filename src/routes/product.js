@@ -8,7 +8,7 @@ const upload= multer({storage: multer.diskStorage({
     destination: (req,file,cb)=> cb(null, path.resolve(__dirname, "../../upload")),
     filename: (req,file,cb)=> cb(null,file.fieldname + "-"+ Date.now() + path.extname(file.originalname))
 })});
-
+    
 router.get("/", controller.products)
 router.get("/productCar", controller.productCar)
 router.get("/productCreate", controller.productCreate)

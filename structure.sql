@@ -40,41 +40,41 @@ CREATE TABLE users (
     name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
     date_birth DATE,
-    id_nacionality INT,
-    id_city INT,
+    nacionalityId INT,
+    cityId INT,
     admin BOOLEAN,
-    email VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL, 
     password VARCHAR(255) NOT NULL,
-    id_image INT,
-    FOREIGN KEY (id_nacionality) REFERENCES nacionalities(id),
-    FOREIGN KEY (id_city) REFERENCES cities(id),
-    FOREIGN KEY (id_image) REFERENCES images(id)
+    imageId INT,
+    FOREIGN KEY (nacionalityId) REFERENCES nacionalities(id),
+    FOREIGN KEY (cityId) REFERENCES cities(id),
+    FOREIGN KEY (imageId) REFERENCES images(id)
 );
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(200) NOT NULL,
-    id_city INT,
+    cityId INT,
     address TEXT NOT NULL,
-    id_category INT,
+    categoryId INT,
     capacity INT NOT NULL,
-    id_bath INT NOT NULL,
-    id_room INT NOT NULL,
+    bathId INT NOT NULL,
+    roomId INT NOT NULL,
     surface INT,
     description TEXT NOT NULL,
     price INT NOT NULL,
-    id_image INT,
-    FOREIGN KEY (id_city) REFERENCES cities(id),
-    FOREIGN KEY (id_image) REFERENCES images(id),
-    FOREIGN KEY (id_category) REFERENCES categories(id),
-    FOREIGN KEY (id_room) REFERENCES rooms(id),
-    FOREIGN KEY (id_bath) REFERENCES baths(id)
+    imageId INT,
+    FOREIGN KEY (cityId) REFERENCES cities(id),
+    FOREIGN KEY (imageId) REFERENCES images(id),
+    FOREIGN KEY (categoryId) REFERENCES categories(id),
+    FOREIGN KEY (roomId) REFERENCES rooms(id),
+    FOREIGN KEY (bathId) REFERENCES baths(id)
 );
 CREATE TABLE services_products(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    product_id INT,
-    service_id INT,
-    FOREIGN KEY (product_id) REFERENCES products(id),
-    FOREIGN KEY (service_id) REFERENCES services(id)
+    productId INT,
+    serviceId INT,
+    FOREIGN KEY (productId) REFERENCES products(id),
+    FOREIGN KEY (serviceId) REFERENCES services(id)
 );
 
 

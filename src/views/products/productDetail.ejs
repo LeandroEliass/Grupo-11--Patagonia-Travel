@@ -35,16 +35,14 @@ Es el destino más visitado de la Patagonia y uno de los destinos más visitados
     <div class= "flexListaContenedor">
       
         <ul class="flexLista">
-            <h3><%= product.categoria  %>  <%= product.name %></h3>
+            <h3><%= product.category.category%>  <%= product.name %></h3>
             <h4>Servicios del hospedaje</h4>
-            <li> Habitación <%= product.habitaciones %>  para <%= product.capacidad %>  personas  <i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i></li>
-            <% if (product.bañoPrivado) { %>
-                <li> Baño Privado </li>
-               <% } %>
-               <% if (product.bañoCompartido) { %>
-                <li> Baño Compartido </li>
-               <% } %>
-            <% if (product.garage) { %>
+            <li> Habitación <%= product.room.room %>  para <%= product.capacity %>  personas  <i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i></li>
+            <li> Baño <%= product.bath.bath %>  </li>
+            <% for( let i = 0; i < product.services.length; i++ ) { %>
+                <li><%= product.services[i].service %> </li>
+            <% } %>
+            <!-- <% if (product.garage) { %>
             <li> Estacionamiento privado <i class="fas fa-bus"></i> </li>
            <% } %>
            <% if (product.television) { %>
@@ -62,7 +60,7 @@ Es el destino más visitado de la Patagonia y uno de los destinos más visitados
            <% if (product.climatizacion) { %> 
             <li>Aire condicionado y calefacción<i class="fas fa-thermometer-empty"></i></li>
            <% } %>
-           <li><%= product.description %> <i class="fas fa-comment-dots"></i> </li>
+           <li><%= product.description %> <i class="fas fa-comment-dots"></i> </li> -->
            <br>
 
            <h4 class="reservaTitle"> RESERVA por tan solo $<%= product.price %> por noche</h4>
@@ -78,12 +76,12 @@ Es el destino más visitado de la Patagonia y uno de los destinos más visitados
     <div class= flexCabanaContenedor>
         
            
-        <% if (product.image) { %>
-            <picture> <img src="/upload/<%= imagen%>" class= "flexCabana"></picture>
-        <% } %>
-            
-            
-        
+            <% if (product.image_id != null) { %>
+                <picture> <img src="../../upload/<%= product.image.url %>" class= "flexCabana"></picture>
+            <% } else { %>
+                <picture> <img src="../../upload>" class= "flexCabana"></picture>
+                <% } %> 
+         
       
     </div>
 </section>

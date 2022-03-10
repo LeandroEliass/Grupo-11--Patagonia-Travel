@@ -1,5 +1,5 @@
 module.exports= function(sequelize, dataTypes){
-    let alias = "user";
+    let alias = "User";
     let cols ={
         id:{
             type: dataTypes.INTEGER, 
@@ -18,11 +18,11 @@ module.exports= function(sequelize, dataTypes){
             type: dataTypes.STRING,
             allowNull: false
         },
-        id_nacionality:{
+        nacionalityId:{
             type: dataTypes.INTEGER,
             allowNull: false
         },
-        id_city:{
+        cityId:{
             type: dataTypes.INTEGER,
             allowNull: false
         },
@@ -39,29 +39,30 @@ module.exports= function(sequelize, dataTypes){
             type: dataTypes.STRING,
             allowNull: false
         },
-        id_image:{
+        imageId:{
             type: dataTypes.INTEGER,
             allowNull: false
         }
     };
     let config={
         timestamps:false,
-        tableName: "users"
+        tableName: "users",
+        underscored:true
     }
 const user = sequelize.define(alias,cols,config);
 
 user.associate=function(models){
-    user.belongsTo(models.nacionality,{
+    user.belongsTo(models.Nacionality,{
         as: "nacionality",
-        foreingKey: "id_nacionality"
+        foreingKey: "nacionalityId"
     })
     user.belongsTo(models.City,{
         as: "city",
-        foreingKey: "id_city"
+        foreingKey: "cityId"
     })
-    user.belongsTo(models.image,{
+    user.belongsTo(models.Image,{
         as: "image",
-        foreingKey: "id_image"
+        foreingKey: "imageId"
     })
 
 }

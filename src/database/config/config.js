@@ -2,7 +2,7 @@ module.exports={
   "development": {
     "username": "root",
     "password": null,
-    "database": "patagoniaTravel_db",
+    "database": "patagoniatravel_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

@@ -7,38 +7,26 @@
     <main>
         <section class="principal">
             <section class="flex-container" >
-                <form action="/products/<%= product.id %>?m=PUT" method="post" class="form-register">
+                <form action="/products/?m=PUT" method="post" class="form-register">
         <fieldset class="form-fieldset">
             <label name="name">Nombre</label>
             <input type="text" name="name" id="name" value="<%= product.name %>">
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="ciudad">Ciudad</label>
-        <input type="text" name="ciudad" id="ciudad" value="<%= product.ciudad %>">
+        <input type="text" name="ciudad" id="ciudad" value="<%= product.city.city %>">
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="direccion">Dirección</label>
-        <input type="text" name="direccion" id="direccion" value="<%= product.direccion %>">
+        <input type="text" name="direccion" id="direccion" value="<%= product.address %>">
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="categoria">Categoría</label>
-        <input list="categoria" name="categoria"  value="<%= product.categoria %>">
-        <datalist id="categoria" name="categoria">
-            <option value="Hotel">Hotel</option>
-            <option value="Hostal">Hostal</option>
-            <option value="Cabañas">Cabañas</option>
-            <option value="Complejo">Complejo</option>
-            
-        </datalist>
-</fieldset>
-
-<fieldset class="form-fieldset">
-    <label name="cantHab">N° Habitaciones</label>
-    <input type="number" name= "cantHab" id="cantHab" min="1" value="<%= product.cantHab %>">
+        <input list="categoria" name="categoria"  value="<%= product.category.category %>">
 </fieldset>
 <fieldset class="form-fieldset">
     <label name="tipoHabitacion">Tipo de Habitación</label>
-    <input list="habitacion" name="habitaciones" id="habitaciones" value="<%= product.habitaciones %>">
+    <input list="habitacion" name="habitaciones" id="habitaciones" value="<%= product.room.room %>">
         <option value="Single"></option>
         <option value="Doble/ Matrimonial"></option>
         <option value="Triple"></option>
@@ -47,13 +35,14 @@
     </datalist>
     <fieldset class="form-fieldset">
         <label name="capacidad">Max. Ocupantes</label>
-        <input type="number" name= "capacidad" id="capacidad" min="1" value="<%= product.capacidad %>">
+        <input type="number" name= "capacidad" id="capacidad" min="1" value="<%= product.capacity %>">
     </fieldset>
 </fieldset>
 <fieldset class="form-fieldset">
-    <label name="Baños">Baños</label><br>
-    <input type="checkbox" name="bañoPrivado" id="bañoPrivado" <%= product.bañoPrivado ? "checked":null  %> > Privado <br>
-    <input type="checkbox" name="bañoCompartido" id="bañoCompartido" <%= product.bañoCompartido ? "checked":null  %>> Compartido
+    <label name="bath">Baños</label><br>
+        <input value="<%= product.bath.bath%> ">
+            
+
 </fieldset>
 <fieldset class="form-fieldset">
     <label name="servicios">Servicios</label> <br>

@@ -1,5 +1,5 @@
 module.exports= function(sequelize, dataTypes){
-    let alias = "image";
+    let alias = "Image";
     let cols ={
         id:{
             type: dataTypes.INTEGER, 
@@ -13,17 +13,18 @@ module.exports= function(sequelize, dataTypes){
     };
     let config={
         timestamps:false,
-        tableName: "images"
+        tableName: "images",
+        underscored:true
     }
 const image = sequelize.define(alias,cols,config);
 image.associate=function(models){
-    image.hasMany(models.user,{
+    image.hasMany(models.User,{
         as: "users",
-        foreingKey: "id_image"
-    })}
-    /* image.hasMany(models.product,{
+        foreingKey: "image_id"
+    })
+    image.hasMany(models.Product,{
             as: "products",
             foreingKey: "id_image"
-        })} */
+        })}
 return image
 }
