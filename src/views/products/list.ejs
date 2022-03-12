@@ -7,14 +7,13 @@
             <% for (i=0;i<product.length; i++) { %> 
                 <li>
                   <a class="listHospedajes" href="/products/<%= product[i].id %> "> 
-                     <%= product[i].name %> </li>
-                   <% } %> 
-                </a></ol>
-                    <% for( let index = 0; index < image.length; index++ ) { %>
-                        <picture> <img src="../../upload/<%= image[index].url %> "> </picture>
+                    <%= product[i].category.category %>  <%= product[i].name %> </li>
+                    <% if (product[i].image_id > 0 ) { %>
+                        <picture> <img src="../../upload/<%= product[i].image.url %> "> </picture>
                     <% } %>
-                        
-                  
+                    
+                    <% } %> 
+                </a></ol>           
         
             </section>
 

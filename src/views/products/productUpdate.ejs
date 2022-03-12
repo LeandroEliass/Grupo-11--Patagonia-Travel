@@ -7,59 +7,80 @@
     <main>
         <section class="principal">
             <section class="flex-container" >
-                <form action="/products/?m=PUT" method="post" class="form-register">
-        <fieldset class="form-fieldset">
+                <form action="/products/<%= product.id%>?m=PUT" method="post" class="form-register">
+        
+        
+                    <fieldset class="form-fieldset">
             <label name="name">Nombre</label>
-            <input type="text" name="name" id="name" value="<%= product.name %>">
+            <input type="text" name="name" id="name" value="<%= product.name%>">
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="ciudad">Ciudad</label>
-        <input type="text" name="ciudad" id="ciudad" value="<%= product.city.city %>">
+        <select name="city_id" id="" required>
+            <% city.forEach(city => { %>
+            <option value="<%= city.id %>" <% if (product.city.id == city.id) { %><%= 'selected' %><% }; %>><%= city.city %></option>
+            <% }); %>
+        </select>
+        <!-- <p><input type="number" name="city_id" id="" value="<%= product.city_id %>"></p> -->
     </fieldset>
     <fieldset class="form-fieldset">
-        <label name="direccion">Dirección</label>
-        <input type="text" name="direccion" id="direccion" value="<%= product.address %>">
+        <label name="address">Dirección</label>
+        <input type="text" name="address" id="address" value="<%= product.address %>">
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="categoria">Categoría</label>
-        <input list="categoria" name="categoria"  value="<%= product.category.category %>">
+        <select name="category_id" id="" required>
+            <% category.forEach(category => { %>
+            <option value="<%= category.id %>" <% if (product.category.id == category.id) { %><%= 'selected' %><% }; %>><%= category.category %></option>
+            <% }); %>
+        </select>
+        <!-- <p><input type="number" name="city_id" id="" value="<%= product.category_id %>"></p> -->
+        
 </fieldset>
 <fieldset class="form-fieldset">
     <label name="tipoHabitacion">Tipo de Habitación</label>
-    <input list="habitacion" name="habitaciones" id="habitaciones" value="<%= product.room.room %>">
-        <option value="Single"></option>
-        <option value="Doble/ Matrimonial"></option>
-        <option value="Triple"></option>
-        <option value="Cuadruple"></option>
-        <option value="Suite"></option>
-    </datalist>
+    <select name="room_id" id="" required>
+        <% room.forEach(room => { %>
+        <option value="<%= room.id %>" <% if (product.room.id == room.id) { %><%= 'selected' %><% }; %>><%= room.room %></option>
+        <% }); %>
+    </select>
+    <!-- <p><input type="number" name="city_id" id="" value="<%= product.room_id %>"></p> -->
+    
+</fieldset>
+    
     <fieldset class="form-fieldset">
-        <label name="capacidad">Max. Ocupantes</label>
-        <input type="number" name= "capacidad" id="capacidad" min="1" value="<%= product.capacity %>">
+        <label name="capacity">Max. Ocupantes</label>
+        <input type="number" name= "capacity" id="capacity" min="1" value="<%= product.capacity %>">
     </fieldset>
 </fieldset>
 <fieldset class="form-fieldset">
-    <label name="bath">Baños</label><br>
-        <input value="<%= product.bath.bath%> ">
-            
-
+    <label name="bath">Baños</label>
+    <select name="bath_id" id="" required>
+        <% bath.forEach(bath => { %>
+        <option value="<%= bath.id %>" <% if (product.bath.id == bath.id) { %><%= 'selected' %><% }; %>><%= bath.bath %></option>
+        <% }); %>
+    </select>
+    <!-- <p><input type="number" name="city_id" id="" value="<%= product.bath_id %>"></p> -->
+    
 </fieldset>
 <fieldset class="form-fieldset">
-    <label name="servicios">Servicios</label> <br>
-    <input type="radio" name="internet" id="internet" <%= product.internet ? "checked":null  %>> <h4>Wifi</h4><br>
-    <input type="radio" name="television" id="television" <%= product.television ? "checked":null  %>> > <h4>TV</h4><br>
-    <input type="radio" name="servicioHab" id="servicioHab" <%= product.servicioHab ? "checked":null  %>> ><h4>Servicio a la Habitación</h4><br>
-    <input type="radio" name="garage" id="garage"<%= product.garage ? "checked":null  %>>  > <h4>Estacionamiento</h4><br>
-    <input type="radio" name="climatizacion" id="climatizacion" <%= product.climatizacion ? "checked":null  %>> > <h4>Aire Acondicionado/ Estufas</h4><br>
-    <input type="radio" name="mascotas" id="mascotas" <%= product.mascotas ? "checked":null  %>> > <h4>Pet Friendly</h4><br>
+    <label name="service">Servicios</label> 
+        <% for(i=0; i<service.length; i++){ %>
+    <input type="checkbox" name="service_id" value="<%= service[i].id %>" <% if (service.id == service.id) { %><%= 'checked' %><% }; %>><%= service.service %>> <%= service[i].service %>
+     
+     <!-- <p><input type="number" name="service_id" id="" value="<%= service.id %>"></p> -->
+     <% } %>
+</fieldset>
+<fieldset class="form-fieldset">
+    
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="description">Descripción</label>
         <input type="" name="description" id="description" value="<%= product.description %>" > 
     </fieldset>
     <fieldset class="form-fieldset">
-        <label name="superficie">Medidas</label>
-        <input type="text" name="superficie" id="superficie" value="<%= product.superficie %>"> m2
+        <label name="surface">Medidas</label>
+        <input type="text" name="surface" id="surface" value="<%= product.surface %>"> m2
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="price">Precio</label>
@@ -67,7 +88,7 @@
     </fieldset>
     <fieldset class="form-fieldset"> 
         <label name="file">Fotos</label>
-        <input type="file" name="file" multiple >
+        <input type="file" name="file" multiple > <%= product.image_id %>
     </fieldset> 
     <fieldset class="form-fieldset-buttons">
         <legend class="dn">Botones de enviar</legend>
@@ -75,10 +96,10 @@
      
    
 </form>
-<form action="/products/?m=DELETE" method="post">
+<form action="/products/delete/<%= product.id %>?m=DELETE" method="post">
     <input type="hidden" > 
     
-<button id="deleteButon" class="buttons" type="submit" name="id" value="<%= product.id  %> ">Eliminar </button></fieldset>
+<button id="deleteButon" class="buttons" type="submit" name="id" value="">Eliminar </button></fieldset>
 </form> 
 
     

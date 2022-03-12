@@ -13,7 +13,7 @@
             <input type="text" name="name" id="name">
     </fieldset>
     <fieldset class="form-fieldset">
-        <label name="ciudad">Ciudad</label>
+        <label name="city">Ciudad</label>
         <select name="city_id">
             <% for(i=0; i<city.length; i++){ %> 
             
@@ -68,13 +68,16 @@
     
 </fieldset>
 <fieldset class="form-fieldset">
-    <label name="service">Servicios</label> <br>
-    <input type="radio" name="TV" id="TV"> <h4>Wifi</h4><br>
-    <input type="radio" name="Climatización" id="Climatización" v> <h4>TV</h4><br>
+    <label name="service">Servicios</label> 
+        <% for(i=0; i<service.length; i++){ %>
+    <input type="checkbox" name="service_id" value="<%= service[i].id %>" > <%= service[i].service %>
+    <!-- <p><input type="number" name="service_id" id="" value="<%= service[i].id %>"></p> -->
+
+    <% } %><!-- 
     <input type="radio" name="Servicio a la Habitación" id="Servicio a la Habitación" ><h4>Servicio a la Habitación</h4><br>
     <input type="radio" name="Garage" id="Garage" > <h4>Estacionamiento</h4><br>
     <input type="radio" name="PetFriendly" id="PetFriendly" > <h4>Aire Acondicionado/ Estufas</h4><br>
-    <input type="radio" name="Internet" id="Internet" > <h4>Pet Friendly</h4><br>
+    <input type="radio" name="Internet" id="Internet" > <h4>Pet Friendly</h4><br> -->
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="description">Descripción</label>
