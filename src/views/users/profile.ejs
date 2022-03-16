@@ -1,0 +1,17 @@
+<%- include ("../partials/head.ejs") %> 
+    <body> 
+        <%- include ("../partials/header.ejs") %> 
+        <main>
+
+    <h1>Hola <%= user.name %>  <%= user.last_name %></h1>
+    <p><%= user.email %> </p>
+    <picture><img src=""></picture>
+    <form action="/users/logout" method="post">
+<button type="submit">Cerrar sesión</button>
+        <a href="/users/edit/<%=user.id%>">Editar datos</a>
+
+    </form>
+
+</main>
+<%- include ("../partials/footer.ejs") %> 
+</body>

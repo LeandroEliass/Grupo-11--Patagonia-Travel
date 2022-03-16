@@ -1,0 +1,120 @@
+
+    <%- include ("../partials/head.ejs") %> 
+    <body> 
+        <%- include ("../partials/header.ejs") %> 
+    
+        <main>
+            <section class="principal">
+                <section class="flex-container">
+                    
+                    
+                    <form class="form-register"  action="/users/<%= user.id %>/update?m=PUT" method="post">           
+                        <fieldset class="form-fieldset">
+                            <legend class="dn">Nombre</legend>
+                            <label class="" for="nombreCompleto">Nombre</label>
+                            <input class="form-fieldset-input" type="text" id="name" name="name" value=" <%= user.name %>  ">
+                            <% if (locals.errors && errors.name) { %>
+                            
+                                <p class="text-danger"> <%= errors.name.msg  %> </p>
+                                
+                                   <% } %>
+                        </fieldset>
+    
+                        <fieldset class="form-fieldset">
+                            <legend class="dn">Apellido</legend>
+                            <label class="" for="apellido">Apellido</label>
+                            <input class="form-fieldset-input" type="text" id="lastName" name="lastName" value=" <%= user.last_name %>  ">
+                            <% if (locals.errors && errors.lastName) { %>
+                            
+                                <p class="text-danger"> <%= errors.lastName.msg  %> </p>
+                                
+                                   <% } %>
+                        </fieldset>
+    
+                        <fieldset class="form-fieldset">
+                            <legend class="dn">Fecha de Nacimiento</legend>
+                            <label for="fecha">Fecha de Nacimiento</label>
+                            <input class="form-fieldset-input" type="date" id="fechaNac" name="fechaNac" value=" <%= user.date_birth %>  ">
+                            <% if (locals.errors && errors.fechaNac) { %>
+                            
+                                <p class="text-danger"> <%= errors.fechaNac.msg  %> </p>
+                                
+                                   <% } %>
+                        </fieldset>
+    
+                        <!-- <fieldset class="form-fieldset">
+                            <legend class="dn">Email</legend>
+                            <label class="" for="email">Email</label>
+                            <input class="form-fieldset-input" type="email" id="email" name="email" value=" <%= user.email %>  " >
+                            <% if (locals.errors && errors.email) { %>
+                            
+                                <p class="text-danger"> <%= errors.email.msg  %> </p>
+                                
+                                   <% } %>
+                        </fieldset>
+    
+                        <fieldset class="form-fieldset">
+                            <legend class="dn">Repetir Email</legend>
+                            <label class="" for="rEmail">Repetir Email</label>
+                            <input class="form-fieldset-input" type="email" id="rEmail" name="rEmail" value=" <%= user.rEmail %>  " >
+                            <% if (locals.errors && errors.rEmail) { %>
+                            
+                                <p class="text-danger"> <%= errors.rEmail.msg  %> </p>
+                                
+                                   <% } %>
+                        </fieldset> -->
+    
+                        <fieldset class="form-fieldset">
+                            <legend class="dn">Contraseña</legend>
+                            <label for="clave">Contraseña</label>
+                            <input class="form-fieldset-input" type="password" name="password" id="password"  placeholder="**********" >
+                            <% if (locals.errors && errors.password) { %>
+                            
+                                <p class="text-danger"> <%= errors.password.msg  %> </p>
+                                
+                                   <% } %>
+                        </fieldset>
+    
+                        <fieldset class="form-fieldset">
+                            <legend class="dn">Confirmar Contraseña</legend>
+                            <label for="clave">Confirmar Contraseña</label>
+                            <input class="form-fieldset-input" type="password" name="rPassword" id="rPassword" placeholder="**********" >
+                        </fieldset>
+    
+                        <div>
+                            <label for="terminosCodiciones">Terminos y Codiciones
+                                <input class="" type="Checkbox" name="terminosCodiciones" id="terminos"  >
+                                </label>                 
+                        </div>
+    
+                        <div>
+                            <label  for="ofertasDescuentos">Desea recibir noticias vía email
+                                <input class="" type="Checkbox" name="ofertasDescuentos" id="ofertas"  >
+                                </label>
+                        </div>               
+    
+                        <fieldset class="form-fieldset">
+                            <legend class="dn">Foto del Usuario</legend>
+                            <label for="foto" name="file">Foto del Usuario</label>
+                            
+                             
+                            
+                            <input class="form-fieldset-input" type="file" name="file" accept=".jpeg, .png, .svg " id="file"  >
+                           
+                        </fieldset>
+    
+                        <fieldset class="form-fieldset-buttons">
+                            <legend class="dn">Botones del Formulario</legend>
+                            <button class="buttons" type="submit">Actualizar</button>
+                            <button class="buttons" type="reset">Limpiar</button>
+                        </fieldset> 
+                             
+                    </form>
+                    
+                </section>      
+            </section>
+    
+            <%- include ("../partials/footer.ejs") %> 
+    </body>
+    
+    

@@ -4,6 +4,7 @@ const app = express();
 const session= require("express-session")
 const method = require("method-override")
 const cookie= require("cookie-parser")
+const userLogged = require("./middlewares/users")
 
 app.listen(process.env.PORT || 3000, function () {
     console.log("Servidor corriendo http://localhost:3000")})
@@ -23,12 +24,12 @@ const rutasUsers = require("./routes/users")
 const rutasFiles = require("./routes/files")/* 
 const rutasFilesUser = require("./routes/filesUser") */
 
-
+app.use(userLogged)
 app.use("/",rutasMain);
 app.use("/products",rutasProducts);
 app.use("/users",rutasUsers);
 app.use("/files", rutasFiles)
-app.use(require("./middlewares/users"))/* 
+/* 
 app.use("/filesUser", rutasFilesUser) */
 
 

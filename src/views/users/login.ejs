@@ -51,10 +51,10 @@
                         <button class="buttons" type="submit"><i style="margin-right: 5px;" class="fab fa-facebook"></i>Iniciar con facebook</button>
                     </fieldset>  -->
                     <% if (locals.errors && errors.email) { %>
-                        <p class = "warningtxt">! <%= errors.email.msg  %> </p>
+                        <p><%= errors.email.msg  %></p> 
                         <% } %>
                         <% if (locals.errors && errors.password) { %>
-                        <p class = "warningtxt">! <%= errors.password.msg  %> </p>
+                        <p><%= errors.password.msg  %>  </p>
                         <% } %>
     
                 </form>

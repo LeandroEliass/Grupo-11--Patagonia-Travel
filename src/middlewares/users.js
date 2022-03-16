@@ -1,17 +1,24 @@
 const userModel = require("../models/users")
+const db = require("../database/models")
 
 const user=(req, res, next) =>{
-    let user= null
-    if(req.cookie && req.cookie.email){
-        user= userModel.search("email", req.cookie.email);
-        req.session.user= user
+    res.locals.logged = false
+    if(req.session.user && req.session){
+        res.locals.logged = true
     }
+    /* db.User.findOne({
+        where:{
+            email: req.cookies.user && req.cookies ? req.cookies.user : null,
+        }})
+    .then(users=>{
+        let logeado = users;
+   
     if(req.session && req.session.user ){
-        user= req.session.user;
+        logeado= req.session.user;
     }
-    res.locals.user= user
-    
-    return next()
-}
+    res.locals.user= logeado 
+}) */
+    next()
 
+}
 module.exports= user

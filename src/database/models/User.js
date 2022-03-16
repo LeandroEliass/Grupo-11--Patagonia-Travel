@@ -20,11 +20,11 @@ module.exports= function(sequelize, dataTypes){
         },
         nacionalityId:{
             type: dataTypes.INTEGER,
-            allowNull: false
+            
         },
         cityId:{
             type: dataTypes.INTEGER,
-            allowNull: false
+           
         },
         admin:{
             type: dataTypes.BOOLEAN,
@@ -35,13 +35,14 @@ module.exports= function(sequelize, dataTypes){
             allowNull: false,
             unique: true
         },
+        
         password:{
             type: dataTypes.STRING,
             allowNull: false
         },
         imageId:{
             type: dataTypes.INTEGER,
-            allowNull: false
+            
         }
     };
     let config={

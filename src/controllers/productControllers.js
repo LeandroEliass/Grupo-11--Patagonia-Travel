@@ -1,8 +1,9 @@
-let fs = require("fs")
+
 const product = require("../models/products")
 const file= require("../models/files")
 let db = require("../database/models")
 const sequelize = db.sequelize
+const Op = db.Sequelize.Op
 
 
 const controller ={
@@ -36,25 +37,31 @@ const controller ={
     product:product.all()}) */},
     save: (req,res)=> { 
         
-        db.Product.create({
-            name: req.body.name,
-            city_id:req.body.city_id,
-            address:req.body.address,
-            category_id:req.body.category_id,
-            capacity:req.body.capacity,
-            bath_id:req.body.bath_id,
-            room_id: req.body.room_id,
-            surface:req.body.surface,
-            description:req.body.description,
-            price:req.body.price
+        db.Image.create({
+            url: req.files[0].filename
         })
-       
+        .then(function(image){
+            db.Product.create({
+                name: req.body.name,
+                city_id:req.body.city_id,
+                address:req.body.address,
+                category_id:req.body.category_id,
+                capacity:req.body.capacity,
+                bath_id:req.body.bath_id,
+                room_id: req.body.room_id,
+                surface:req.body.surface,
+                description:req.body.description,
+                price:req.body.price,
+                image_id: image.id
+            })
+            .then(function(){
+                return res.redirect("/products")})
         
+                
+        })
         
-        .then(function(){
-        return res.redirect("/products")})
-
         .catch(error=>res.send(error))
+        
         /* 
         req.body.files = req.files;
         let created= product.create(req.body);

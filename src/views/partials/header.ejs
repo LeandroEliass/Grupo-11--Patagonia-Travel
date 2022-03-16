@@ -7,11 +7,17 @@
         <picture class="logo"><a href="/"><img src="../../image/logo1.jpg" alt=""></a></picture>
         <form action=""><fieldset class="navbar"><input type="search" placeholder="Buscar" name="Barra"><i class="fas fa-search"></i></fieldset></form>
         <nav class="listaprimaria">
-            <ul>
-            <li><a href="/users/register">Crear cuenta</a></li>
-            <li><a href="/users/login">Iniciar Sesión</a></li>
-            <li><a href="/products/productCar">Mis compras</a></li>
+            <% if (locals.logged) { %>
+                <a href="/users/profile">Bienvenido </a>
+                <li><a href="/products/productCar">Mis compras</a></li>
+             <ul>
+             <% } else { %>
+            
+                <li><a href="/users/register">Crear cuenta</a></li>
+                <li><a href="/users/login">Iniciar Sesión</a></li>
+                <li><a href="/products/productCar">Mis compras</a></li>
             </ul>
+            <% } %> 
         </nav>
     </section>
     <section ><nav class="listasecundaria">
