@@ -5,10 +5,11 @@
     <section class="menuprincipal">
         <nav><a  href=""><i id="menu1" class="fas fa-ellipsis-v"></i></a></nav>
         <picture class="logo"><a href="/"><img src="../../image/logo1.jpg" alt=""></a></picture>
-        <form action=""><fieldset class="navbar"><input type="search" placeholder="Buscar" name="Barra"><i class="fas fa-search"></i></fieldset></form>
+        <form action="/products/search"><fieldset class="navbar"><input type="search" placeholder="Buscar" name="search"><i class="fas fa-search"></i></a></fieldset></form>
         <nav class="listaprimaria">
             <% if (locals.logged) { %>
-                <a href="/users/profile">Bienvenido </a>
+                <a  class="aavatar" href="/users/profile"> <picture ><img class="avatar" src="../../image/users/avatardefault_92824.png" ></picture>
+                Bienvenid@, <%= locals.user.name %> </a>
                 <li><a href="/products/productCar">Mis compras</a></li>
              <ul>
              <% } else { %>

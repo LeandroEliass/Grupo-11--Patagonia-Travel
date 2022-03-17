@@ -1,0 +1,35 @@
+<%- include ("../partials/head.ejs") %> 
+<body> 
+    <%- include ("../partials/header.ejs") %> 
+    <h2 class="tituloSeccion"> Busquedas</h1>
+        <section class="">
+            <ol class="listaHospedajes">
+         <% if (product) { %>   
+            <% for (i=0;i<product.length; i++) { %> 
+                <li>
+                  <a class="listHospedajes" href="/products/<%= product[i].id %> "> 
+                    <%= product[i].category.category %>  <%= product[i].name %> </li>
+                    <% if (product[i].image_id > 0 ) { %>
+                        <picture> <img src="../../upload/<%= product[i].image.url %> "> </picture>
+                    <% } %>
+                    
+                    
+                </a>
+            <% } %> 
+                <span class="agregar"> <a class="create" href="/products/">Ver </a></span></ol>           
+                
+                 
+                <% } else { %>
+
+                    <p> Lo sentimos, no hay coincidencias con la búsqueda</p>
+                    <% } %>
+                     
+                    
+            </section>
+
+    
+           
+        
+    
+    <%- include ("../partials/footer.ejs") %> 
+</body>

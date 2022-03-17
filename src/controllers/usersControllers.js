@@ -144,13 +144,13 @@ const controller ={
             last_name:req.body.lastName,
             date_birth: req.body.fechaNac,
             password: bcrypt.hashSync(req.body.password,10),
-        }),{
+        },{
             where:{
                 id: req.params.id
             }
-        }
-        .then(function(user){
-            return res.redirect("/users/edit/"+ req.params.id )})
+        })
+        .then(function(){
+            return res.redirect("/users/profile")})
             .catch(error=>res.send(error))
     },
         

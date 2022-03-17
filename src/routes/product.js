@@ -12,9 +12,12 @@ const upload= multer({storage: multer.diskStorage({
 router.get("/", controller.products)
 router.get("/productCar", controller.productCar)
 router.get("/productCreate", controller.productCreate)
-router.get("/:id",controller.show)
+router.get("/search", controller.search)
+
 router.post("/productCreate",[upload.any()],controller.save)
+router.get("/:id",controller.show)
 router.get("/:id/edit",controller.edit)
 router.put("/:id", controller.update)
 router.delete("/delete/:id",controller.delet) 
+
 module.exports = router

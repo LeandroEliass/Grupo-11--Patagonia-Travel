@@ -2,9 +2,16 @@ const userModel = require("../models/users")
 const db = require("../database/models")
 
 const user=(req, res, next) =>{
-    res.locals.logged = false
-    if(req.session.user && req.session){
-        res.locals.logged = true
+    res.locals.logged = false;
+
+    let emailCookie = req.cookies.userEmail;
+    let userFromCookie = req.cookies
+
+
+
+    if(req.session.user){
+        res.locals.logged = true;
+        res.locals.user = req.session.user
     }
     /* db.User.findOne({
         where:{

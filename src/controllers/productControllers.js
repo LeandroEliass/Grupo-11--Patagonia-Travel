@@ -142,7 +142,27 @@ const controller ={
             .catch(error => res.send(error))
                 /* product.delete(req.body.id)
                 return res.redirect("/products") */
-            }
+            },
+        search: (req,res) => {
+            db.Category.findOne({
+        
+                where:{
+                    category: {[Op.like]: "%" + req.query.search + "%"}
+                }
+            })
+            .then(function(category){
+                db.Product.findAll({
+                    include:["city","category","image"],
+            where:{
+                category_id: category.id
+            }})
+            
+            .then(product=>{
+                return res.render("./products/search",{product:product, styles:["list"]})
+            })
+        })
+            .catch(error=>res.send(error))
+        }
 
     
 }

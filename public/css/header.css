@@ -131,7 +131,14 @@
 
 @media (min-width: 1200px){
 
-  
+    .aavatar{
+        display: flex;
+        align-items: center;
+    }
+    .avatar{
+        width: 2.5rem;
+        margin: 2px;
+    }
     .menuprincipal{
         justify-content: space-between;
     }
@@ -143,6 +150,7 @@
     }
     .listaprimaria{
         max-width: 28%;
+        align-items: center;
     }
    .listasecundaria ul {
        width: 60%;

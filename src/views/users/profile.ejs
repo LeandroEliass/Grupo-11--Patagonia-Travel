@@ -1,17 +1,22 @@
 <%- include ("../partials/head.ejs") %> 
     <body> 
         <%- include ("../partials/header.ejs") %> 
-        <main>
-
-    <h1>Hola <%= user.name %>  <%= user.last_name %></h1>
-    <p><%= user.email %> </p>
-    <picture><img src=""></picture>
+<section class="principal">
+    <section class="form-login">
+    <h2>Bienvenid@ <%= user.name %>  <%= user.last_name %></h2>
+    
+    <p>Aquì podrás editar tu información y actualizar tu contraseña</p>
+    <p>Tu email: <%= user.email %> </p>
+    <p>Tu fecha de cumpleaños: <%= user.date_birth %> </p>
+    
+    <picture><img src=" <%=  %> "></picture>
     <form action="/users/logout" method="post">
 <button type="submit">Cerrar sesión</button>
         <a href="/users/edit/<%=user.id%>">Editar datos</a>
 
+        <a href="/users/list">Ver usuarios</a>
     </form>
-
-</main>
+</section>
+</section>
 <%- include ("../partials/footer.ejs") %> 
 </body>

@@ -153,9 +153,7 @@ article img{
    section article{
        width: 45%;
    }
-   section img{
-       height: 200px;
-   }
+  
    
  }
 
@@ -173,7 +171,7 @@ article img{
     margin: 15px 10px;}
     
 
-    section img{
+    .imgIndex{
         height: 250px;
     }
     .button{

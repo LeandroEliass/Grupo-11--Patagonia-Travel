@@ -15,10 +15,10 @@ const upload= multer({storage: multer.diskStorage({
 })});
 
 router.get("/list",auth,controller.list)
-router.get("/login",guest, controller.login)
-router.get("/register", guest,controller.register)
-router.get("/profile",access, controller.profile)
-router.get("/edit/:id",access, controller.edit)
+router.get("/login", controller.login)
+router.get("/register",controller.register)
+router.get("/profile", controller.profile)
+router.get("/edit/:id", controller.edit)
 router.put("/:id/update",controller.update)
 router.post("/new",[validateCreate], controller.save)
 
