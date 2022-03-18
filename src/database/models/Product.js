@@ -84,9 +84,8 @@ Product.associate=models=>{
     Product.belongsToMany(models.Service,{
         as:"services",
         through: "services_products",
-        foreingKey: "product_id",
-        otherKey:"service_id",
-        timestamps:false
+        timestamps:false,
+        underscored:true
     }) }
 
  

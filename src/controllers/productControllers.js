@@ -36,7 +36,7 @@ const controller ={
         /* res.render("./products/productCreate",{styles: ["productCreate"],
     product:product.all()}) */},
     save: (req,res)=> { 
-        
+        /* return res.send(req.body) */
         db.Image.create({
             url: req.files[0].filename
         })
@@ -54,8 +54,26 @@ const controller ={
                 price:req.body.price,
                 image_id: image.id
             })
-            .then(function(){
-                return res.redirect("/products")})
+            .then(function(product){
+                db.Service.findAll({
+                    where:{
+                        id: {[Op.in] : req.body.service_id}
+                    }
+                })
+                
+                .then(function(servicios){
+
+                    product.addServices(servicios)
+
+                    .then(function(){
+                        return res.redirect("/products")})
+
+                    })
+                    .catch(error=>res.send(error))
+                })
+                
+
+                
         
                 
         })
@@ -135,7 +153,8 @@ const controller ={
             let productId = req.params.id;
             db.Product.destroy({
                 where:{id: productId}, 
-                force:true})
+                force:true,
+                cascade: true})
             .then(()=>{
                 return res.redirect("/products")})
                 /* res.render(path.resolve(__dirname, '..', 'views',  'moviesDelete'), {product})}) */

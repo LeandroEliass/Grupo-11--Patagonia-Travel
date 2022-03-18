@@ -22,8 +22,7 @@ service.associate=function(models){
     service.belongsToMany(models.Product,{
         as:"products",
         through: "services_products",
-        foreingKey: "service_id",
-        otherKey:"product_id"
+        underscored:true
     })
 }
 return service
