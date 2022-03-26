@@ -1,6 +1,6 @@
-let fs = require("fs")
-const userModel= require("../models/users")/* 
-const file= require("../models/filesUser") */
+
+const userModel= require("../models/users") 
+const file= require("../models/filesUser") 
 const validator= require("express-validator")
 const bcrypt= require("bcrypt")
 const db = require("../database/models")
@@ -64,24 +64,53 @@ const controller ={
     },
     
     save: (req,res)=> {
-     
-        
-   let errors = validator.validationResult(req);
+   
+    db.User.findOne({
+        where:{
+            email: req.body.email
+        }
+    })
+   .then(function(exist){
+    let errors = validator.validationResult(req);
    
    if(!errors.isEmpty()){
     return res.render("users/register",{styles: ["register"],
-        errors: errors.mapped()})}
+        errors: errors.mapped(),oldData: req.body})}
 
-    let exist = user.search("email", req.body.email)
     if(exist){
-    return res.render("users/register",{styles: ["register"],
-        errors:{
-            email:{
-                msg: "email ya se encuentra registrado"
-            }
-        }
-    })
-}  
+        return res.render("users/register",{styles: ["register"],
+            errors:{
+                email:{
+                    msg: "El email ya se encuentra registrado"
+                }
+            }, oldData: req.body})}
+        })
+        db.Image.create({
+            url: req.files[0].filename
+        })
+        .then(function(image){
+                db.User.create({
+                    name:req.body.name,
+                    last_name:req.body.lastName,
+                    date_birth: req.body.fechaNac,
+                    admin: req.body.email.includes("@patagoniatravel") ? true : false,
+                    email: req.body.email,
+                    password: bcrypt.hashSync(req.body.password,10),
+                    image_id: image.id
+                })
+                
+                .then(function(){
+                    res.render("./users/login",{styles: ["login"]})
+                }) 
+                .catch(error=>res.send(error))
+            })
+         
+                
+            
+   
+       
+    
+  
     
     /* let userRegistred = user.create(req.body)
 
@@ -102,25 +131,12 @@ const controller ={
                 })
             } */ 
            
-        db.User.create({
-                name:req.body.name,
-                last_name:req.body.lastName,
-                date_birth: req.body.fechaNac,
-                admin: req.body.email.includes("@patagoniatravel") ? true : false,
-                email: req.body.email,
-                password: bcrypt.hashSync(req.body.password,10),
-    
-            })
-            
-            .then(function(){
-                res.render("./users/login",{styles: ["login"]})
-            }) 
-            .catch(error=>res.send(error))
-     
-            
+        
     },
     profile: (req,res) => {
-        db.User.findByPk(req.session.user.id)
+        db.User.findByPk(req.session.user.id,{
+            include: [{association:"image"}]
+        })
 
         .then(user=>{
             res.render("./users/profile", {

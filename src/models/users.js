@@ -40,12 +40,12 @@ const model={
         body("password").isLength({ min: 5,max:16}).withMessage("La contraseña debe comprender entre 5 y 16 caracteres")],
     validateCreate:[
         
-        body("name").isLength({ min: 3, max:16}).withMessage("Debe ingresar un nombre entre 3 y 16 caracteres"),
-        body("lastName").isLength({ min: 3, max:16}).withMessage("Debe ingresar un apellido entre 3 y 16 caracteres"),
+        body("name").isLength({ min: 2, max:16}).withMessage("Debe ingresar un nombre entre 3 y 16 caracteres"),
+        body("lastName").isLength({ min: 2, max:16}).withMessage("Debe ingresar un apellido entre 3 y 16 caracteres"),
         body("fechaNac").isDate().withMessage("Ingrese su fecha de nacimiento"),
         body("email").isEmail().withMessage("email incorrecto"),
         body("rEmail").isEmail().withMessage("Repetir email incorrecto"),
-        body("password").isLength({ min: 5,max:16}).withMessage("La contraseña debe comprender entre 5 y 16 caracteres")
+        body("password").isLength({ min: 8,max:16}).withMessage("La contraseña debe comprender entre 5 y 16 caracteres")
     ]
 }
 

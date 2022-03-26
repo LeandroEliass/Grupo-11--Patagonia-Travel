@@ -5,16 +5,22 @@
     <%- include ("../partials/header.ejs") %> 
     <h3>Agregar Alojamiento</h3>
     <main>
+        
         <section class="principal">
             <section class="flex-container" >
-                <form action="/products/productCreate" enctype="multipart/form-data" method="post" class="form-register">
-        <fieldset class="form-fieldset">
+                <form  method="post" class="form-register" action="/products/productCreate" enctype="multipart/form-data">
+               
+                    
+                    <fieldset class="form-fieldset">
             <label name="name">Nombre</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required value="<%= locals.oldData ? oldData.name : null%>">
+            <% if (locals.errors && errors.name) { %>
+                <p class="text-danger"> <%= errors.name.msg  %> </p>
+               <% } %>
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="city">Ciudad</label>
-        <select name="city_id">
+        <select name="city_id" >
             <% for(i=0; i<city.length; i++){ %> 
             
                 <option value="<%= city[i].id %> ">
@@ -22,14 +28,20 @@
                 </option>
                 <% } %> 
             </select>
+            <% if (locals.errors && errors.city_id) { %>
+                <p class="text-danger"> <%= errors.city_id.msg  %> </p>
+               <% } %>
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="address">Dirección</label>
-        <input type="text" name="address" id="address">
+        <input type="text" name="address" id="address" value="<%= locals.oldData ? oldData.address : null%>" >
+        <% if (locals.errors && errors.address) { %>
+            <p class="text-danger"> <%= errors.address.msg  %> </p>
+           <% } %>
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="category">Categoría</label>
-        <select name="category_id">
+        <select name="category_id" >
         <% for(i=0; i<category.length; i++){ %> 
         
             <option value="<%= category[i].id %> ">
@@ -37,15 +49,20 @@
             </option>
             <% } %> 
         </select>
-        
+        <% if (locals.errors && errors.category_id) { %>
+            <p class="text-danger"> <%= errors.category_id.msg  %> </p>
+           <% } %>
 </fieldset>
 
 <fieldset class="form-fieldset">
     <label name="capacidad">Max. Ocupantes</label>
-    <input type="number" name= "capacity" id="capacity" min="1">
+    <input type="number" name= "capacity" id="capacity" min="1" value="<%= locals.oldData ? oldData.capacity : null%>">
+    <% if (locals.errors && errors.capacity) { %>
+        <p class="text-danger"> <%= errors.capacity.msg  %> </p>
+       <% } %>
 </fieldset>
 <fieldset class="form-fieldset">
-    <label name="bath">Baños</label><br>
+    <label name="bath" >Baños</label><br>
     <select name="bath_id">
         <% for(i=0; i<bath.length; i++){ %> 
         
@@ -54,9 +71,12 @@
             </option>
             <% } %> 
         </select>
+        <% if (locals.errors && errors.bath_id) { %>
+            <p class="text-danger"> <%= errors.bath_id.msg  %> </p>
+           <% } %>
 </fieldset>
 <fieldset class="form-fieldset">
-    <label name="tipoHabitacion">Tipo de Habitación</label>
+    <label name="tipoHabitacion" >Tipo de Habitación</label>
     <select name="room_id">
         <% for(i=0; i<room.length; i++){ %> 
         
@@ -65,10 +85,12 @@
             </option>
             <% } %> 
         </select>
-    
+        <% if (locals.errors && errors.room_id) { %>
+            <p class="text-danger"> <%= errors.room_id.msg  %> </p>
+           <% } %>
 </fieldset>
 <fieldset class="form-fieldset">
-    <label name="service">Servicios</label> 
+    <label name="service" >Servicios</label> 
         <% for(i=0; i<service.length; i++){ %>
     <input type="checkbox" name="service_id" value="<%= service[i].id %>" > <%= service[i].service %>
     <!-- <p><input type="number" name="service_id" id="" value="<%= service[i].id %>"></p> -->
@@ -79,21 +101,36 @@
     <input type="radio" name="PetFriendly" id="PetFriendly" > <h4>Aire Acondicionado/ Estufas</h4><br>
     <input type="radio" name="Internet" id="Internet" > <h4>Pet Friendly</h4><br> -->
     </fieldset>
+    <% if (locals.errors && errors.service) { %>
+        <p class="text-danger"> <%= errors.service.msg  %> </p>
+       <% } %>
     <fieldset class="form-fieldset">
         <label name="description">Descripción</label>
-        <input type="" name="description" id="description" placeholder="Descripción del alojamiento"> 
+        <input type="" name="description" id="description" placeholder="Descripción del alojamiento" value="<%= locals.oldData ? oldData.description : null%>"> 
+        <% if (locals.errors && errors.description) { %>
+            <p class="text-danger"> <%= errors.description.msg  %> </p>
+           <% } %>
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="surface">Medidas</label>
-        <input type="text" name="surface" id="surface"> m2
+        <input type="text" name="surface" id="surface" value="<%= locals.oldData ? oldData.surface : null%>"> m2
+        <% if (locals.errors && errors.surface) { %>
+            <p class="text-danger"> <%= errors.surface.msg  %> </p>
+           <% } %>
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="price">Precio</label>
-        <input type="number" name="price" id="price"> $ (Pesos Argentinos)
+        <input type="number" name="price" id="price" value="<%= locals.oldData ? oldData.price : null%>"> $ (Pesos Argentinos)
+        <% if (locals.errors && errors.price) { %>
+            <p class="text-danger"> <%= errors.price.msg  %> </p>
+           <% } %>
     </fieldset>
     <fieldset class="form-fieldset"> 
         <label name="file">Fotos</label>
-        <input type="file" name="file" id="file" multiple>
+        <input type="file" name="file" id="file" accept=".jpeg, .png, .gif, .jpg " multiple value="<%= locals.oldData ? oldData.file : null%>" >
+        <% if (locals.errors && errors.file) { %>
+            <p class="text-danger"> <%= errors.file.msg  %> </p>
+           <% } %>
     </fieldset> 
     <fieldset class="form-fieldset-buttons">
         <legend class="dn">Botones de enviar</legend>

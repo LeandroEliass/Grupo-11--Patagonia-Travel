@@ -20,7 +20,7 @@ const image = sequelize.define(alias,cols,config);
 image.associate=function(models){
     image.hasMany(models.User,{
         as: "users",
-        foreingKey: "image_id"
+        foreingKey: "id_image"
     })
     image.hasMany(models.Product,{
             as: "products",

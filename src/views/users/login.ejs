@@ -11,14 +11,21 @@
                 <form class="form-login" action="/users/access" method="post"> 
 
                     <label class="" for="email">Email</label>
-                        <input class="form-fieldset-input" type="email" id="email" name="email" placeholder="Email">
-
+                        <input class="form-fieldset-input" type="email" id="email" name="email" placeholder="Email" required>
+                        <% if (locals.errors && errors.email) { %>
+                            <p class="text-danger"><%= errors.email.msg  %></p> 
+                            <% } %>
+                            
                     <fieldset class="form-fieldset">
                         <legend class="dn">Contraseña</legend>
                         <label class="form-fieldset-input" for="contrasena">Contraseña</label>
-                        <input class="form-fieldset-input" type="password" name="password" id="password"  placeholder="**********" >
-                        <a class="rcontraseña" href="rccontrasena.html">Recuperar tu contraseña</a>
+                        <input class="form-fieldset-input" type="password" name="password" id="password"  placeholder="**********" required>
+                        <% if (locals.errors && errors.password) { %>
+                            <p class="text-danger"><%= errors.password.msg  %>  </p>
+                            <% } %>
+                        
                     </fieldset>
+                    <a class="rcontraseña" href="rccontrasena.html">Recuperar tu contraseña</a>
                     <div>
                         <label for="recordarUsuario">Recordar Usuario
                             <input class="" type="Checkbox" name="remember" id="remember" >
@@ -50,12 +57,7 @@
                         <legend class="dn">Iniciar con facebook</legend>
                         <button class="buttons" type="submit"><i style="margin-right: 5px;" class="fab fa-facebook"></i>Iniciar con facebook</button>
                     </fieldset>  -->
-                    <% if (locals.errors && errors.email) { %>
-                        <p><%= errors.email.msg  %></p> 
-                        <% } %>
-                        <% if (locals.errors && errors.password) { %>
-                        <p><%= errors.password.msg  %>  </p>
-                        <% } %>
+                   
     
                 </form>
             </section>      

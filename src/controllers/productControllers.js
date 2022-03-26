@@ -4,6 +4,7 @@ const file= require("../models/files")
 let db = require("../database/models")
 const sequelize = db.sequelize
 const Op = db.Sequelize.Op
+const {validationResult} = require("express-validator")
 
 
 const controller ={
@@ -26,17 +27,35 @@ const controller ={
        let bathAll=db.Bath.findAll()
        let roomAll=db.Room.findAll()
        let serviceAll=db.Service.findAll()
-       let imageAll=db.Image.findAll()
+       
       
-       Promise.all([categoryAll, cityAll,bathAll,roomAll,serviceAll,imageAll])
-        .then(function([category, city,bath,room,service,image]){
-            return res.render("./products/productCreate",{category,city,bath,room,service,image, styles:["productCreate"]})
+       Promise.all([categoryAll, cityAll,bathAll,roomAll,serviceAll])
+        .then(function([category, city,bath,room,service]){
+            return res.render("./products/productCreate",{category,city,bath,room,service, styles:["productCreate"]})
         })
         .catch(error=>res.send(error))
         /* res.render("./products/productCreate",{styles: ["productCreate"],
     product:product.all()}) */},
     save: (req,res)=> { 
-        /* return res.send(req.body) */
+        
+        let errors = validationResult(req);
+        
+       
+        if(!errors.isEmpty()){
+            let categoryAll=db.Category.findAll()
+            let cityAll=db.City.findAll()
+            let bathAll=db.Bath.findAll()
+            let roomAll=db.Room.findAll()
+            let serviceAll=db.Service.findAll()
+            let imageAll=db.Image.findAll()
+           
+            Promise.all([categoryAll, cityAll,bathAll,roomAll,serviceAll,imageAll])
+             .then(function([category, city,bath,room,service,image]){
+                 return res.render("./products/productCreate",{category,city,bath,room,service,image, 
+                    styles:["productCreate"], errors : errors.mapped(), oldData: req.body})
+                 })
+             
+        } else {
         db.Image.create({
             url: req.files[0].filename
         })
@@ -71,20 +90,15 @@ const controller ={
                     })
                     .catch(error=>res.send(error))
                 })
-                
-
-                
-        
-                
+            .catch(error=>res.send(error))   
         })
         
-        .catch(error=>res.send(error))
         
         /* 
         req.body.files = req.files;
         let created= product.create(req.body);
         return res.redirect("/products") */
-    },
+    }},
     show: (req,res) => {
         // con sequelize
         db.Product.findByPk(req.params.id,{
@@ -156,7 +170,10 @@ const controller ={
                 force:true,
                 cascade: true})
             .then(()=>{
-                return res.redirect("/products")})
+                
+                    return res.redirect("/products")
+                })
+                
                 /* res.render(path.resolve(__dirname, '..', 'views',  'moviesDelete'), {product})}) */
             .catch(error => res.send(error))
                 /* product.delete(req.body.id)

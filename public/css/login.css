@@ -10,9 +10,11 @@ main{
     animation-name: slidein ;  
 }
 
-.warningtxt{
-    text-align: left;
+.text-danger{
+    text-align: center;
     color: red;
+    padding: 5px;
+    font-size: 13px
 }
 
 @keyframes slidein {

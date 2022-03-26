@@ -40,7 +40,7 @@ module.exports= function(sequelize, dataTypes){
             type: dataTypes.STRING,
             allowNull: false
         },
-        imageId:{
+        image_id:{
             type: dataTypes.INTEGER,
             
         }
@@ -63,7 +63,7 @@ user.associate=function(models){
     })
     user.belongsTo(models.Image,{
         as: "image",
-        foreingKey: "imageId"
+        foreingKey: "image_id"
     })
 
 }

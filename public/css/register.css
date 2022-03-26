@@ -59,9 +59,11 @@ body{
     justify-content: space-between;
 }
 
-.warningtxt{
+.text-danger{
     text-align: center;
     color: red;
+    padding: 5px;
+    font-size: 13px
 }
 
 .form-fieldset-input{
