@@ -10,6 +10,22 @@
     animation-duration: 1.5s;
     animation-name: slidein ;  
 }
+#tilde{
+    display: none;
+    color:rgb(6, 95, 6)
+}
+.sucess{
+    font-size: 1rem;
+    margin: .25rem;
+    color: rgb(6, 95, 6);
+}
+
+.error{
+    font-size: 1rem;
+    margin: .25rem;
+    color: rgb(201, 45, 45);
+}
+
 .text-danger{
     text-align: center;
     color: red;

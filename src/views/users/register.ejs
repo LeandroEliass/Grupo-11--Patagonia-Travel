@@ -13,23 +13,27 @@
                             <legend class="dn">Nombre</legend>
                             <label class="" for="nombreCompleto">Nombre</label>
                             <input class="form-fieldset-input" type="text" id="name" name="name" required value="<%= locals.oldData ? oldData.name : null%>">
+                            <i  class=" fas fa-check-circle"></i>
                             <% if (locals.errors && errors.name) { %>
                             
-                                <p class="text-danger"> <%= errors.name.msg  %> </p>
+                                <p class="text-danger" > <%= errors.name.msg  %> </p>
                                 
                                    <% } %>
-                                   <small id="text-danger"></small>
+                                   <small id="errorName"></small>
                         </fieldset>
     
                         <fieldset class="form-fieldset">
                             <legend class="dn">Apellido</legend>
                             <label class="" for="apellido">Apellido</label>
                             <input class="form-fieldset-input" type="text" id="lastName" name="lastName" value="<%= locals.oldData ? oldData.lastName : null%>" required>
+                            <i class=" fas fa-check-circle"></i>
+                            
                             <% if (locals.errors && errors.lastName) { %>
                             
-                                <p class="text-danger"> <%= errors.lastName.msg  %> </p>
+                                <p class="text-danger" > <%= errors.lastName.msg  %> </p>
                                 
                                    <% } %>
+                                   <small id="errorLastName"></small>
                         </fieldset>
     
                         <fieldset class="form-fieldset">
@@ -41,50 +45,59 @@
                                 <p class="text-danger"> <%= errors.fechaNac.msg  %> </p>
                                 
                                    <% } %>
+                                   <small id="errorDate"></small>
                         </fieldset>
                         <fieldset class="form-fieldset">
                             <legend class="dn">Email</legend>
                             <label class="" for="email">Email</label>
                             <input class="form-fieldset-input" type="email" id="email" name="email" value="<%= locals.oldData ? oldData.email : null%>"requerid>
+                            <i  ></i>
                             <% if (locals.errors && errors.email) { %>
                             
-                                <p class="text-danger"> <%= errors.email.msg  %> </p>
+                                <p class="text-danger" > <%= errors.email.msg  %> </p>
                                 
                                    <% } %>
+                                   <small id="errorEmail"></small>
                         </fieldset>
     
                         <fieldset class="form-fieldset">
                             <legend class="dn">Repetir Email</legend>
                             <label class="" for="rEmail">Repetir Email</label>
                             <input class="form-fieldset-input" type="email" id="rEmail" name="rEmail" value="<%= locals.oldData ? oldData.rEmail : null%>" requerid >
+                            <i  class=" fas fa-check-circle"></i>
                             <% if (locals.errors && errors.rEmail) { %>
                             
-                                <p class="text-danger"> <%= errors.rEmail.msg  %> </p>
+                                <p class="text-danger" > <%= errors.rEmail.msg  %> </p>
                                 
                                    <% } %>
+                                   <small id="errorRemail"></small>
                         </fieldset>
     
                         <fieldset class="form-fieldset">
                             <legend class="dn">Contraseña</legend>
                             <label for="clave">Contraseña</label>
                             <input class="form-fieldset-input" type="password" name="password" id="password"  placeholder="**********" required>
+                            <!-- <button type="button" id="mostrar">Mostrar</button> -->
+                            <i id= "ip" class=" fas fa-check-circle"></i>
                             <% if (locals.errors && errors.password) { %>
                             
-                                <p class="text-danger"> <%= errors.password.msg  %> </p>
+                                <p class="text-danger" > <%= errors.password.msg  %> </p>
                                 
                                    <% } %>
+                                   <small id="errorPassword"></small>
                         </fieldset>
     
                         <fieldset class="form-fieldset">
                             <legend class="dn">Confirmar Contraseña</legend>
                             <label for="clave">Confirmar Contraseña</label>
                             <input class="form-fieldset-input" type="password" name="rPassword" id="rPassword" placeholder="**********" required>
+                            <i id= "irp" class=" fas fa-check-circle"></i>
                             <% if (locals.errors && errors.rPassword) { %>
                             
-                                <p class="text-danger"> <%= errors.rPassword.msg  %> </p>
+                                <p class="text-danger" id="errorRpassword"> <%= errors.rPassword.msg  %> </p>
                                 
                                    <% } %>
-                                   <small id="text-danger"></small>
+                                   <small id="errorRpassword"></small> 
                         </fieldset>
     
                         <div>
@@ -106,6 +119,7 @@
                             <% if (locals.errors && errors.file) { %>
                                 <p class="text-danger"> <%= errors.file.msg  %> </p>
                                <% } %>
+                               <small id="errorFile"></small>
                         </fieldset>
     
                         <fieldset class="form-fieldset-buttons">

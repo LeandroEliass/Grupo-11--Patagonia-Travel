@@ -15,7 +15,8 @@
                         <% if (locals.errors && errors.email) { %>
                             <p class="text-danger"><%= errors.email.msg  %></p> 
                             <% } %>
-                            
+                            <small id="errorEmail"></small> 
+
                     <fieldset class="form-fieldset">
                         <legend class="dn">Contraseña</legend>
                         <label class="form-fieldset-input" for="contrasena">Contraseña</label>
@@ -23,7 +24,7 @@
                         <% if (locals.errors && errors.password) { %>
                             <p class="text-danger"><%= errors.password.msg  %>  </p>
                             <% } %>
-                        
+                        <small id="errorPassword"></small>
                     </fieldset>
                     <a class="rcontraseña" href="rccontrasena.html">Recuperar tu contraseña</a>
                     <div>
@@ -64,4 +65,5 @@
         </section>
 
         <%- include ("../partials/footer.ejs") %> 
+        <script src="../js/userLogin.js"></script>
 </body>

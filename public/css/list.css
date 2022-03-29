@@ -48,6 +48,21 @@
     margin-top: 3rem;
    
 }
+@media (min-width: 768px){
+    section{
+        text-align: center;
+    }
+    section img{
+        width: 50%;
+    }
+    article{
+        margin: 2rem 0;
+    }
+    section li{
+        padding: 10px
+    }
+
+}
 
 
 

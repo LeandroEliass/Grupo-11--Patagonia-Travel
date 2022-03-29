@@ -17,6 +17,8 @@
             <% if (locals.errors && errors.name) { %>
                 <p class="text-danger"> <%= errors.name.msg  %> </p>
                <% } %>
+               <small id="errorName"></small>
+                <i id="tilde" class="fa-solid fa-circle-check"></i>
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="city">Ciudad</label>
@@ -38,6 +40,8 @@
         <% if (locals.errors && errors.address) { %>
             <p class="text-danger"> <%= errors.address.msg  %> </p>
            <% } %>
+           <small id="errorAddress"></small>
+           <i id="tilde" class="fa-solid fa-circle-check"></i>
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="category">Categoría</label>
@@ -60,6 +64,8 @@
     <% if (locals.errors && errors.capacity) { %>
         <p class="text-danger"> <%= errors.capacity.msg  %> </p>
        <% } %>
+       <small id="errorCapacity"></small>
+       <i id="tilde" class="fa-solid fa-circle-check"></i>
 </fieldset>
 <fieldset class="form-fieldset">
     <label name="bath" >Baños</label><br>
@@ -92,7 +98,7 @@
 <fieldset class="form-fieldset">
     <label name="service" >Servicios</label> 
         <% for(i=0; i<service.length; i++){ %>
-    <input type="checkbox" name="service_id" value="<%= service[i].id %>" > <%= service[i].service %>
+    <input type="checkbox" name="service_id" id="service_id" value="<%= service[i].id %>" required> <%= service[i].service %>
     <!-- <p><input type="number" name="service_id" id="" value="<%= service[i].id %>"></p> -->
 
     <% } %><!-- 
@@ -100,23 +106,29 @@
     <input type="radio" name="Garage" id="Garage" > <h4>Estacionamiento</h4><br>
     <input type="radio" name="PetFriendly" id="PetFriendly" > <h4>Aire Acondicionado/ Estufas</h4><br>
     <input type="radio" name="Internet" id="Internet" > <h4>Pet Friendly</h4><br> -->
-    </fieldset>
+      
+
     <% if (locals.errors && errors.service) { %>
         <p class="text-danger"> <%= errors.service.msg  %> </p>
        <% } %>
+       <small id="errorService"></small>  
+    </fieldset>
     <fieldset class="form-fieldset">
         <label name="description">Descripción</label>
         <input type="" name="description" id="description" placeholder="Descripción del alojamiento" value="<%= locals.oldData ? oldData.description : null%>"> 
         <% if (locals.errors && errors.description) { %>
             <p class="text-danger"> <%= errors.description.msg  %> </p>
            <% } %>
+           <small id="errorDescription"></small>  
+           <i id="tilde" class="fa-solid fa-circle-check"></i>
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="surface">Medidas</label>
-        <input type="text" name="surface" id="surface" value="<%= locals.oldData ? oldData.surface : null%>"> m2
+        <input type="number" name="surface" id="surface" value="<%= locals.oldData ? oldData.surface : null%>"> m2
         <% if (locals.errors && errors.surface) { %>
             <p class="text-danger"> <%= errors.surface.msg  %> </p>
            <% } %>
+           <small id="errorSurface"></small>  
     </fieldset>
     <fieldset class="form-fieldset">
         <label name="price">Precio</label>
@@ -124,6 +136,7 @@
         <% if (locals.errors && errors.price) { %>
             <p class="text-danger"> <%= errors.price.msg  %> </p>
            <% } %>
+           <small id="errorPrice"></small>  
     </fieldset>
     <fieldset class="form-fieldset"> 
         <label name="file">Fotos</label>
@@ -131,6 +144,7 @@
         <% if (locals.errors && errors.file) { %>
             <p class="text-danger"> <%= errors.file.msg  %> </p>
            <% } %>
+           <small id="errorFile"></small>  
     </fieldset> 
     <fieldset class="form-fieldset-buttons">
         <legend class="dn">Botones de enviar</legend>
@@ -144,7 +158,10 @@
 </section>
 </main>
 
-</body>
+
 <%- include ("../partials/footer.ejs") %> 
+<script src="../js/createProduct.js"></script>
+</body>
+
 
 </html>

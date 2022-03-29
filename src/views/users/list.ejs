@@ -2,13 +2,14 @@
     <body> 
         <%- include ("../partials/header.ejs") %> 
         <main>
-    <h1>Estoy aqui, lista de usuarios</h1>
+    <section class="principal">
+            <h1>Usuarios registrados</h1>
     <% for( let i = 0; i < user.length; i++ ) { %>
     <p> <%= user[i].name %> <%= user[i].last_name %> <%= user[i].email %></p>
     <% } %>
     <form action="/users/logout" method="post">
         <button type="submit">Cerrar sesión</button>
-        
+    </section>
             </form>
 </main>
 <%- include ("../partials/footer.ejs") %> 

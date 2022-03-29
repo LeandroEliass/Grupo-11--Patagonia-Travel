@@ -5,6 +5,7 @@
         <section class="">
             <ol class="listaHospedajes">
             <% for (i=0;i<product.length; i++) { %> 
+                <article>
                 <li>
                   <a class="listHospedajes" href="/products/<%= product[i].id %> "> 
                     <%= product[i].category.category %>  <%= product[i].name %> </li>
@@ -13,7 +14,9 @@
                     <% } %>
                     
                     <% } %> 
-                </a></ol>           
+                </a>
+            </article>
+        </ol>           
         
             </section>
 

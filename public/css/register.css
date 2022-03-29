@@ -58,10 +58,23 @@ body{
     align-items: center;   
     justify-content: space-between;
 }
+.form-fieldset i{
+    display: none
+}
 
+.sucess{
+    font-size: 1rem;
+    margin: .25rem;
+    color: rgb(6, 95, 6);
+}
+.error{
+    font-size: 1rem;
+    margin: .25rem;
+    color: rgb(201, 45, 45);
+}
 .text-danger{
     text-align: center;
-    color: red;
+    color: rgb(201, 45, 45);
     padding: 5px;
     font-size: 13px
 }
@@ -74,7 +87,10 @@ body{
     padding: .25rem;
     margin: .25rem 0;
 }
-
+input.front{
+    background-color: "red";
+    font-family: 'Franklin Gothic Medium';
+}
 .form-fieldset-buttons{
     display: flex;
     border: none;

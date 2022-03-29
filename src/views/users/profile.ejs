@@ -8,8 +8,10 @@
     <p>Aquì podrás editar tu información y actualizar tu contraseña</p>
     <p>Tu email: <%= user.email %> </p>
     <p>Tu fecha de cumpleaños: <%= user.date_birth %> </p>
+    <% if (user.image) { %>
+        <picture><img src="../image/users/<%=user.image.url %>" ></picture>
+    <% } %>
     
-    <picture><img src="../image/users/<%=user.image.url %>" ></picture>
     <form action="/users/logout" method="post">
 <button type="submit">Cerrar sesión</button>
         <a href="/users/edit/<%=user.id%>">Editar datos</a>
